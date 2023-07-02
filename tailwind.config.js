@@ -30,6 +30,13 @@ module.exports = {
         '60': '60vh',
         '50': '50vh',
       },
+      colors: {
+        'creme': '#FAF6F2;',
+        'tan': '#DED1BD;',
+        'gold': '#B08401;',
+        'pink': '#D49E8D;',
+        'brown': '#683B2B;',
+      },
     },
   },
   plugins: [
