@@ -21,14 +21,18 @@ banner:
 {% include full-banner.html %}
 
 <!-- Welcome Section -->
-<section class="bg-red-200 p-5p">
+<section class="bg-[#D49E8D] p-5p">
   <div class="px-8 mx-auto text-center max-w-screen-2xl">
     <h2>Welcome!</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, veniam asperiores qui quis quam tempore corrupti possimus! Illum tenetur numquam omnis laboriosam nam possimus porro repudiandae voluptatibus, atque, illo debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia eius nesciunt amet quibusdam minus labore vel at beatae odit mollitia totam cum aliquid molestias perspiciatis, suscipit tempore culpa est.</p>
   </div>
 </section>
 
-<!-- Add SVG to bottom to create the triangle down shape -->
+<!-- SVG to create the triangle down shape -->
+<svg viewBox="0 0 1431 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M708 168L1430.27 0H-14.2652L708 168Z" fill="#D49E8D"/>
+</svg>
+  
 
 <!-- Services Section -->
 <section class="p-5p">
@@ -37,6 +41,45 @@ banner:
 
     {% include services_link.html %}
 
-    <a href="#" class="bg-yellow-600">Learn More</a>
+    <div class="pt-8">
+      <a href="#" class="bg-[#B08401]">Learn More</a>
+    </div>
   </div>
+</section>
+
+<!-- Lisa's Intro -->
+<section class="bg-[#D49E8D]">
+  <div class="grid grid-cols-2 mx-auto max-w-screen-2xl min-h-60">
+    <!-- Image -->
+    <div class="p-20">
+      <div class="bg-cover bg-center aspect-portrait bg-[url('/uploads/Coaching_img_resized.jpg')]"></div>
+    </div>
+    <!-- Copy -->
+    <div class="px-4 py-8 bg-[#FAF6F2] items-center flex">
+      <div class="">
+        <h4>Hi, I'm</h4>
+        <h2 class="text-4xl">Dr. Lisa Rambaldo</h2>
+        <hr>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti, corrupti voluptatibus vel reiciendis maiores pariatur facilis dolores rem perspiciatis accusantium optio at nisi quidem!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti, corrupti voluptatibus vel reiciendis maiores pariatur facilis dolores rem perspiciatis accusantium optio at nisi quidem!</p>
+        <a class="mt-2 bg-[#B08401]" href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+{% include testimonials.html %}
+
+<!-- Let's Connect -->
+<section class="">
+  <div class="grid grid-cols-2 mx-auto max-w-screen-2xl">
+    <!-- Contact Form Div -->
+    {% include contact-form.html %}
+    
+    <div class="bg-[url('/uploads/Coaching_img_resized.jpg')] bg-cover bg-center">
+
+    </div>
+  </div>
+
 </section>
