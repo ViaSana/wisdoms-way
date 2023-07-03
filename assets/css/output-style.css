@@ -30,7 +30,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: Figtree, sans-serif; /* 4 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
 }
@@ -312,7 +312,7 @@ video {
 }
 h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
-  font-family: Playfair Display, serif;
+  font-family: minerva-modern, sans-serif;
 }
 h1 {
   font-size: 1.5rem;
@@ -328,6 +328,7 @@ h3 {
 }
 p {
   margin-bottom: 0.5rem;
+  font-family: dolly-new, serif;
 }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -544,16 +545,8 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(120 53 15 / var(--tw-bg-opacity));
 }
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
 .bg-transparent {
   background-color: transparent;
-}
-.bg-yellow-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\/uploads\/Lisa_beach\.jpeg\'\)\] {
   background-image: url('/uploads/Lisa_beach.jpeg');
@@ -589,9 +582,6 @@ p {
 .p-5p {
   padding: 5%;
 }
-.p-8 {
-  padding: 2rem;
-}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -624,9 +614,6 @@ p {
 .align-middle {
   vertical-align: middle;
 }
-.font-serif {
-  font-family: Playfair Display, serif;
-}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -638,10 +625,6 @@ p {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 .text-\[8vw\] {
   font-size: 8vw;
