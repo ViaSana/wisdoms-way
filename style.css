@@ -9,7 +9,7 @@
 @layer base {
 
     h1, h2, h3, h4  {
-        @apply font-headings mb-2;
+        @apply font-serif mb-2;
     }
 
     h1 {
@@ -27,7 +27,7 @@
     }
 
     p {
-        @apply mb-2 font-paragraphs;
+        @apply mb-2;
     }
 
 }
