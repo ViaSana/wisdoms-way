@@ -458,6 +458,9 @@ p {
 .min-h-90 {
   min-height: 90vh;
 }
+.max-w-screen-2xl {
+  max-width: 1536px;
+}
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -480,6 +483,10 @@ p {
 .bg-amber-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(120 53 15 / var(--tw-bg-opacity));
+}
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 .bg-yellow-600 {
   --tw-bg-opacity: 1;
@@ -513,6 +520,10 @@ p {
 .px-5p {
   padding-left: 5%;
   padding-right: 5%;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .py-8 {
   padding-top: 2rem;
