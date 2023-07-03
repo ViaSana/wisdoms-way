@@ -8,8 +8,12 @@
 
 @layer base {
 
+    body {
+        @apply bg-creme text-brown;
+    }
+
     h1, h2, h3, h4  {
-        @apply font-serif mb-2;
+        @apply mb-2 font-headings;
     }
 
     h1 {
@@ -27,7 +31,11 @@
     }
 
     p {
-        @apply mb-2;
+        @apply font-paragraphs mb-2;
+    }
+
+    a {
+        @apply font-paragraphs uppercase text-base;
     }
 
 }
