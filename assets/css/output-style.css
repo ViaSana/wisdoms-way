@@ -449,6 +449,10 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .-mt-2 {
   margin-top: -0.5rem;
 }
@@ -509,6 +513,9 @@ p {
 .max-w-lg {
   max-width: 32rem;
 }
+.max-w-\[25\%\] {
+  max-width: 25%;
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -530,6 +537,10 @@ p {
 .gap-4 {
   gap: 1rem;
 }
+.gap-x-11 {
+  -moz-column-gap: 2.75rem;
+       column-gap: 2.75rem;
+}
 .self-end {
   align-self: flex-end;
 }
@@ -549,6 +560,9 @@ p {
 }
 .border-gold {
   border-color: #B08401;;
+}
+.border-brown {
+  border-color: #683B2B;;
 }
 .bg-brown {
   background-color: #683B2B;;
@@ -678,6 +692,10 @@ p {
   font-size: 3.75rem;
   line-height: 1;
 }
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -689,6 +707,9 @@ p {
 }
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 .text-brown {
   color: #683B2B;;
@@ -732,6 +753,9 @@ p {
 }
 
 @media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
   .md\:grid {
     display: grid;
   }
