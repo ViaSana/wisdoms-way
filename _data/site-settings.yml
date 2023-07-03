@@ -1,6 +1,6 @@
 seo:
-  site_name: Tina's Amazing Blog
-  title: Default SEO Title
+  site_name: Wisdom's Way
+  title: Wisdom's Way
   description:
   keywords:
   social_image:
@@ -10,6 +10,3 @@ social:
   instagram_username:
   facebook_url:
   twitter_username:
-cta-shortcode:
-  - web-dev
-  - photography

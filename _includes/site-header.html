@@ -1,22 +1,9 @@
-
-<header class="text-center bg-transparent">
-
-    <a href="/" class="inline-block logo text-6xl font-serif p-8"> VOGUE </a>
-
-    <nav class="flex items-center md:justify-center border-y-2 border-slate-600 md:overflow-x-auto overflow-x-scroll md:flex-wrap flex-nowrap">
-
-
-          {% for cat in site.archives %}
-
-          <a href="{{cat.url}}" class="p-4 uppercase whitespace-nowrap hover:text-rose-600"> {{cat.category}} </a>
-
-          {% endfor %}
-
-    </nav> 
-
-  </header>
-
-
-<!-- 
-  NOTE - need to style scrollbars more beeautifully and browser compatibly
---> 
+<header class="absolute top-0 left-0 right-0 flex items-center justify-center max-w-screen-xl py-8 mx-auto text-center border-b border-black px-5p">
+  <nav class="align-middle">
+    <a class="px-4" href="">About</a>
+    <a class="px-4" href="">Services</a>
+    <a class="inline-block p-8 px-4 font-serif text-6xl" href="/"> Wisdom's Way </a>
+    <a class="px-4" href="">Blog</a>
+    <a class="px-4" href="">Connect</a>
+  </nav> 
+</header>

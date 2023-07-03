@@ -1,18 +1,10 @@
 collections:
-  posts:
-    output: true
-    permalink: /posts/:year/:slug
-  archives:
+  services:
     output: true
     permalink: /:title
-  products:
-    output: true
-    permalink: /shop/:title
 
-data_config:
-  site-settings:
-    cta-shortcode: true
 
+# ALL OF THIS IS UNUSED CURRENTLY
 _options:
   content:
     styles: /editor.css
@@ -101,15 +93,6 @@ _array_structures:
       background-image:
       aspect-ratio:
       content_html:
-
-_inputs:
-  cta-shortcode:
-    type: select
-    options:
-      values:
-        - web-dev
-        - photography
-      # data.site-settings.cta-shortcode
 
   banner-heights:
     - min-h-60
