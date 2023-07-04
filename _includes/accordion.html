@@ -1,0 +1,27 @@
+<div class="border-b border-zinc-800" x-data="{ selected: null }">
+
+    {% for item in include.accordion-source %}
+
+        <div class="relative border-t border-zinc-800">
+
+            <button type="button" class="py-6 block w-full" 
+                    @click="selected !== {{ forloop.index }} ? selected = {{ forloop.index }} : selected = null">
+                <div class="flex items-center justify-between">
+                    <h4 class="mb-0 uppercase tracking-wide">{{ item.question }}</h4>
+                    <span> + </span>
+                </div>
+            </button>
+
+            <div class="relative overflow-hidden transition-all max-h-0 duration-700" 
+                    style="" x-ref="container{{ forloop.index }}" 
+                    x-bind:style="selected == {{ forloop.index }} ? 'max-height: ' + $refs.container{{ forloop.index }}.scrollHeight + 'px' : ''">
+                <div class="pb-6">
+                    <p class="mb-0">{{ item.answer }}</p>
+                </div>
+            </div>
+
+        </div>
+
+    {% endfor %}
+
+</div>

@@ -1,0 +1,15 @@
+<div class="grid gap-10 sm:grid-cols-3">
+    {% for page in site.services %}
+    <div>
+        <div class="aspect-portrait">
+            <a href="{{page.url}}"><img src="{{ page.featured-image }}" class="object-cover w-full h-full rounded-t-3xl"></a>
+        </div>
+        <div class="p-4 bg-tan">
+            <a href="{{page.url}}"><h2>{{page.title}}</h2></a>
+            <hr class="w-3/5 mx-auto border-gold">
+            <p>{{page.description}}</p>
+            <a href="{{page.url}}" class="px-4 bg-gold">Book Now</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
