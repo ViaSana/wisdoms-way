@@ -2,7 +2,7 @@
 layout: default
 ---
 <!-- Give space for the header nav -->
-<div class="h-[150px]"></div>
+<div class="h-[119px]"></div>
 
 <section class="mx-auto max-w-screen-2xl"> 
     <div class="grid grid-cols-9 gap-4">
@@ -10,6 +10,7 @@ layout: default
             <h1 class="text-6xl blog-heading">{{page.title}}</h1>
             <h2 class="py-4 text-2xl uppercase blog-type2"> {{page.subtitle}}</h2>
             <p class="mb-6"> {{page.description}} </p>
+            <a href="{{page.url}}" class="button"> Book Now</a>
         </div>
         <div class="relative col-span-5 max-md:hidden">
             <img src="{{page.featured-image}}" class="object-cover w-full max-h-[600px]">
@@ -19,10 +20,10 @@ layout: default
 
 <!-- What to Expect -->
 <section class="mx-auto max-w-screen-2xl">
-    <div class="grid grid-cols-9">
+    <div class="grid grid-cols-9 py-10p">
         <div class="py-8 pl-8 md:col-span-4 col-span-full">
             <div class="inline-block border-b-2 border-gold">
-                <h4 class="pb-2 text-2xl uppercase">What To Expect</h4>
+                <h3 class="pb-2 uppercase font-bold">What To Expect </h3>
             </div>
             <ul class="m-6 list-disc">
                 {% for item in page.what-to-expect %}
@@ -32,7 +33,7 @@ layout: default
         </div>
 
         <div class="self-center py-8 mx-4 md:col-span-5 col-span-full">
-            <h2 class="pb-4 text-2xl">FAQ's</h2>
+            <h3 class="pb-4 font-bold">FAQ's </h3>
             
             {% include accordion.html accordion-source=page.faqs %}
             

@@ -13,33 +13,33 @@
     }
 
     h1, h2, h3, h4  {
-        @apply mb-2 font-headings;
+        @apply mb-2 font-headings pb-5p;
     }
 
     h1 {
         @apply text-4xl;
     }
     h2 {
-        @apply text-3xl;
+        @apply text-5xl;
     }
     h3 {
         @apply text-2xl;
     }
 
-    h3 {
-        @apply text-lg;
+    h4 {
+        @apply text-xl;
     }
 
     p {
-        @apply font-paragraphs mb-2;
+        @apply font-paragraphs text-base pb-5p;
     }
 
     a {
         @apply font-paragraphs uppercase text-base;
     }
 
-    button {
-        @apply px-4 bg-gold text-base uppercase font-headings;
+    .button {
+        @apply px-4 py-2 bg-gold text-base text-creme uppercase font-headings;
     }
 
 }

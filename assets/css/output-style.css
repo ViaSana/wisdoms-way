@@ -316,23 +316,30 @@ body {
 }
 h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
+  padding-bottom: 5%;
   font-family: minerva-modern, sans-serif;
 }
 h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+h3 {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-h2 {
+h4 {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-h3 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 p {
-  margin-bottom: 0.5rem;
+  padding-bottom: 5%;
   font-family: dolly-new, serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 a {
   font-family: dolly-new, serif;
@@ -340,14 +347,17 @@ a {
   line-height: 1.5rem;
   text-transform: uppercase;
 }
-button {
+.button {
   background-color: #B08401;;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-family: minerva-modern, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   text-transform: uppercase;
+  color: #FAF6F2;;
 }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -523,17 +533,14 @@ button {
 .mb-6 {
   margin-bottom: 1.5rem;
 }
-.mt-2 {
-  margin-top: 0.5rem;
-}
-.mt-5 {
-  margin-top: 1.25rem;
-}
-.mt-10p {
-  margin-top: 10%;
+.mt-20 {
+  margin-top: 5rem;
 }
 .mt-\[20\%\] {
   margin-top: 20%;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 .block {
   display: block;
@@ -565,29 +572,38 @@ button {
 .h-full {
   height: 100%;
 }
+.h-\[119px\] {
+  height: 119px;
+}
 .max-h-0 {
   max-height: 0px;
 }
-.max-h-\[600px\] {
-  max-height: 600px;
-}
-.max-h-40 {
-  max-height: 10rem;
+.max-h-4 {
+  max-height: 1rem;
 }
 .max-h-56 {
   max-height: 14rem;
 }
-.min-h-50 {
-  min-height: 50vh;
+.max-h-\[600px\] {
+  max-height: 600px;
+}
+.max-h-60 {
+  max-height: 15rem;
+}
+.max-h-20 {
+  max-height: 5rem;
+}
+.max-h-14 {
+  max-height: 3.5rem;
+}
+.max-h-72 {
+  max-height: 18rem;
 }
 .min-h-60 {
   min-height: 60vh;
 }
 .min-h-90 {
   min-height: 90vh;
-}
-.min-h-70 {
-  min-height: 70vh;
 }
 .w-28 {
   width: 7rem;
@@ -725,6 +741,9 @@ button {
 .p-1 {
   padding: 0.25rem;
 }
+.p-10p {
+  padding: 10%;
+}
 .p-20 {
   padding: 5rem;
 }
@@ -736,9 +755,6 @@ button {
 }
 .p-5p {
   padding: 5%;
-}
-.p-10p {
-  padding: 10%;
 }
 .px-4 {
   padding-left: 1rem;
@@ -776,6 +792,10 @@ button {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-10p {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -797,6 +817,9 @@ button {
 .text-right {
   text-align: right;
 }
+.font-headings {
+  font-family: minerva-modern, sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -809,12 +832,16 @@ button {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
 }
-.text-\[8vw\] {
-  font-size: 8vw;
+.text-\[6vw\] {
+  font-size: 6vw;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -824,9 +851,9 @@ button {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .font-bold {
   font-weight: 700;
@@ -836,6 +863,9 @@ button {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
