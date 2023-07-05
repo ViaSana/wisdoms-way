@@ -31,15 +31,15 @@
     }
 
     p {
-        @apply font-paragraphs mb-2;
+        @apply mb-2 font-paragraphs;
     }
 
     a {
-        @apply font-paragraphs uppercase text-base;
+        @apply text-base uppercase font-paragraphs;
     }
 
     button {
-        @apply px-4 bg-gold text-base uppercase font-headings;
+        @apply px-4 text-base uppercase bg-gold font-headings;
     }
 
 }
@@ -49,4 +49,81 @@
 
 @layer components {
 
+/* Testimonial Slider CSS */
+
+    /* Typography Styles */  
+    .author {
+    font-size: 0.9rem;
+    color: rgb(90,90,90);
+    margin-top: 0.5rem;
+    font-style: italic;
+    text-align: right;
+    }
+
+    .quote-icon {
+    font-size: 4rem;
+    color: rgb(200,200,200);
+    }
+
+    /* Slider */
+    .testimonial-slider-container {
+    /* padding: 5%; */
+    max-width: 900px;
+    margin: auto;
+    }
+
+    .slider-item {
+    padding: 2rem 2.5rem;
+    display: none;
+    }
+
+    .slider-item:first-child {
+    display: block;
+    }
+
+    .slick-next {
+    right: 10px;
+    }
+
+    .slick-prev {
+    left: 10px;
+    }
+
+    .slick-next::before, .slick-prev::before {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(90,90,90);
+    }
+
+/* !!CURRENT BUG WITH TAILWIND FOR STYLE ORDER OF APPLICATION!!  */
+    .slick-dots {
+    left: 0;
+    bottom: 10px;
+    /*  Without this the padding on the parent affects the centering of the dots. Do not delete.    */
+    }
+
+    .slick-dots li,
+    .slick-dots li button {
+    width: 10px;
+    }
+
+    .slick-dots li button::before {
+    color: rgb(47, 223, 20);
+    }
+
+    .slick-dots li.slick-active button::before {
+    color: rgb(90,90,90);
+    }
+
+    /* Slider Text Styles  */
+    .slider-item p {
+    /* text-align: justify; */
+    font-size: 1.5rem;
+    }
+
+    @media(max-width: 36em){
+    .slider-item p { font-size: 1.1rem;}
+    }
 }
