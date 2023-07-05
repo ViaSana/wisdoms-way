@@ -2,6 +2,8 @@ collections:
   services:
     output: true
     permalink: /:title
+  testimonials:
+    output: false
 
 
 # ALL OF THIS IS UNUSED CURRENTLY
