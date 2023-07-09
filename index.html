@@ -11,24 +11,22 @@ seo:
 banner:
   background-position: bg-center
   banner-image: /uploads/beach_img_resized.jpg
-  heading: Awaken Your Inner Wisdom
-  sub-heading: Embark on a Transformative Journey of Self-Discovery
-  link-text: learn more
+  heading: Awaken the Wisdom Within you
 ---
 
 <!-------Site Header ------>
 {% include full-banner.html %}
 
 <!-- Welcome Section -->
-<section class="bg-pink p-5p">
-  <div class="px-8 mx-auto text-center max-w-screen-2xl">
+<section class="bg-pink pt-5p pb-3">
+  <div class="px-12 max-w-screen-xl mx-auto text-center">
     <h2> Welcome! </h2>
-    <p> Unlock the wisdom within you with Wisdoms' Way, your sanctuary for transformative self-discovery and personal growth. With me, Dr. Lisa Rambaldo, your journey won't follow a singular path — it's a diverse convergence, as varied as the wisdom traditions across the globe. Together, we'll delve into the depths of your being, unearthing your true potential, and empowering you to navigate life's intricate pathways with clarity and purpose. </p>
+    <p class="text-lg"> Wisdoms' Way is your sanctuary for inner discovery. Our journey is not a singular path, but rather a convergence of many, as diverse as the wisdom traditions across the globe. Together, we navigate the depths of self-understanding, exploring the wisdom that lies within. Wisdoms' Way is more than just a journey—it's a revelation of the potential that awaits. Let's take these steps together towards uncovering your unique path of knowing! </p>
   </div>
 </section>
 
 <!-- SVG to create the triangle down shape -->
-<svg viewBox="0 0 1431 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="" viewBox="0 0 1431 168" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M708 168L1430.27 0H-14.2652L708 168Z" fill="#D49E8D"/>
 </svg>
   
@@ -36,31 +34,28 @@ banner:
 <!-- Services Section -->
 <section class="p-5p">
   <div class="mx-auto text-center max-w-screen-2xl">
-    <h2> Pathways to Wisdom </h2>
+    <h2 class="pb-5p"> Offerings </h2>
 
     {% include services_loop.html %}
 
-    <div class="pt-8">
-      <a href="#" class="button">Learn More</a>
-    </div>
   </div>
 </section>
 
 <!-- Lisa's Intro -->
 <section class="bg-pink">
-  <div class="grid grid-cols-2 mx-auto max-w-screen-2xl min-h-60">
+  <div class="grid grid-cols-5 mx-auto max-w-screen-2xl min-h-60">
     <!-- Image -->
-    <div class="p-20">
+    <div class="p-8 col-span-2">
       <div class="bg-cover bg-center aspect-portrait bg-[url('/uploads/Lisa_tree.jpeg')]"></div>
     </div>
     <!-- Copy -->
-    <div class="flex items-center px-4 py-8 bg-creme">
-      <div class="">
-        <p class="italic text-xl"> Hi, I'm </p>
-        <h2 class="border-b-2 border-gold pb-2"> Dr. Lisa Rambaldo </h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti, corrupti voluptatibus vel reiciendis maiores pariatur facilis dolores rem perspiciatis accusantium optio at nisi quidem!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti, corrupti voluptatibus vel reiciendis maiores pariatur facilis dolores rem perspiciatis accusantium optio at nisi quidem!</p>
-        <a class="button" href="/about.html">Learn More</a>
+    <div class="flex items-center p-8 bg-creme col-span-3">
+      <div>
+        <p class="italic text-2xl"> Get to Know </p>
+        <h2 class="pb-2"> Dr. Lisa Rambaldo </h2>
+        <p class="pb-2"> Hi, I'm Lisa! My life’s journey has been an exploration from the halls of academic medicine to meditating in remote caves, studying and gleaning insights from countless wisdom traditions across the globe. This voyage has taught me a profound truth: there isn't just one path to inner wisdom, but an infinite number.</p>
+        <p class="pb-5"> Your inner wisdom—be it intuition, inner truth, or connection with the cosmos—deserves to be discovered and celebrated. Through Wisdoms’ Way, I've fused my extensive experience and studies into a platform that meets you where you are and helps guide you toward where you yearn to be. Let's embark on this intriguing journey together.</p>
+        <a class="button" href="/about.html"> Learn More</a>
       </div>
     </div>
   </div>

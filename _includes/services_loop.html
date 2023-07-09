@@ -1,12 +1,9 @@
 <div class="grid gap-10 sm:grid-cols-3">
     {% for page in site.services %}
     <div>
-        <div class="aspect-portrait">
-            <a href="{{page.url}}"><img src="{{ page.featured-image }}" class="object-cover w-full h-full rounded-t-3xl"></a>
-        </div>
+        <div class="bg-cover p-[50%] bg-center rounded-t-3xl" style="background-image: url('{{page.featured-image}}')"></div>
         <div class="p-4 bg-tan">
             <a href="{{page.url}}"> <h4 class="mb-0 pb-2 font-bold"> {{page.title}}</h4> </a>
-            <hr class="w-3/5 mx-auto border-gold mb-4">
             <p class="mb-4">{{page.description}}</p>
             <a href="{{page.url}}" class="button"> Book Now</a>
         </div>
