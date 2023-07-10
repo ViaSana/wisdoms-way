@@ -590,11 +590,11 @@ a {
 .grid {
   display: grid;
 }
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
 .h-28 {
   height: 7rem;
-}
-.h-\[119px\] {
-  height: 119px;
 }
 .h-\[110px\] {
   height: 110px;
@@ -746,6 +746,18 @@ a {
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
+.bg-\[url\(\'\/uploads\/Coaching_img_resized\.jpg\'\)\] {
+  background-image: url('/uploads/Coaching_img_resized.jpg');
+}
+.bg-\[url\(\'\/uploads\/Connections_img_resized\.jpg\'\)\] {
+  background-image: url('/uploads/Connections_img_resized.jpg');
+}
+.bg-\[url\(\'\/uploads\/Courses_img_resized\.jpg\'\)\] {
+  background-image: url('/uploads/Courses_img_resized.jpg');
+}
+.bg-\[url\(\'\{\{page\.featured-image\}\}\'\)\] {
+  background-image: url('{{page.featured-image}}');
+}
 .from-\[\#FAF6F2\] {
   --tw-gradient-from: #FAF6F2 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(250 246 242 / 0) var(--tw-gradient-to-position);
@@ -817,10 +829,6 @@ a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -850,9 +858,6 @@ a {
 .pb-\[30rem\] {
   padding-bottom: 30rem;
 }
-.pl-8 {
-  padding-left: 2rem;
-}
 .pt-5p {
   padding-top: 5%;
 }
@@ -881,10 +886,6 @@ a {
   font-size: 3rem;
   line-height: 1;
 }
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
 .text-\[5vw\] {
   font-size: 5vw;
 }
@@ -907,9 +908,6 @@ a {
 }
 .italic {
   font-style: italic;
-}
-.tracking-wide {
-  letter-spacing: 0.025em;
 }
 .text-brown {
   color: #683B2B;;
@@ -944,26 +942,21 @@ a {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-
 .placeholder\:uppercase::-moz-placeholder {
   text-transform: uppercase;
 }
-
 
 .placeholder\:uppercase::placeholder {
   text-transform: uppercase;
 }
 
-
 .placeholder\:text-brown::-moz-placeholder {
   color: #683B2B;;
 }
 
-
 .placeholder\:text-brown::placeholder {
   color: #683B2B;;
 }
-
 
 @media not all and (min-width: 768px) {
   .max-md\:hidden {
@@ -971,13 +964,11 @@ a {
   }
 }
 
-
 @media (min-width: 640px) {
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-
 
 @media (min-width: 768px) {
   .md\:col-span-4 {
@@ -985,6 +976,12 @@ a {
   }
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
+  }
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
   .md\:flex {
     display: flex;

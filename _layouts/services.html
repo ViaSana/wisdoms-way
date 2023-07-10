@@ -5,15 +5,15 @@ layout: default
 <div class="h-[110px]"></div>
 
 <section class="mx-auto max-w-screen-2xl"> 
-    <div class="grid grid-cols-9 gap-4">
-        <div class="self-end max-w-lg px-8 py-12 col-span-full md:col-span-4">
+    <div class="grid grid-cols-5 gap-4">
+        <div class="self-end px-8 py-12 col-span-full md:col-span-3">
             <h1 class="">{{page.title}}</h1>
             <h2 class=""> {{page.subtitle}}</h2>
-            <p class=""> {{page.description}} </p>
+            <p class="mb-6"> {{page.description}} </p>
             <a href="{{page.url}}" class="button"> Book Now</a>
         </div>
-        <div class="relative col-span-5 max-md:hidden">
-            <img src="{{page.featured-image}}" class="object-cover w-full max-h-[600px]">
+        <div class="col-span-2 max-md:hidden">
+            <div class="bg-cover bg-center pb-[30rem] bg-[url('{{page.featured-image}}')]"></div>
         </div>
     </div>
 </section> 
