@@ -941,21 +941,26 @@ a {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
+
 .placeholder\:uppercase::-moz-placeholder {
   text-transform: uppercase;
 }
+
 
 .placeholder\:uppercase::placeholder {
   text-transform: uppercase;
 }
 
+
 .placeholder\:text-brown::-moz-placeholder {
   color: #683B2B;;
 }
 
+
 .placeholder\:text-brown::placeholder {
   color: #683B2B;;
 }
+
 
 @media not all and (min-width: 768px) {
   .max-md\:hidden {
@@ -963,11 +968,13 @@ a {
   }
 }
 
+
 @media (min-width: 640px) {
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
 
 @media (min-width: 768px) {
   .md\:col-span-4 {
@@ -981,8 +988,5 @@ a {
   }
   .md\:grid {
     display: grid;
-  }
-  .md\:min-h-\[315px\] {
-    min-height: 315px;
   }
 }
