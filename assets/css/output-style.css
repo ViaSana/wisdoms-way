@@ -910,9 +910,6 @@ a {
 .text-creme {
   color: #FAF6F2;;
 }
-.opacity-20 {
-  opacity: 0.2;
-}
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
