@@ -533,9 +533,6 @@ a {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
-.col-span-5 {
-  grid-column: span 5 / span 5;
-}
 .col-span-full {
   grid-column: 1 / -1;
 }
@@ -563,9 +560,6 @@ a {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
-.mb-4 {
-  margin-bottom: 1rem;
-}
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -590,9 +584,6 @@ a {
 .grid {
   display: grid;
 }
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
 .h-28 {
   height: 7rem;
 }
@@ -604,9 +595,6 @@ a {
 }
 .max-h-72 {
   max-height: 18rem;
-}
-.max-h-\[600px\] {
-  max-height: 600px;
 }
 .min-h-60 {
   min-height: 60vh;
@@ -626,8 +614,8 @@ a {
 .max-w-\[25\%\] {
   max-width: 25%;
 }
-.max-w-lg {
-  max-width: 32rem;
+.max-w-\[40\%\] {
+  max-width: 40%;
 }
 .max-w-screen-2xl {
   max-width: 1536px;
@@ -643,9 +631,6 @@ a {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -731,21 +716,6 @@ a {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-\[url\(\'\/uploads\/Lisa_beach\.jpeg\'\)\] {
-  background-image: url('/uploads/Lisa_beach.jpeg');
-}
-.bg-\[url\(\'\/uploads\/Lisa_tree\.jpeg\'\)\] {
-  background-image: url('/uploads/Lisa_tree.jpeg');
-}
-.bg-\[url\(\'\/uploads\/testimonial_img_resized\.jpg\'\)\] {
-  background-image: url('/uploads/testimonial_img_resized.jpg');
-}
-.bg-\[url\(\'\{\{site\.data\.lisa-bio\.bio-pic\}\}\'\)\] {
-  background-image: url('{{site.data.lisa-bio.bio-pic}}');
-}
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
 .bg-\[url\(\'\/uploads\/Coaching_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/Coaching_img_resized.jpg');
 }
@@ -755,8 +725,23 @@ a {
 .bg-\[url\(\'\/uploads\/Courses_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/Courses_img_resized.jpg');
 }
+.bg-\[url\(\'\/uploads\/Lisa_beach\.jpeg\'\)\] {
+  background-image: url('/uploads/Lisa_beach.jpeg');
+}
+.bg-\[url\(\'\/uploads\/Lisa_tree\.jpeg\'\)\] {
+  background-image: url('/uploads/Lisa_tree.jpeg');
+}
+.bg-\[url\(\'\/uploads\/testimonial_img_resized\.jpg\'\)\] {
+  background-image: url('/uploads/testimonial_img_resized.jpg');
+}
 .bg-\[url\(\'\{\{page\.featured-image\}\}\'\)\] {
   background-image: url('{{page.featured-image}}');
+}
+.bg-\[url\(\'\{\{site\.data\.lisa-bio\.bio-pic\}\}\'\)\] {
+  background-image: url('{{site.data.lisa-bio.bio-pic}}');
+}
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 .from-\[\#FAF6F2\] {
   --tw-gradient-from: #FAF6F2 var(--tw-gradient-from-position);
@@ -771,10 +756,6 @@ a {
 }
 .bg-center {
   background-position: center;
-}
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .p-1 {
   padding: 0.25rem;
@@ -915,6 +896,9 @@ a {
 .text-creme {
   color: #FAF6F2;;
 }
+.text-gold {
+  color: #B08401;;
+}
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -971,17 +955,14 @@ a {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
-  }
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-  .md\:col-span-3 {
-    grid-column: span 3 / span 3;
   }
   .md\:flex {
     display: flex;
