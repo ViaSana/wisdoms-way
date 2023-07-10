@@ -567,9 +567,6 @@ nav a {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.-mt-2 {
-  margin-top: -0.5rem;
-}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -627,6 +624,9 @@ nav a {
 .w-full {
   width: 100%;
 }
+.max-w-2xl {
+  max-width: 42rem;
+}
 .max-w-\[25\%\] {
   max-width: 25%;
 }
@@ -671,9 +671,6 @@ nav a {
 }
 .gap-4 {
   gap: 1rem;
-}
-.gap-6 {
-  gap: 1.5rem;
 }
 .gap-x-11 {
   -moz-column-gap: 2.75rem;
@@ -759,6 +756,9 @@ nav a {
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
+.bg-\[url\(\'\/uploads\/coaching-mandala\.jpg\'\)\] {
+  background-image: url('/uploads/coaching-mandala.jpg');
+}
 .from-\[\#FAF6F2\] {
   --tw-gradient-from: #FAF6F2 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(250 246 242 / 0) var(--tw-gradient-to-position);
@@ -773,11 +773,20 @@ nav a {
 .bg-center {
   background-position: center;
 }
+.bg-left {
+  background-position: left;
+}
+.bg-top {
+  background-position: top;
+}
 .p-1 {
   padding: 0.25rem;
 }
 .p-10p {
   padding: 10%;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .p-4 {
   padding: 1rem;
@@ -809,10 +818,6 @@ nav a {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 .py-10p {
   padding-top: 10%;
@@ -857,6 +862,9 @@ nav a {
 }
 .pt-5p {
   padding-top: 5%;
+}
+.pr-6 {
+  padding-right: 1.5rem;
 }
 .text-center {
   text-align: center;
@@ -915,10 +923,16 @@ nav a {
 .text-gold {
   color: #B08401;;
 }
+.bg-blend-lighten {
+  background-blend-mode: lighten;
+}
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.outline-white {
+  outline-color: #fff;
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -948,22 +962,6 @@ nav a {
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
-
-.placeholder\:uppercase::-moz-placeholder {
-  text-transform: uppercase;
-}
-
-.placeholder\:uppercase::placeholder {
-  text-transform: uppercase;
-}
-
-.placeholder\:text-brown::-moz-placeholder {
-  color: #683B2B;;
-}
-
-.placeholder\:text-brown::placeholder {
-  color: #683B2B;;
-}
 
 @media not all and (min-width: 768px) {
   .max-md\:hidden {

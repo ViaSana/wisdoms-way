@@ -1,19 +1,15 @@
 <div class="p-10p">
-    <h2 class="text-3xl text-center uppercase">Let's Connect</h2>
-    <form class="grid max-w-screen-xl gap-6 mx-auto"> 
-        <input class="py-1 bg-transparent border-b placeholder:uppercase placeholder:text-brown text-brown font-headings" 
-        type="text" name="name" placeholder="Name" aria-label="Name">
+    <h2 class="text-center uppercase mb-6">Let's Connect</h2>
+    <form class="grid max-w-2xl mx-auto"> 
+        <label for="fname" class="font-headings uppercase"> Name </label>
+        <input type="text" id="fname" name="fname" class="bg-transparent border-t border-gold p-2 outline-white">
         
-        <input class="py-1 bg-transparent border-b placeholder:uppercase placeholder:text-brown text-brown font-headings" 
-        type="email" name="email" placeholder="Email" aria-label="email">
-       
-        <div>
-            <label class="block uppercase text-brown font-headings" for="message">Message</label>
-            <textarea class="w-full bg-transparent border placeholder:uppercase placeholder:text-brown text-brown" id="message" name="message" ></textarea>
-        </div>
-        
-        <div class="-mt-2 text-right">
-            <button class="button" type="submit">Submit</button>
-        </div>
+        <label for="email" class="font-headings uppercase"> Email </label>
+        <input type="email" id="email" name="email" class="bg-transparent border-t border-gold p-2 outline-white">
+
+        <label for="message" class="font-headings uppercase"> Message </label>
+        <textarea id="message" name="message" class="bg-transparent border border-gold p-2 outline-white mb-6"></textarea>
+
+        <div class="text-right" class="font-headings uppercase"> <input class="button" type="submit" value="Submit"> </div>
     </form>
 </div>
