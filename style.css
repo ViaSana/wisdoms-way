@@ -13,7 +13,7 @@
     }
 
     h1, h2, h3, h4  {
-        @apply mb-2 font-headings uppercase;
+        @apply mb-2 uppercase font-headings;
     }
 
     h1 {
@@ -31,7 +31,7 @@
     }
 
     p {
-        @apply font-paragraphs text-base;
+        @apply text-base font-paragraphs;
     }
 
     a {
@@ -39,7 +39,7 @@
     }
 
     .button {
-        @apply px-4 py-2 bg-gold text-base text-creme uppercase font-headings;
+        @apply px-4 py-2 text-base uppercase bg-gold text-creme font-headings;
     }
 
 }
@@ -50,6 +50,10 @@
 @layer components {
 
 /* Testimonial Slider CSS */
+    .testimonial-overlay {
+        position: relative;
+        background-color: rgba(190, 190, 190, 0.5);
+    }
 
     /* Typography Styles */  
     .author {

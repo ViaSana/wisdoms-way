@@ -485,6 +485,10 @@ a {
   }
 }
 /* Testimonial Slider CSS */
+.testimonial-overlay {
+        position: relative;
+        background-color: rgba(190, 190, 190, 0.5);
+    }
 /* Typography Styles */
 .author {
     font-size: 0.9rem;
@@ -592,9 +596,6 @@ a {
 .grid {
   display: grid;
 }
-.aspect-portrait {
-  aspect-ratio: 3 / 4;
-}
 .h-28 {
   height: 7rem;
 }
@@ -616,14 +617,8 @@ a {
 .min-h-90 {
   min-height: 90vh;
 }
-.min-h-\[90px\] {
-  min-height: 90px;
-}
 .min-h-\[110px\] {
   min-height: 110px;
-}
-.min-h-\[315px\] {
-  min-height: 315px;
 }
 .w-28 {
   width: 7rem;
@@ -852,17 +847,14 @@ a {
 .pb-6 {
   padding-bottom: 1.5rem;
 }
+.pb-\[30rem\] {
+  padding-bottom: 30rem;
+}
 .pl-8 {
   padding-left: 2rem;
 }
-.pt-10p {
-  padding-top: 10%;
-}
 .pt-5p {
   padding-top: 5%;
-}
-.pb-\[30rem\] {
-  padding-bottom: 30rem;
 }
 .text-center {
   text-align: center;
