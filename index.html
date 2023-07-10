@@ -18,8 +18,8 @@ banner:
 {% include full-banner.html %}
 
 <!-- Welcome Section -->
-<section class="bg-pink pt-5p pb-3">
-  <div class="px-12 max-w-screen-xl mx-auto text-center">
+<section class="pb-3 bg-pink pt-5p">
+  <div class="max-w-screen-xl px-12 mx-auto text-center">
     <h2> Welcome! </h2>
     <p class="text-lg"> Wisdoms' Way is your sanctuary for inner discovery. Our journey is not a singular path, but rather a convergence of many, as diverse as the wisdom traditions across the globe. Together, we navigate the depths of self-understanding, exploring the wisdom that lies within. Wisdoms' Way is more than just a journey—it's a revelation of the potential that awaits. Let's take these steps together towards uncovering your unique path of knowing! </p>
   </div>
@@ -43,22 +43,27 @@ banner:
 
 <!-- Lisa's Intro -->
 <section class="bg-pink">
+  
   <div class="grid grid-cols-5 mx-auto max-w-screen-2xl min-h-60">
+    
     <!-- Image -->
-    <div class="p-8 col-span-2">
-      <div class="bg-cover bg-center aspect-portrait bg-[url('/uploads/Lisa_tree.jpeg')]"></div>
+    <div class="col-span-2 p-8">
+      <div class="bg-cover bg-center pb-[30rem] bg-[url('{{site.data.lisa-bio.bio-pic}}')]"></div>
     </div>
+    
     <!-- Copy -->
-    <div class="flex items-center p-8 bg-creme col-span-3">
+    <div class="flex items-center col-span-3 p-8 bg-creme">
       <div>
-        <p class="italic text-2xl"> Get to Know </p>
-        <h2 class="pb-2"> Dr. Lisa Rambaldo </h2>
-        <p class="pb-2"> Hi, I'm Lisa! My life’s journey has been an exploration from the halls of academic medicine to meditating in remote caves, studying and gleaning insights from countless wisdom traditions across the globe. This voyage has taught me a profound truth: there isn't just one path to inner wisdom, but an infinite number.</p>
-        <p class="pb-5"> Your inner wisdom—be it intuition, inner truth, or connection with the cosmos—deserves to be discovered and celebrated. Through Wisdoms’ Way, I've fused my extensive experience and studies into a platform that meets you where you are and helps guide you toward where you yearn to be. Let's embark on this intriguing journey together.</p>
+        <p class="text-2xl italic"> {{site.data.lisa-bio.bio-sub}} </p>
+        <h2 class="pb-2"> {{site.data.lisa-bio.bio-name}} </h2>
+        <p class="pb-2"> {{site.data.lisa-bio.bio-text_p1}}</p>
+        <p class="pb-5"> {{site.data.lisa-bio.bio-text_p2}}</p>
         <a class="button" href="/about.html"> Learn More</a>
       </div>
     </div>
+
   </div>
+  
 </section>
 
 <!-- Testimonials -->

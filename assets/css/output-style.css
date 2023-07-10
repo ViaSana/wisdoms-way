@@ -616,6 +616,15 @@ a {
 .min-h-90 {
   min-height: 90vh;
 }
+.min-h-\[90px\] {
+  min-height: 90px;
+}
+.min-h-\[110px\] {
+  min-height: 110px;
+}
+.min-h-\[315px\] {
+  min-height: 315px;
+}
 .w-28 {
   width: 7rem;
 }
@@ -736,6 +745,9 @@ a {
 .bg-\[url\(\'\/uploads\/testimonial_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/testimonial_img_resized.jpg');
 }
+.bg-\[url\(\'\{\{site\.data\.lisa-bio\.bio-pic\}\}\'\)\] {
+  background-image: url('{{site.data.lisa-bio.bio-pic}}');
+}
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -849,6 +861,9 @@ a {
 .pt-5p {
   padding-top: 5%;
 }
+.pb-\[30rem\] {
+  padding-bottom: 30rem;
+}
 .text-center {
   text-align: center;
 }
@@ -909,9 +924,6 @@ a {
 }
 .text-creme {
   color: #FAF6F2;;
-}
-.opacity-20 {
-  opacity: 0.2;
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -975,5 +987,8 @@ a {
   }
   .md\:grid {
     display: grid;
+  }
+  .md\:min-h-\[315px\] {
+    min-height: 315px;
   }
 }
