@@ -1,12 +1,14 @@
 <div class="grid gap-10 sm:grid-cols-3">
     {% for page in site.services %}
-    <div>
+    <div class="hover-shrink">
+        <a href="{{page.url}}">
         <div class="bg-cover p-[50%] bg-center rounded-t-3xl" style="background-image: url('{{page.featured-image}}')"></div>
         <div class="p-4 bg-tan">
-            <a href="{{page.url}}"> <h4 class="mb-2 font-bold"> {{page.title}}</h4> </a>
+            <h4 class="mb-2 font-bold"> {{page.title}}</h4>
             <p class="mb-6">{{page.summary}}</p>
-            <a href="{{page.url}}" class="button"> Book Now</a>
+            <div class="inline-block button"> Book Now</div>
         </div>
+        </a>
     </div>
     {% endfor %}
 </div>

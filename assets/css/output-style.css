@@ -347,6 +347,8 @@ a {
   text-transform: uppercase;
 }
 .button {
+  border-width: 1px;
+  border-color: #B08401;;
   background-color: #B08401;;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -357,6 +359,20 @@ a {
   line-height: 1.5rem;
   text-transform: uppercase;
   color: #FAF6F2;;
+}
+.button:hover {
+  border-width: 1px;
+  border-color: #B08401;;
+  background-color: #FAF6F2;;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: minerva-modern, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: #B08401;;
 }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -919,6 +935,13 @@ a {
 .duration-700 {
   transition-duration: 700ms;
 }
+/* This is the hover-shrink animation */
+.hover-shrink{
+        transition-duration: .4s;
+    }
+.hover-shrink:hover{
+        scale: 1.05;
+    }
 
 
 /* ----------- Default Styles --------- */

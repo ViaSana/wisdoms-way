@@ -39,7 +39,11 @@
     }
 
     .button {
-        @apply px-4 py-2 text-base uppercase bg-gold text-creme font-headings;
+        @apply px-4 py-2 text-base uppercase border bg-gold text-creme font-headings border-gold;
+    }
+
+    .button:hover {
+        @apply px-4 py-2 text-base uppercase border bg-creme text-gold font-headings border-gold;
     }
 
 }
@@ -123,4 +127,16 @@
     @media(max-width: 36em){
     .slider-item p { font-size: 1.1rem;}
     }
+}
+
+@layer utilities {
+
+    /* This is the hover-shrink animation */
+    .hover-shrink{
+        transition-duration: .4s;
+    }
+    .hover-shrink:hover{
+        scale: 1.05;
+    }
+
 }
