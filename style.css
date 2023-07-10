@@ -124,3 +124,15 @@
     .slider-item p { font-size: 1.1rem;}
     }
 }
+
+@layer utilities {
+
+    /* This is the hover-shrink animation */
+    .hover-shrink{
+        transition-duration: .4s;
+    }
+    .hover-shrink:hover{
+        scale: 1.05;
+    }
+
+}

@@ -566,6 +566,9 @@ a {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .mt-20 {
   margin-top: 5rem;
 }
@@ -607,6 +610,9 @@ a {
 }
 .min-h-90 {
   min-height: 90vh;
+}
+.min-h-\[110px\] {
+  min-height: 110px;
 }
 .w-28 {
   width: 7rem;
@@ -888,9 +894,6 @@ a {
 .italic {
   font-style: italic;
 }
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
 .text-brown {
   color: #683B2B;;
 }
@@ -917,6 +920,13 @@ a {
 .duration-700 {
   transition-duration: 700ms;
 }
+/* This is the hover-shrink animation */
+.hover-shrink{
+        transition-duration: .4s;
+    }
+.hover-shrink:hover{
+        scale: 1.05;
+    }
 
 
 /* ----------- Default Styles --------- */
@@ -924,26 +934,21 @@ a {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-
 .placeholder\:uppercase::-moz-placeholder {
   text-transform: uppercase;
 }
-
 
 .placeholder\:uppercase::placeholder {
   text-transform: uppercase;
 }
 
-
 .placeholder\:text-brown::-moz-placeholder {
   color: #683B2B;;
 }
 
-
 .placeholder\:text-brown::placeholder {
   color: #683B2B;;
 }
-
 
 @media not all and (min-width: 768px) {
   .max-md\:hidden {
@@ -951,13 +956,11 @@ a {
   }
 }
 
-
 @media (min-width: 640px) {
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-
 
 @media (min-width: 768px) {
   .md\:col-span-4 {
