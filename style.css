@@ -34,7 +34,7 @@
         @apply text-base font-paragraphs;
     }
 
-    a {
+    nav a {
         @apply text-base uppercase font-paragraphs;
     }
 
