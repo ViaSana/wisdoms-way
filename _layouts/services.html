@@ -2,14 +2,14 @@
 layout: default
 ---
 <!-- Give space for the header nav -->
-<div class="h-[119px]"></div>
+<div class="h-[110px]"></div>
 
 <section class="mx-auto max-w-screen-2xl"> 
     <div class="grid grid-cols-9 gap-4">
         <div class="self-end max-w-lg px-8 py-12 col-span-full md:col-span-4">
-            <h1 class="text-6xl blog-heading">{{page.title}}</h1>
-            <h2 class="py-4 text-2xl uppercase blog-type2"> {{page.subtitle}}</h2>
-            <p class="mb-6"> {{page.description}} </p>
+            <h1 class="">{{page.title}}</h1>
+            <h2 class=""> {{page.subtitle}}</h2>
+            <p class=""> {{page.description}} </p>
             <a href="{{page.url}}" class="button"> Book Now</a>
         </div>
         <div class="relative col-span-5 max-md:hidden">
@@ -21,9 +21,9 @@ layout: default
 <!-- What to Expect -->
 <section class="mx-auto max-w-screen-2xl">
     <div class="grid grid-cols-9 py-10p">
-        <div class="py-8 pl-8 md:col-span-4 col-span-full">
+        <div class="md:col-span-4 col-span-full">
             <div class="inline-block border-b-2 border-gold">
-                <h3 class="pb-2 uppercase font-bold">What To Expect </h3>
+                <h3 class="">What To Expect </h3>
             </div>
             <ul class="m-6 list-disc">
                 {% for item in page.what-to-expect %}
@@ -33,7 +33,7 @@ layout: default
         </div>
 
         <div class="self-center py-8 mx-4 md:col-span-5 col-span-full">
-            <h3 class="pb-4 font-bold">FAQ's </h3>
+            <h3 class="pb-4">FAQ's </h3>
             
             {% include accordion.html accordion-source=page.faqs %}
             
@@ -44,7 +44,7 @@ layout: default
 <!-- Related Products -->
 
 <section class="p-5p">
-    <h2 class="pb-4 text-4xl tracking-wide text-center uppercase"> Other Services </h2>
+    <h2 class="pb-4 text-center"> Other Services </h2>
     <div class="max-w-screen-xl mx-auto text-center">
 
         {% include services_loop.html %}
