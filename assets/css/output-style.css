@@ -487,7 +487,6 @@ a {
 /* Testimonial Slider CSS */
 /* Typography Styles */
 .author {
-    font-size: 0.9rem;
     margin-top: 0.5rem;
     font-style: italic;
     text-align: center;
@@ -506,11 +505,6 @@ a {
     display: block;
     }
 /* !!CURRENT BUG WITH TAILWIND FOR STYLE ORDER OF APPLICATION!!  */
-/* Slider Text Styles  */
-.slider-item p {
-    /* text-align: justify; */
-    font-size: 1.5rem;
-    }
 @media(max-width: 36em){
     .slider-item p { font-size: 1.1rem;}
     }
@@ -592,9 +586,6 @@ a {
 .grid {
   display: grid;
 }
-.aspect-portrait {
-  aspect-ratio: 3 / 4;
-}
 .h-28 {
   height: 7rem;
 }
@@ -616,14 +607,8 @@ a {
 .min-h-90 {
   min-height: 90vh;
 }
-.min-h-\[90px\] {
-  min-height: 90px;
-}
 .min-h-\[110px\] {
   min-height: 110px;
-}
-.min-h-\[315px\] {
-  min-height: 315px;
 }
 .w-28 {
   width: 7rem;
@@ -642,6 +627,9 @@ a {
 }
 .max-w-screen-xl {
   max-width: 1280px;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .list-disc {
   list-style-type: disc;
@@ -852,17 +840,14 @@ a {
 .pb-6 {
   padding-bottom: 1.5rem;
 }
+.pb-\[30rem\] {
+  padding-bottom: 30rem;
+}
 .pl-8 {
   padding-left: 2rem;
 }
-.pt-10p {
-  padding-top: 10%;
-}
 .pt-5p {
   padding-top: 5%;
-}
-.pb-\[30rem\] {
-  padding-bottom: 30rem;
 }
 .text-center {
   text-align: center;
@@ -924,6 +909,11 @@ a {
 }
 .text-creme {
   color: #FAF6F2;;
+}
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
