@@ -1233,6 +1233,15 @@ nav a {
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+.bg-\[url\(\'\{\{page\.contact_image\}\}\'\)\] {
+  background-image: url('{{page.contact_image}}');
+}
+.bg-\[url\(\'\{\{page\.about_image\}\}\'\)\] {
+  background-image: url('{{page.about_image}}');
+}
 .from-\[\#FAF6F2\] {
   --tw-gradient-from: #FAF6F2 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(250 246 242 / 0) var(--tw-gradient-to-position);

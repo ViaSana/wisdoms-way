@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Homepage
+title: Home
 seo:
   title: 
   description:
@@ -13,9 +13,8 @@ banner:
   background-position: bg-[center_50%] 
   text-color: text-creme
   heading: Awaken the Wisdom Within you
-about:
-  copy: "Hi, I'm Lisa! My life’s journey has been an exploration from the halls of academic medicine to meditating in remote caves, studying and gleaning insights from countless wisdom traditions across the globe. This voyage has taught me a profound truth: there isn't just one path to inner wisdom, but an infinite number."
-  button: true
+about_image: /uploads/Lisa_tree.jpeg
+contact_image: /uploads/Lisa_beach.jpeg
 ---
 
 <!-------Site Header ------>
@@ -57,7 +56,7 @@ about:
     <!-- Contact Form Div -->
     <div class="md:col-span-3 col-span-full"> {% include contact-form.html %} </div>
     <div class="p-8 md:col-span-2 col-span-full"> 
-      <div class="bg-[url('/uploads/Lisa_beach.jpeg')] editable bg-cover bg-center aspect-square "></div>
+      <div class="bg-[url('{{page.contact_image}}')] bg-cover bg-center aspect-square "></div>
     </div>
   </div>
 </section>

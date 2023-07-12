@@ -4,7 +4,7 @@
         
         <!-- Image -->
         <div class="pb-6 col-span-full sm:col-span-2">
-            <div class="editable bg-cover bg-center aspect-square bg-[url('/uploads/Lisa_tree.jpeg')]"></div>
+            <div class="bg-cover bg-center aspect-square bg-[url('{{page.about_image}}')]"></div>
         </div>
         
         <!-- Copy -->
@@ -12,12 +12,16 @@
             <div>
                 <p class="text-2xl italic editable">Get to Know</p>
                 <h2 class="pb-2 editable">Dr. Lisa Rambaldo</h2>
-                <div class="pb-5 editable">
-                    <p> {{page.about.copy}}</p>
-                </div>
-                <!-- Bio.Button needs to say 'true' -->
-                {% if page.about.button %}
-                <a class="button" href="/about.html"> Learn More</a>
+                {% if page.title == "Home" %}
+                    <div class="pb-5 editable">                       
+                        <p>Hi, I'm Lisa! My life’s journey has been an exploration from the halls of academic medicine to meditating in remote caves, studying and gleaning insights from countless wisdom traditions across the globe. This voyage has taught me a profound truth: there isn't just one path to inner wisdom, but an infinite number.</p>
+                    </div>
+                    <a class="button" href="/about.html"> Learn More</a>
+                {% elsif page.title == "About" %}
+                    <div class="pb-5 editable">
+                        <p>"Hi, I'm Lisa! My life’s journey has been an exploration from the halls of academic medicine to meditating in remote caves, studying and gleaning insights from countless wisdom traditions across the globe. This voyage has taught me a profound truth: there isn't just one path to inner wisdom, but an infinite number. </p>
+                        <p>Your inner wisdom—be it intuition, inner truth, or connection with the cosmos—deserves to be discovered and celebrated. Through Wisdoms’ Way, I've fused my extensive experience and studies into a platform that meets you where you are and helps guide you toward where you yearn to be. Let's embark on this intriguing journey together."</p>
+                    </div>
                 {% endif %}
             </div>
         </div>
