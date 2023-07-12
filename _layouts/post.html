@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<!-------Header Banner -------------------->
+
+{% include full-banner.html %}
+
+
+<!---------------Post title  ----------------->
+
+<section class="p-2 border-b-2 border-black">
+
+    <div class="grid grid-cols-5 max-w-screen-lg mx-auto text-center items-center">
+
+        <div class="col-span-1"> 
+            <p class="text-sm uppercase"> by {{ page.author }} </p>
+        </div>
+
+        <div class=" col-span-3 intro pt-6 p-4 text-center margin-b-2 max-w-screen-lg mx-auto">
+            <h1 class="text-xl md:text-4xl uppercase font-serif mt-4 mb-8"> {{ page.subtitle }} </h1>
+        </div>
+
+        <div class="col-span-1">
+            <p class="text-sm uppercase"> {{ page.date | date_to_string }} </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-------------------Post content   ----------------->
+
+<section> 
+    <div class="p-5p prose max-w-screen-md mx-auto blog-content">
+
+        {{content}}
+
+    </div>
+
+    {% include social-share.html %}
+</section>
+
+{% include social-share.html %}

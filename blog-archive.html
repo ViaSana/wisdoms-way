@@ -1,0 +1,46 @@
+---
+layout: default
+title: Blog Archive
+banner:
+  background-position: bg-center
+  banner-height: min-h-50
+  text-position: items-center
+  text-color: text-white
+  banner-image: /uploads/travel/travel-1.jpg 
+  heading: Exploring Sumbawa.
+  sub-heading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
+  link-text: Read more
+  link-url: 
+seo:
+  title: Blog Archive
+  description:
+  social_image:
+  twitter_card:
+  keywords:
+  hide-from-google: false
+---
+
+<div class="min-h-[110px]"></div>
+
+
+<section class="p-5p archive" x-data="{ search: '', posts: [...document.querySelectorAll('.post')] }" x-on:input="filterPosts">
+    <div class="max-w-screen-lg mx-auto p-2 center mb-8 text-center">
+        <h2 class="font-serif text-4xl mb-2 editable"> Explore the blog </h2>
+        <div class="editable"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p> </div>
+   
+        <div class="filter relative my-4 inline-block"> 
+            <input type="text" x-model="search" placeholder="Search..." class="p-4">
+        </div>
+    </div>
+
+    <div class="max-w-screen-lg mx-auto">
+
+        {% for post in site.posts limit:100 %}
+
+        <div class="post" x-show="search === '' || $el.querySelector('h2').textContent.toLowerCase().includes(search.toLowerCase())">
+            {% include post-loop-simple.html %}
+        </div>
+
+        {% endfor %}
+    </div>
+</section>
