@@ -17,9 +17,9 @@
 
             <div class="testimonial-slider-container">
                 {% for slide in site.testimonials %}
-                <div class="slider-item"> 
-                    <p>{{slide.content}}</p>
-                    <p class="author"> - {{slide.author}} </p>  
+                <div class="slider-item bg-creme"> 
+                    <p> {{slide.content}} </p>
+                    <p class="author"> {{slide.author}} </p>  
                 </div> 
                 {% endfor %}
             </div>
@@ -27,4 +27,4 @@
     </div>
     </div>
 
-</section> 
+</section>

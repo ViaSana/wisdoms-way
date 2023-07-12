@@ -563,10 +563,6 @@ nav a {
   margin-left: auto;
   margin-right: auto;
 }
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -597,6 +593,9 @@ nav a {
 .grid {
   display: grid;
 }
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
 .h-28 {
   height: 7rem;
 }
@@ -609,11 +608,11 @@ nav a {
 .max-h-72 {
   max-height: 18rem;
 }
+.min-h-100 {
+  min-height: 100vh;
+}
 .min-h-60 {
   min-height: 60vh;
-}
-.min-h-90 {
-  min-height: 90vh;
 }
 .min-h-\[110px\] {
   min-height: 110px;
@@ -729,9 +728,6 @@ nav a {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-\[url\(\'\/uploads\/Coaching_img_resized\.jpg\'\)\] {
-  background-image: url('/uploads/Coaching_img_resized.jpg');
-}
 .bg-\[url\(\'\/uploads\/Connections_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/Connections_img_resized.jpg');
 }
@@ -743,6 +739,9 @@ nav a {
 }
 .bg-\[url\(\'\/uploads\/Lisa_tree\.jpeg\'\)\] {
   background-image: url('/uploads/Lisa_tree.jpeg');
+}
+.bg-\[url\(\'\/uploads\/coaching-mandala\.jpg\'\)\] {
+  background-image: url('/uploads/coaching-mandala.jpg');
 }
 .bg-\[url\(\'\/uploads\/testimonial_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/testimonial_img_resized.jpg');
@@ -756,28 +755,22 @@ nav a {
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
-.bg-\[url\(\'\/uploads\/coaching-mandala\.jpg\'\)\] {
-  background-image: url('/uploads/coaching-mandala.jpg');
-}
 .from-\[\#FAF6F2\] {
   --tw-gradient-from: #FAF6F2 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(250 246 242 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
-.from-80\% {
-  --tw-gradient-from-position: 80%;
+.from-20\% {
+  --tw-gradient-from-position: 20%;
 }
 .bg-cover {
   background-size: cover;
 }
+.bg-\[center_50\%\] {
+  background-position: center 50%;
+}
 .bg-center {
   background-position: center;
-}
-.bg-left {
-  background-position: left;
-}
-.bg-top {
-  background-position: top;
 }
 .p-1 {
   padding: 0.25rem;
@@ -831,6 +824,14 @@ nav a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -841,9 +842,6 @@ nav a {
 }
 .pb-2 {
   padding-bottom: 0.5rem;
-}
-.pb-3 {
-  padding-bottom: 0.75rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
@@ -857,14 +855,14 @@ nav a {
 .pb-6 {
   padding-bottom: 1.5rem;
 }
+.pb-8 {
+  padding-bottom: 2rem;
+}
 .pb-\[30rem\] {
   padding-bottom: 30rem;
 }
 .pt-5p {
   padding-top: 5%;
-}
-.pr-6 {
-  padding-right: 1.5rem;
 }
 .text-center {
   text-align: center;
@@ -923,8 +921,8 @@ nav a {
 .text-gold {
   color: #B08401;;
 }
-.bg-blend-lighten {
-  background-blend-mode: lighten;
+.bg-blend-hard-light {
+  background-blend-mode: hard-light;
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
