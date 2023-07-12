@@ -1,34 +1,22 @@
 ---
 layout: default
+banner:
+  background-position: bg-center
+  banner-image: /uploads/beach_img_resized.jpg
+  text-color: white
+  heading: Get to Know Me
+  sub-heading: 
+about:
+  top-line: Get to Know
+  bio_image: /uploads/Lisa_tree.jpeg
+  copy: "Hi, I'm Lisa! My life’s journey has been an exploration from the halls of academic medicine to meditating in remote caves, studying and gleaning insights from countless wisdom traditions across the globe. This voyage has taught me a profound truth: there isn't just one path to inner wisdom, but an infinite number. Your inner wisdom—be it intuition, inner truth, or connection with the cosmos—deserves to be discovered and celebrated. Through Wisdoms’ Way, I've fused my extensive experience and studies into a platform that meets you where you are and helps guide you toward where you yearn to be. Let's embark on this intriguing journey together."
 ---
 <div class="min-h-[110px]"></div>
 
 <!-- Lisa's Intro -->
-<section>
-  
-  <div class="grid grid-cols-5 mx-auto max-w-screen-2xl">
-    
-    <!-- Image -->
-    <div class="col-span-2 p-8">
-      <div class="bg-cover bg-center aspect-square bg-[url('{{site.data.lisa-bio.bio-pic}}')]"></div>
-    </div>
+{% include lisa-bio.html %}
 
-    
-    <!-- Copy -->
-    <div class="flex items-center col-span-3 p-8 bg-creme">
-      <div>
-        <p class="text-2xl italic"> {{site.data.lisa-bio.bio-sub}} </p>
-        <h2 class="pb-2"> {{site.data.lisa-bio.bio-name}} </h2>
-        <p class="pb-2"> {{site.data.lisa-bio.bio-text_p1}}</p>
-        <p class="pb-5"> {{site.data.lisa-bio.bio-text_p2}}</p>
-      </div>
-    </div>
-    
-  </div>
-
-</section>
-
-<!---------  <section class="p-5p">
+<section class="pt-1 p-5p">
   <div class="mx-auto max-w-screen-2xl">
     <h2 class="text-3xl text-center">The Spiritual Midwife</h2>
     <div class="grid grid-cols-2 p-4">
@@ -55,9 +43,9 @@ layout: default
     <h2 class="pb-2">Credentials</h2>
     <p class="pb-8"> I bring to Wisdoms’ Way a degree in comparative religions and cultures, a doctoral degree in clinical psychology, E-500 RYT Yoga teacher certification, International Association of Yoga Therapist accreditation, iRest Yoga Nidra Certified teacher, Black Belt in the Nia technique, Reiki level 2 training, and formal study and apprenticeship in tarot and astrology. </p>
     <div class="grid grid-cols-7">
-      <div class="rounded-full w-28 h-28 bg-cover bg-center" style="background-image: url('uploads/RYT_500_logo.png')"></div>
+      <div class="bg-center bg-cover rounded-full w-28 h-28" style="background-image: url('uploads/RYT_500_logo.png')"></div>
       <div></div>
-      <div class="rounded-full w-28 h-28 bg-cover bg-center" style="background-image: url('uploads/nia_black.png')"></div>
+      <div class="bg-center bg-cover rounded-full w-28 h-28" style="background-image: url('uploads/nia_black.png')"></div>
       <div></div>
       <div class="rounded-full w-28 h-28 bg-gold"></div>
       <div></div>

@@ -135,11 +135,11 @@
 
 @layer utilities {
 
-    /* This is the hover-shrink animation */
-    .hover-shrink{
+    /* This is the hover-grow animation */
+    .hover-grow{
         transition-duration: .4s;
     }
-    .hover-shrink:hover{
+    .hover-grow:hover{
         scale: 1.05;
     }
 

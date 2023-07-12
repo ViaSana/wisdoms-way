@@ -1043,9 +1043,6 @@ nav a {
 .min-h-50 {
   min-height: 50vh;
 }
-.min-h-60 {
-  min-height: 60vh;
-}
 .min-h-80 {
   min-height: 80vh;
 }
@@ -1135,6 +1132,9 @@ nav a {
 .overflow-hidden {
   overflow: hidden;
 }
+.rounded-2xl {
+  border-radius: 1rem;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1213,11 +1213,11 @@ nav a {
 .bg-\[url\(\'\/uploads\/testimonial_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/testimonial_img_resized.jpg');
 }
+.bg-\[url\(\'\{\{page\.about\.bio_image\}\}\'\)\] {
+  background-image: url('{{page.about.bio_image}}');
+}
 .bg-\[url\(\'\{\{page\.featured-image\}\}\'\)\] {
   background-image: url('{{page.featured-image}}');
-}
-.bg-\[url\(\'\{\{site\.data\.lisa-bio\.bio-pic\}\}\'\)\] {
-  background-image: url('{{site.data.lisa-bio.bio-pic}}');
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -1324,6 +1324,9 @@ nav a {
 }
 .pb-8 {
   padding-bottom: 2rem;
+}
+.pt-1 {
+  padding-top: 0.25rem;
 }
 .pt-5p {
   padding-top: 5%;
@@ -1443,11 +1446,11 @@ nav a {
 .duration-700 {
   transition-duration: 700ms;
 }
-/* This is the hover-shrink animation */
-.hover-shrink{
+/* This is the hover-grow animation */
+.hover-grow{
         transition-duration: .4s;
     }
-.hover-shrink:hover{
+.hover-grow:hover{
         scale: 1.05;
     }
 
@@ -1457,15 +1460,18 @@ nav a {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
+
 .hover\:text-stone-500:hover {
   --tw-text-opacity: 1;
   color: rgb(120 113 108 / var(--tw-text-opacity));
 }
 
+
 .hover\:text-stone-600:hover {
   --tw-text-opacity: 1;
   color: rgb(87 83 78 / var(--tw-text-opacity));
 }
+
 
 @media not all and (min-width: 768px) {
   .max-md\:hidden {
@@ -1473,13 +1479,27 @@ nav a {
   }
 }
 
+
 @media not all and (min-width: 640px) {
   .max-sm\:hidden {
     display: none;
   }
 }
 
+
 @media (min-width: 640px) {
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .sm\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+  .sm\:aspect-\[1\/2\] {
+    aspect-ratio: 1/2;
+  }
+  .sm\:min-h-\[422px\] {
+    min-height: 422px;
+  }
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1488,6 +1508,7 @@ nav a {
     line-height: 2.25rem;
   }
 }
+
 
 @media (min-width: 768px) {
   .md\:col-span-3 {
@@ -1505,6 +1526,9 @@ nav a {
   .md\:grid {
     display: grid;
   }
+  .md\:min-h-\[366px\] {
+    min-height: 366px;
+  }
   .md\:columns-3 {
     -moz-columns: 3;
          columns: 3;
@@ -1512,5 +1536,24 @@ nav a {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .lg\:min-h-\[300px\] {
+    min-height: 300px;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .xl\:min-h-fit {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
   }
 }

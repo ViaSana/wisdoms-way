@@ -13,6 +13,11 @@ banner:
   background-position: bg-[center_50%] 
   text-color: text-creme
   heading: Awaken the Wisdom Within you
+about:
+  top-line: Get to Know
+  bio_image: /uploads/Lisa_tree.jpeg
+  copy: "Hi, I'm Lisa! My life’s journey has been an exploration from the halls of academic medicine to meditating in remote caves, studying and gleaning insights from countless wisdom traditions across the globe. This voyage has taught me a profound truth: there isn't just one path to inner wisdom, but an infinite number. Your inner wisdom—be it intuition, inner truth, or connection with the cosmos—deserves to be discovered and celebrated. Through Wisdoms’ Way, I've fused my extensive experience and studies into a platform that meets you where you are and helps guide you toward where you yearn to be. Let's embark on this intriguing journey together."
+  button: true
 ---
 
 <!-------Site Header ------>
@@ -43,29 +48,7 @@ banner:
 </section>
 
 <!-- Lisa's Intro -->
-<section>
-  
-  <div class="grid grid-cols-5 mx-auto max-w-screen-2xl min-h-60">
-    
-    <!-- Image -->
-    <div class="col-span-2 p-8">
-      <div class="bg-cover bg-center aspect-square bg-[url('{{site.data.lisa-bio.bio-pic}}')]"></div>
-    </div>
-    
-    <!-- Copy -->
-    <div class="flex items-center col-span-3 p-8 bg-creme">
-      <div>
-        <p class="text-2xl italic"> {{site.data.lisa-bio.bio-sub}} </p>
-        <h2 class="pb-2"> {{site.data.lisa-bio.bio-name}} </h2>
-        <p class="pb-2"> {{site.data.lisa-bio.bio-text_p1}}</p>
-        <p class="pb-5"> {{site.data.lisa-bio.bio-text_p2}}</p>
-        <a class="button" href="/about.html"> Learn More</a>
-      </div>
-    </div>
-
-  </div>
-  
-</section>
+{% include lisa-bio.html %}
 
 <!-- Testimonials -->
 {% include testimonials.html %}

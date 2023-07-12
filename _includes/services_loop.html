@@ -1,13 +1,13 @@
 <div class="grid gap-10 sm:grid-cols-3">
     {% for page in site.services %}
-    <div class="hover-shrink">
+    <div class="hover-grow">
         <a href="{{page.url}}">
-        <div class="bg-cover p-[50%] bg-center rounded-t-3xl" style="background-image: url('{{page.featured-image}}')"></div>
-        <div class="p-4 bg-tan">
-            <h4 class="mb-2 font-bold"> {{page.title}}</h4>
-            <p class="mb-6">{{page.summary}}</p>
-            <div class="inline-block button"> Book Now</div>
-        </div>
+            <div class="bg-cover p-[50%] bg-center rounded-t-3xl" style="background-image: url('{{page.featured-image}}')"></div>
+            <div class="p-4 bg-tan sm:min-h-[422px] md:min-h-[366px] lg:min-h-[300px] xl:min-h-fit grid">
+                <h4 class="mb-2 font-bold"> {{page.title}}</h4>
+                <p class="mb-6">{{page.summary}}</p>
+                <div class="self-end lg:mx-8 button"> Book Now</div>
+            </div>
         </a>
     </div>
     {% endfor %}
