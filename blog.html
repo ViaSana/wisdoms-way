@@ -1,0 +1,40 @@
+---
+layout: default
+title: Blog Page
+background-position: bg-center
+banner:
+  banner-height: min-h-90
+  text-position: items-center
+  text-color: text-white
+  banner-image: /uploads/travel/travel-1.jpg 
+  heading: Exploring Sumbawa.
+  sub-heading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
+  link-text: Read more
+  link-url: /
+seo:
+  title:
+  description:
+  social_image:
+  twitter_card:
+  keywords:
+  hide-from-google: false
+---
+<div class="min-h-[110px]"></div>
+
+<!------------------------ Featured blog loop ------------------------>
+<section class="p-5p">
+  <h2 class="max-w-screen-2xl mx-auto text-center mb-5 editable"> Recently on the blog </h2>
+
+  <div class="max-w-screen-2xl mx-auto md:columns-3">
+
+      {% for post in site.posts limit:12 %}
+
+          {% include post-loop-item.html %}
+
+      {% endfor %}
+
+  </div>
+
+  <a href="/blog-archive.html" class="button editable"> All Posts </a>
+
+</section> 
