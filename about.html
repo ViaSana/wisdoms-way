@@ -1,11 +1,5 @@
 ---
 layout: default
-banner:
-  background-position: bg-center
-  banner-image: /uploads/beach_img_resized.jpg
-  text-color: white
-  heading: Get to Know Me
-  sub-heading: 
 ---
 <div class="min-h-[110px]"></div>
 
@@ -16,15 +10,17 @@ banner:
     
     <!-- Image -->
     <div class="col-span-2 p-8">
-      <div class="bg-cover bg-center pb-[30rem] bg-[url('{{site.data.lisa-bio.bio-pic}}')]"></div>
+      <div class="bg-cover bg-center aspect-square bg-[url('{{site.data.lisa-bio.bio-pic}}')]"></div>
     </div>
+
     
     <!-- Copy -->
     <div class="flex items-center col-span-3 p-8 bg-creme">
       <div>
         <p class="text-2xl italic"> {{site.data.lisa-bio.bio-sub}} </p>
         <h2 class="pb-2"> {{site.data.lisa-bio.bio-name}} </h2>
-        <p class="pb-2 editable"> {{site.data.lisa-bio.bio-text_p1}}</p>
+        <p class="pb-2"> {{site.data.lisa-bio.bio-text_p1}}</p>
+        <p class="pb-5"> {{site.data.lisa-bio.bio-text_p2}}</p>
       </div>
     </div>
     
@@ -32,7 +28,7 @@ banner:
 
 </section>
 
-<section class="p-5p">
+<!---------  <section class="p-5p">
   <div class="mx-auto max-w-screen-2xl">
     <h2 class="text-3xl text-center">The Spiritual Midwife</h2>
     <div class="grid grid-cols-2 p-4">
@@ -48,20 +44,20 @@ banner:
       <div class="px-4 py-2"><span class="font-bold">Magna id eu exercitation reprehenderit.</span> Nostrud ut culpa est consequat exercitation ex mollit irure ipsum sit ad aliquip.</div>
     </div>
   </div>
-</section>
+</section> 
+------->
 
-<!-- Testimonials -->
-{% include testimonials.html %}
+
 
 <!-- Credentials -->
 <section class="p-5p">
   <div class="mx-auto text-center max-w-screen-2xl">
     <h2 class="pb-2">Credentials</h2>
-    <p class="pb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam est saepe dolor architecto cumque nostrum blanditiis facilis exercitationem eos magnam ipsum, distinctio provident, ullam deleniti ratione commodi perferendis asperiores reprehenderit?</p>
+    <p class="pb-8"> I bring to Wisdoms’ Way a degree in comparative religions and cultures, a doctoral degree in clinical psychology, E-500 RYT Yoga teacher certification, International Association of Yoga Therapist accreditation, iRest Yoga Nidra Certified teacher, Black Belt in the Nia technique, Reiki level 2 training, and formal study and apprenticeship in tarot and astrology. </p>
     <div class="grid grid-cols-7">
-      <div class="rounded-full w-28 h-28 bg-gold"></div>
+      <div class="rounded-full w-28 h-28 bg-cover bg-center" style="background-image: url('uploads/RYT_500_logo.png')"></div>
       <div></div>
-      <div class="rounded-full w-28 h-28 bg-gold"></div>
+      <div class="rounded-full w-28 h-28 bg-cover bg-center" style="background-image: url('uploads/nia_black.png')"></div>
       <div></div>
       <div class="rounded-full w-28 h-28 bg-gold"></div>
       <div></div>
@@ -77,8 +73,11 @@ banner:
   </div>
 </section>
 
+<!-- Testimonials -->
+{% include testimonials.html %}
+
 <!-- Behind the Logo -->
-<section class="p-5p bg-pink">
+<!------ <section class="p-5p bg-pink">
   <div class="mx-auto text-center max-w-screen-2xl">
     <div class="text-center">
       <h2>Behind the Logo</h2>
@@ -92,4 +91,4 @@ banner:
       </div>
     </div>
   </div>
-</section>
+</section> ----> 
