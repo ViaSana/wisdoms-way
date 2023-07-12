@@ -51,12 +51,4 @@ contact_image: /uploads/Lisa_beach.jpeg
 {% include testimonials.html %}
 
 <!-- Let's Connect -->
-<section class="p-5p">
-  <div class="grid items-center grid-cols-5 mx-auto max-w-screen-2xl">
-    <!-- Contact Form Div -->
-    <div class="md:col-span-3 col-span-full"> {% include contact-form.html %} </div>
-    <div class="p-8 md:col-span-2 col-span-full"> 
-      <div class="bg-[url('{{page.contact_image}}')] bg-cover bg-center aspect-square "></div>
-    </div>
-  </div>
-</section>
+{% include connect.html %}

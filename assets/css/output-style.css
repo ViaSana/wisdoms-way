@@ -877,6 +877,30 @@ nav a {
 .prose :where(.prose > :last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 0;
 }
+/* Hamburger Style */
+.hamburger-button {
+        cursor: pointer;
+        z-index: 2;
+    }
+/* Styles when the hamburger button is active  */
+.hamburger-button.active{
+        background-color: #FAF6F2;
+    }
+.mobile-menu {
+        display: none; 
+        background-color: #FAF6F2; 
+        padding: 5%;
+        position: fixed; 
+        top:45px;
+        right:1rem;
+        text-align: center;
+    }
+.mobile-menu a {
+        text-decoration: none; 
+        color: #B08401; 
+        padding: 1vh 5%;
+        display: block;
+    }
 /* Testimonial Slider CSS */
 .testimonial-overlay {
         position: relative;
@@ -929,6 +953,9 @@ nav a {
 .top-\[50\%\] {
   top: 50%;
 }
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -937,9 +964,6 @@ nav a {
 }
 .col-span-full {
   grid-column: 1 / -1;
-}
-.col-span-1 {
-  grid-column: span 1 / span 1;
 }
 .m-6 {
   margin: 1.5rem;
@@ -952,10 +976,6 @@ nav a {
   margin-left: auto;
   margin-right: auto;
 }
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -966,20 +986,14 @@ nav a {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-.mt-20 {
-  margin-top: 5rem;
-}
-.mt-\[20\%\] {
-  margin-top: 20%;
-}
 .mb-4 {
   margin-bottom: 1rem;
 }
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 .mb-8 {
   margin-bottom: 2rem;
@@ -990,8 +1004,14 @@ nav a {
 .mt-1 {
   margin-top: 0.25rem;
 }
+.mt-20 {
+  margin-top: 5rem;
+}
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-\[20\%\] {
+  margin-top: 20%;
 }
 .line-clamp-2 {
   overflow: hidden;
@@ -1017,23 +1037,20 @@ nav a {
 .hidden {
   display: none;
 }
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
 .aspect-landscape {
   aspect-ratio: 2 / 1 ;
 }
 .aspect-portrait {
   aspect-ratio: 3 / 4;
 }
-.aspect-\[1\/3\] {
-  aspect-ratio: 1/3;
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
-.aspect-\[3\/1\] {
-  aspect-ratio: 3/1;
+.h-0 {
+  height: 0px;
 }
-.aspect-\[5\/2\] {
-  aspect-ratio: 5/2;
+.h-0\.5 {
+  height: 0.125rem;
 }
 .h-28 {
   height: 7rem;
@@ -1050,18 +1067,11 @@ nav a {
 .max-h-72 {
   max-height: 18rem;
 }
-.min-h-100 {
-  min-height: 100vh;
-}
-.min-h-\[110px\] {
-  min-height: 110px;
-}
-.min-h-fit {
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-}
 .min-h-50 {
   min-height: 50vh;
+}
+.min-h-60 {
+  min-height: 60vh;
 }
 .min-h-80 {
   min-height: 80vh;
@@ -1069,20 +1079,20 @@ nav a {
 .min-h-90 {
   min-height: 90vh;
 }
-.min-h-\[120px\] {
-  min-height: 120px;
-}
-.min-h-\[100px\] {
-  min-height: 100px;
+.min-h-\[110px\] {
+  min-height: 110px;
 }
 .w-28 {
   width: 7rem;
 }
+.w-8 {
+  width: 2rem;
+}
 .w-full {
   width: 100%;
 }
-.min-w-\[280px\] {
-  min-width: 280px;
+.w-screen {
+  width: 100vw;
 }
 .min-w-\[265px\] {
   min-width: 265px;
@@ -1099,14 +1109,17 @@ nav a {
 .max-w-screen-2xl {
   max-width: 1536px;
 }
-.max-w-screen-xl {
-  max-width: 1280px;
-}
 .max-w-screen-lg {
   max-width: 1024px;
 }
 .max-w-screen-md {
   max-width: 768px;
+}
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+.max-w-\[45\%\] {
+  max-width: 45%;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1121,23 +1134,20 @@ nav a {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
-}
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-.flex-col {
-  flex-direction: column;
 }
 .items-center {
   align-items: center;
@@ -1161,6 +1171,11 @@ nav a {
   -moz-column-gap: 2.75rem;
        column-gap: 2.75rem;
 }
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
 .self-end {
   align-self: flex-end;
 }
@@ -1169,9 +1184,6 @@ nav a {
 }
 .overflow-hidden {
   overflow: hidden;
-}
-.rounded-2xl {
-  border-radius: 1rem;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -1192,16 +1204,16 @@ nav a {
 .border-t {
   border-top-width: 1px;
 }
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-gold {
   border-color: #B08401;;
 }
 .border-zinc-800 {
   --tw-border-opacity: 1;
   border-color: rgb(39 39 42 / var(--tw-border-opacity));
-}
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-brown {
   background-color: #683B2B;;
@@ -1215,12 +1227,6 @@ nav a {
 .bg-pink {
   background-color: #D49E8D;;
 }
-.bg-tan {
-  background-color: #DED1BD;;
-}
-.bg-transparent {
-  background-color: transparent;
-}
 .bg-stone-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
@@ -1228,6 +1234,12 @@ nav a {
 .bg-stone-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+.bg-tan {
+  background-color: #DED1BD;;
+}
+.bg-transparent {
+  background-color: transparent;
 }
 .bg-zinc-800 {
   --tw-bg-opacity: 1;
@@ -1248,29 +1260,32 @@ nav a {
 .bg-\[url\(\'\/uploads\/coaching-mandala\.jpg\'\)\] {
   background-image: url('/uploads/coaching-mandala.jpg');
 }
+.bg-\[url\(\'\/uploads\/header_banner\.png\'\)\] {
+  background-image: url('/uploads/header_banner.png');
+}
+.bg-\[url\(\'\/uploads\/logo\.png\'\)\] {
+  background-image: url('/uploads/logo.png');
+}
 .bg-\[url\(\'\/uploads\/testimonial_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/testimonial_img_resized.jpg');
 }
-.bg-\[url\(\'\{\{page\.about\.bio_image\}\}\'\)\] {
-  background-image: url('{{page.about.bio_image}}');
+.bg-\[url\(\'uploads\/Lisa_beach\.jpeg\'\)\] {
+  background-image: url('uploads/Lisa_beach.jpeg');
+}
+.bg-\[url\(\'\{\{page\.about_image\}\}\'\)\] {
+  background-image: url('{{page.about_image}}');
+}
+.bg-\[url\(\'\{\{page\.banner\.banner-image\}\}\'\)\] {
+  background-image: url('{{page.banner.banner-image}}');
+}
+.bg-\[url\(\'\{\{page\.contact_image\}\}\'\)\] {
+  background-image: url('{{page.contact_image}}');
 }
 .bg-\[url\(\'\{\{page\.featured-image\}\}\'\)\] {
   background-image: url('{{page.featured-image}}');
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-.bg-\[url\(\'\{\{page\.contact_image\}\}\'\)\] {
-  background-image: url('{{page.contact_image}}');
-}
-.bg-\[url\(\'\{\{page\.about_image\}\}\'\)\] {
-  background-image: url('{{page.about_image}}');
-}
-.bg-\[url\(\'\/uploads\/logo\.png\'\)\] {
-  background-image: url('/uploads/logo.png');
 }
 .from-\[\#FAF6F2\] {
   --tw-gradient-from: #FAF6F2 var(--tw-gradient-from-position);
@@ -1291,10 +1306,6 @@ nav a {
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -1391,14 +1402,8 @@ nav a {
 .pt-6 {
   padding-top: 1.5rem;
 }
-.pb-\[100\%\] {
-  padding-bottom: 100%;
-}
-.pb-\[50\%\] {
-  padding-bottom: 50%;
-}
-.pb-\[20\%\] {
-  padding-bottom: 20%;
+.text-left {
+  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -1558,17 +1563,11 @@ nav a {
   .sm\:col-span-3 {
     grid-column: span 3 / span 3;
   }
-  .sm\:aspect-\[1\/2\] {
-    aspect-ratio: 1/2;
+  .sm\:hidden {
+    display: none;
   }
   .sm\:min-h-\[422px\] {
     min-height: 422px;
-  }
-  .sm\:min-h-\[420px\] {
-    min-height: 420px;
-  }
-  .sm\:min-h-\[438px\] {
-    min-height: 438px;
   }
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1583,6 +1582,9 @@ nav a {
   .md\:order-first {
     order: -9999;
   }
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -1592,18 +1594,8 @@ nav a {
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
   }
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-  .md\:flex {
-    display: flex;
-  }
-  .md\:grid {
-    display: grid;
-  }
-  .md\:min-h-fit {
-    min-height: -moz-fit-content;
-    min-height: fit-content;
+  .md\:min-h-100 {
+    min-height: 100vh;
   }
   .md\:min-h-\[366px\] {
     min-height: 366px;
@@ -1611,6 +1603,9 @@ nav a {
   .md\:columns-3 {
     -moz-columns: 3;
          columns: 3;
+  }
+  .md\:p-4 {
+    padding: 1rem;
   }
   .md\:text-4xl {
     font-size: 2.25rem;
@@ -1622,10 +1617,6 @@ nav a {
   .lg\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
-  }
-  .lg\:min-h-max {
-    min-height: -moz-max-content;
-    min-height: max-content;
   }
   .lg\:min-h-\[300px\] {
     min-height: 300px;

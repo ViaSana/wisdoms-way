@@ -53,7 +53,36 @@
 
 @layer components {
 
-/* Testimonial Slider CSS */
+    /* Hamburger Style */
+    .hamburger-button {
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    /* Styles when the hamburger button is active  */
+    .hamburger-button.active{
+        background-color: #FAF6F2;
+    }
+
+    .mobile-menu {
+        display: none; 
+        background-color: #FAF6F2; 
+        padding: 5%;
+        position: fixed; 
+        top:45px;
+        right:1rem;
+        text-align: center;
+    }
+
+    .mobile-menu a {
+        text-decoration: none; 
+        color: #B08401; 
+        padding: 1vh 5%;
+        display: block;
+    }
+
+
+    /* Testimonial Slider CSS */
     .testimonial-overlay {
         position: relative;
         background-color: rgba(190, 190, 190, 0.5);

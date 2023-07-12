@@ -3,6 +3,10 @@
         {
             "filePath": "style.css",
             "group": "Default"
+        },
+        {
+            "filePath": "_layouts/default.html",
+            "group": "Default"
         }
     ]
 }

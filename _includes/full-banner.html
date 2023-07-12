@@ -1,5 +1,5 @@
 <!--  image banner block that takes up most of the full screen  -->
-<section class="bg-cover py-5p min-h-100 items-center justify-center {{page.banner.background-position}} flex" style="background-image: url('{{page.banner.banner-image}}')">
+<section class="bg-cover py-5p items-center md:min-h-100 min-h-60 justify-center {{page.banner.background-position}} flex bg-[url('{{page.banner.banner-image}}')]">
     <div class="mt-20 text-center"> 
         <h1 class="text-[5vw] uppercase p-5 {{page.banner.text-color}} bg-blend-hard-light"> {{page.banner.heading | default: page.title }} </h1>
         <p class="text-2xl {{page.banner.text-color}}"> {{page.banner.sub-heading | default: page.description }}</p>

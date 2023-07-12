@@ -1,3 +1,8 @@
+$('.hamburger-button').click(function(){
+    $('.mobile-menu').fadeToggle(100);
+    $(this).toggleClass('active');
+});
+
 $(".testimonial-slider-container").slick({
     autoplay: true,
     autoplaySpeed: 2e3,
