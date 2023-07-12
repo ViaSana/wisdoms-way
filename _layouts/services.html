@@ -12,18 +12,18 @@ layout: default
             <p class="mb-6"> {{page.description}} </p>
             <a href="{{page.url}}" class="button"> Book Now</a>
         </div>
-        <div class="col-span-2 max-md:hidden">
-            <div class="bg-cover bg-center pb-[30rem] bg-[url('{{page.featured-image}}')]"></div>
+        <div class="col-span-2 p-8 max-md:hidden">
+            <div class=" bg-cover bg-center aspect-square bg-[url('{{page.featured-image}}')]"></div>
         </div>
     </div>
 </section> 
 
 <!-- What to Expect -->
-<section class="mx-auto max-w-screen-2xl">
+<section class="mx-auto max-w-screen-2xl p-5p">
     <div class="grid grid-cols-9 py-10p">
         <div class="md:col-span-4 col-span-full">
             <div class="inline-block border-b-2 border-gold">
-                <h3 class="">What To Expect </h3>
+                <h3 class="font-bold">What To Expect </h3>
             </div>
             <ul class="m-6 list-disc">
                 {% for item in page.what-to-expect %}
@@ -32,8 +32,8 @@ layout: default
             </ul>
         </div>
 
-        <div class="self-center py-8 mx-4 md:col-span-5 col-span-full">
-            <h3 class="pb-4">FAQ's </h3>
+        <div class="mx-4 md:col-span-5 col-span-full">
+            <h3 class="pb-4 font-bold">FAQ's </h3>
             
             {% include accordion.html accordion-source=page.faqs %}
             

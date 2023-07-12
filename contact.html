@@ -1,19 +1,16 @@
 ---
 layout: default
-banner:
-  background-position: bg-center
-  banner-image: /uploads/beach_img_resized.jpg
-  text-color: white
-  heading: Contact Me
-  sub-heading: 
 ---
 
 <!-- Let's Connect -->
 <div class="min-h-[110px]"></div>
+
 <section>
-    <div class="grid grid-cols-2 mx-auto max-w-screen-2xl">
+    <div class="grid grid-cols-5 mx-auto max-w-screen-2xl">
         <!-- Contact Form Div -->
-        {% include contact-form.html %}
-        <div class="bg-[url('/uploads/Lisa_beach.jpeg')] bg-cover bg-center"></div>
+        <div class="col-span-3"> {% include contact-form.html %} </div>
+        <div class="col-span-2 p-8"> 
+          <div class="bg-[url('/uploads/Lisa_beach.jpeg')] bg-cover bg-center aspect-square "></div>
+        </div>
     </div>
 </section>
