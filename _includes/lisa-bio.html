@@ -1,19 +1,20 @@
 <!-- Lisa's Intro -->
-<section>
-    <div class="grid grid-cols-5 mx-auto max-w-screen-2xl">
+<section class="p-5p">
+    <div class="grid items-center grid-cols-5 mx-auto max-w-screen-2xl">
         
         <!-- Image -->
-        <div class="p-8 col-span-full sm:col-span-2">
-            <div class="bg-cover rounded-2xl bg-center aspect-square sm:aspect-[1/2] bg-[url('{{page.about.bio_image}}')]"></div>
+        <div class="pb-6 col-span-full sm:col-span-2">
+            <div class="editable bg-cover bg-center aspect-square bg-[url('/uploads/Lisa_tree.jpeg')]"></div>
         </div>
         
         <!-- Copy -->
         <div class="flex items-center px-8 pb-6 col-span-full sm:col-span-3 bg-creme">
             <div>
-                <p class="text-2xl italic"> {{page.about.top-line}} </p>
-                <h2 class="pb-2"> {{site.data.lisa-bio.bio-name}} </h2>
-                <p class="pb-5"> {{page.about.copy}}</p>
-                
+                <p class="text-2xl italic editable">Get to Know</p>
+                <h2 class="pb-2 editable">Dr. Lisa Rambaldo</h2>
+                <div class="pb-5 editable">
+                    <p> {{page.about.copy}}</p>
+                </div>
                 <!-- Bio.Button needs to say 'true' -->
                 {% if page.about.button %}
                 <a class="button" href="/about.html"> Learn More</a>

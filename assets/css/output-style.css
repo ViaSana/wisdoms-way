@@ -783,6 +783,10 @@ nav a {
 .bg-center {
   background-position: center;
 }
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .p-1 {
   padding: 0.25rem;
 }
@@ -876,6 +880,9 @@ nav a {
 }
 .text-right {
   text-align: right;
+}
+.align-middle {
+  vertical-align: middle;
 }
 .font-headings {
   font-family: minerva-modern, sans-serif;
@@ -1007,6 +1014,9 @@ nav a {
   }
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
+  }
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
   .md\:flex {
     display: flex;
