@@ -1,15 +1,10 @@
-<a class="post-item p-2 break-inside-avoid block mb-4" href="{{ post.url }}">
+<a class="post-item p-2 break-inside-avoid block mb-4 hover-grow" href="{{ post.url }}">
     <div class="bg-cover bg-center
     {% cycle 'aspect-square', 'aspect-portrait', 'aspect-landscape', %}" 
     style="background-image:url( '{{ post.featured_image }}' );"></div>
-    <div class="p-4 relative bg-stone-200">
-        <p class="uppercase text-zinc-600 text-xs tracking-wide mb-2">
-            {% for item in post.categories %}
-                <span class="tag mr-2"> {{item}} </span>
-            {% endfor %}
-          </p>
-        <h3 class="mt-1 font-sans text-1xl uppercase mb-2"> {{ post.title }} </h3>
-        <p class="font-sans text-xs normal-case mb-2">{{post.description}} </p>
-        <span href="{{post.url}}" class="uppercase text-1xl font-serif font-light border-b-2 border-black inline-block mb-2"> Read more </span> 
+    <div class="p-4 relative bg-tan">
+        <h3 class="mt-1 text-1xl mb-2 hover:text-gold"> {{ post.title }} </h3>
+        <p class="text-sm normal-case mb-2">{{post.description}} </p>
+        <span href="{{post.url}}" class="uppercase text-1xl font-headings hover:text-gold inline-block mb-2"> Read more </span> 
     </div>
 </a>

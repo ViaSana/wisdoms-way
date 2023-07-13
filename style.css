@@ -46,6 +46,9 @@
         @apply px-4 py-2 text-base uppercase border bg-creme text-gold font-headings border-gold;
     }
 
+    .blog-content {
+        @apply text-brown
+    }
 }
 
 
