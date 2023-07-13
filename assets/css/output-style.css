@@ -890,9 +890,9 @@ nav a {
         display: none; 
         background-color: #DED1BD; 
         text-align: center;
-        padding: 35% 50% 25% 50%;
+        padding: 55% 60% 25% 50%;
         position: absolute;
-        top: 16px;
+        top: -6px;
         right: 0;
     }
 .mobile-menu a {
@@ -950,6 +950,12 @@ nav a {
 .top-\[50\%\] {
   top: 50%;
 }
+.z-10 {
+  z-index: 10;
+}
+.z-30 {
+  z-index: 30;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -977,6 +983,12 @@ nav a {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.-mr-\[6px\] {
+  margin-right: -6px;
+}
+.-mt-4 {
+  margin-top: -1rem;
+}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -995,8 +1007,8 @@ nav a {
 .mb-8 {
   margin-bottom: 2rem;
 }
-.ml-\[25vw\] {
-  margin-left: 25vw;
+.ml-\[33vw\] {
+  margin-left: 33vw;
 }
 .mr-2 {
   margin-right: 0.5rem;
@@ -1012,6 +1024,9 @@ nav a {
 }
 .mt-\[20\%\] {
   margin-top: 20%;
+}
+.-mr-2 {
+  margin-right: -0.5rem;
 }
 .line-clamp-2 {
   overflow: hidden;
@@ -1084,6 +1099,9 @@ nav a {
 }
 .w-8 {
   width: 2rem;
+}
+.w-\[67vw\] {
+  width: 67vw;
 }
 .w-full {
   width: 100%;
@@ -1398,6 +1416,9 @@ nav a {
 }
 .pt-6 {
   padding-top: 1.5rem;
+}
+.pt-48 {
+  padding-top: 12rem;
 }
 .text-left {
   text-align: left;
