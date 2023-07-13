@@ -1100,9 +1100,6 @@ nav a {
 .h-full {
   height: 100%;
 }
-.h-\[500px\] {
-  height: 500px;
-}
 .max-h-0 {
   max-height: 0px;
 }
@@ -1273,9 +1270,6 @@ nav a {
 }
 .bg-transparent {
   background-color: transparent;
-}
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
 }
 .bg-\[url\(\'\/uploads\/Connections_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/Connections_img_resized.jpg');
