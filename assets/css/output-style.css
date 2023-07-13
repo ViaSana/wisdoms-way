@@ -884,21 +884,21 @@ nav a {
     }
 /* Styles when the hamburger button is active  */
 .hamburger-button.active{
-        background-color: #FAF6F2;
+        background-color: #DED1BD;
     }
 .mobile-menu {
         display: none; 
-        background-color: #FAF6F2; 
-        padding: 5%;
-        position: fixed; 
-        top:45px;
-        right:1rem;
+        background-color: #DED1BD; 
         text-align: center;
+        padding: 35% 50% 25% 50%;
+        position: absolute;
+        top: 16px;
+        right: 0;
     }
 .mobile-menu a {
         text-decoration: none; 
-        color: #B08401; 
-        padding: 1vh 5%;
+        color: #683B2B; 
+        padding: 1vh 0;
         display: block;
     }
 /* Testimonial Slider CSS */
@@ -943,9 +943,6 @@ nav a {
 }
 .left-0 {
   left: 0px;
-}
-.right-0 {
-  right: 0px;
 }
 .top-0 {
   top: 0px;
@@ -997,6 +994,9 @@ nav a {
 }
 .mb-8 {
   margin-bottom: 2rem;
+}
+.ml-\[25vw\] {
+  margin-left: 25vw;
 }
 .mr-2 {
   margin-right: 0.5rem;
@@ -1070,9 +1070,6 @@ nav a {
 .min-h-50 {
   min-height: 50vh;
 }
-.min-h-60 {
-  min-height: 60vh;
-}
 .min-h-80 {
   min-height: 80vh;
 }
@@ -1106,6 +1103,9 @@ nav a {
 .max-w-\[40\%\] {
   max-width: 40%;
 }
+.max-w-\[45\%\] {
+  max-width: 45%;
+}
 .max-w-screen-2xl {
   max-width: 1536px;
 }
@@ -1117,9 +1117,6 @@ nav a {
 }
 .max-w-screen-xl {
   max-width: 1280px;
-}
-.max-w-\[45\%\] {
-  max-width: 45%;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1151,6 +1148,9 @@ nav a {
 }
 .items-center {
   align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -1268,9 +1268,6 @@ nav a {
 }
 .bg-\[url\(\'\/uploads\/testimonial_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/testimonial_img_resized.jpg');
-}
-.bg-\[url\(\'uploads\/Lisa_beach\.jpeg\'\)\] {
-  background-image: url('uploads/Lisa_beach.jpeg');
 }
 .bg-\[url\(\'\{\{page\.about_image\}\}\'\)\] {
   background-image: url('{{page.about_image}}');
@@ -1411,9 +1408,6 @@ nav a {
 .text-right {
   text-align: right;
 }
-.align-middle {
-  vertical-align: middle;
-}
 .font-headings {
   font-family: minerva-modern, sans-serif;
 }
@@ -1432,9 +1426,6 @@ nav a {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-.text-\[5vw\] {
-  font-size: 5vw;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -1610,6 +1601,9 @@ nav a {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+  .md\:text-\[5vw\] {
+    font-size: 5vw;
   }
 }
 
