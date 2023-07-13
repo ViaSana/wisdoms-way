@@ -56,6 +56,28 @@
 
 @layer components {
 
+    .animation-box {
+        width: 200px;
+        height: 200px;
+        position: sticky;
+        top: 200px;
+    }
+
+    /* Logo Animation */
+    .logo-part, .text-part {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        display: none;
+    }
+    .text-part {
+        position: relative;
+        left: 265px; /* position the text to the right of the logo */
+        width: 60vw;
+    }
+
+
+
     /* Hamburger Style */
     .hamburger-button {
         cursor: pointer;

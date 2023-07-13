@@ -880,6 +880,24 @@ nav a {
 .prose :where(.prose > :last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 0;
 }
+.animation-box {
+        width: 200px;
+        height: 200px;
+        position: sticky;
+        top: 200px;
+    }
+/* Logo Animation */
+.logo-part, .text-part {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        display: none;
+    }
+.text-part {
+        position: relative;
+        left: 265px; /* position the text to the right of the logo */
+        width: 60vw;
+    }
 /* Hamburger Style */
 .hamburger-button {
         cursor: pointer;
@@ -932,6 +950,9 @@ nav a {
 @media(max-width: 36em){
     .slider-item p { font-size: 1.1rem;}
     }
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
 }
@@ -941,8 +962,14 @@ nav a {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   inset: 0px;
+}
+.-top-\[250px\] {
+  top: -250px;
 }
 .left-0 {
   left: 0px;
@@ -1064,8 +1091,17 @@ nav a {
 .h-\[110px\] {
   height: 110px;
 }
+.h-\[200vh\] {
+  height: 200vh;
+}
+.h-\[600px\] {
+  height: 600px;
+}
 .h-full {
   height: 100%;
+}
+.h-\[500px\] {
+  height: 500px;
 }
 .max-h-0 {
   max-height: 0px;
