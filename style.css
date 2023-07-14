@@ -69,24 +69,27 @@
 
 @layer components {
 
-    .animation-box {
-        width: 200px;
-        height: 200px;
-        position: sticky;
-        top: 200px;
+    /* Logo Animation */
+    .logo_animation-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 630px;
     }
 
-    /* Logo Animation */
-    .logo-part, .text-part {
+    .logo-part{
         position: absolute;
+        height: 360px;
+        padding-top: 9rem;
+        padding-left: 5%;
         top: 0;
-        left: 5%;
-        display: none;
+        left: 0;
     }
     .text-part {
         position: relative;
-        left: 265px; /* position the text to the right of the logo */
+        left: 440px; /* position the text to the right of the logo */
         width: 60vw;
+        top: 4rem;
     }
 
 
@@ -208,6 +211,20 @@
     }
     .hover-grow:hover{
         scale: 1.05;
+    }
+
+    .bouncing-animation{
+        animation: bounce 2s ease-out 1s infinite running;
+    }
+    
+    @keyframes bounce {
+    from {
+        translate: 0 0;
+        opacity: 0;
+    }
+    to { 
+        translate: 0 1rem;
+    }
     }
 
 }

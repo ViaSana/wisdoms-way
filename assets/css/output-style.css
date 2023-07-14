@@ -912,23 +912,26 @@ nav a:hover {
 .prose :where(.prose > :last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 0;
 }
-.animation-box {
-        width: 200px;
-        height: 200px;
-        position: sticky;
-        top: 200px;
-    }
 /* Logo Animation */
-.logo-part, .text-part {
-        position: absolute;
+.logo_animation-container {
+        position: relative;
         top: 0;
-        left: 5%;
-        display: none;
+        left: 0;
+        height: 630px;
+    }
+.logo-part{
+        position: absolute;
+        height: 360px;
+        padding-top: 9rem;
+        padding-left: 5%;
+        top: 0;
+        left: 0;
     }
 .text-part {
         position: relative;
-        left: 265px; /* position the text to the right of the logo */
+        left: 440px; /* position the text to the right of the logo */
         width: 60vw;
+        top: 4rem;
     }
 /* Hamburger Style */
 .hamburger-button {
@@ -997,6 +1000,9 @@ nav a:hover {
 .inset-0 {
   inset: 0px;
 }
+.-top-12 {
+  top: -3rem;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -1005,6 +1011,9 @@ nav a:hover {
 }
 .left-4 {
   left: 1rem;
+}
+.left-\[49vw\] {
+  left: 49vw;
 }
 .top-0 {
   top: 0px;
@@ -1015,8 +1024,17 @@ nav a:hover {
 .top-\[50\%\] {
   top: 50%;
 }
-.-z-10 {
-  z-index: -10;
+.z-0 {
+  z-index: 0;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-20 {
+  z-index: 20;
+}
+.z-30 {
+  z-index: 30;
 }
 .order-first {
   order: -9999;
@@ -1035,9 +1053,6 @@ nav a:hover {
 }
 .m-6 {
   margin: 1.5rem;
-}
-.m-auto {
-  margin: auto;
 }
 .mx-4 {
   margin-left: 1rem;
@@ -1126,14 +1141,11 @@ nav a:hover {
 .h-0\.5 {
   height: 0.125rem;
 }
-.h-10 {
-  height: 2.5rem;
+.h-8 {
+  height: 2rem;
 }
 .h-\[110px\] {
   height: 110px;
-}
-.h-\[600px\] {
-  height: 600px;
 }
 .h-full {
   height: 100%;
@@ -1173,6 +1185,9 @@ nav a:hover {
 }
 .w-screen {
   width: 100vw;
+}
+.min-w-\[135px\] {
+  min-width: 135px;
 }
 .min-w-\[265px\] {
   min-width: 265px;
@@ -1268,6 +1283,9 @@ nav a:hover {
 .overflow-hidden {
   overflow: hidden;
 }
+.rounded-full {
+  border-radius: 9999px;
+}
 .rounded-t-3xl {
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
@@ -1291,6 +1309,10 @@ nav a:hover {
 .border-gold {
   border-color: #a88342;;
 }
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
 .bg-brown {
   background-color: #683B2B;;
 }
@@ -1300,11 +1322,23 @@ nav a:hover {
 .bg-gold {
   background-color: #a88342;;
 }
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
 .bg-tan {
   background-color: #DED1BD;;
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\/uploads\/Connections_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/Connections_img_resized.jpg');
@@ -1315,14 +1349,14 @@ nav a:hover {
 .bg-\[url\(\'\/uploads\/Lisa_tree\.jpeg\'\)\] {
   background-image: url('/uploads/Lisa_tree.jpeg');
 }
-.bg-\[url\(\'\/uploads\/coaching-mandala\.jpg\'\)\] {
-  background-image: url('/uploads/coaching-mandala.jpg');
-}
 .bg-\[url\(\'\/uploads\/footsteps-beach\.jpg\'\)\] {
   background-image: url('/uploads/footsteps-beach.jpg');
 }
 .bg-\[url\(\'\/uploads\/header_banner\.png\'\)\] {
   background-image: url('/uploads/header_banner.png');
+}
+.bg-\[url\(\'\/uploads\/jung_pink_mandala\.png\'\)\] {
+  background-image: url('/uploads/jung_pink_mandala.png');
 }
 .bg-\[url\(\'\/uploads\/white_logo_sm\.png\'\)\] {
   background-image: url('/uploads/white_logo_sm.png');
@@ -1341,9 +1375,6 @@ nav a:hover {
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-.bg-\[url\(\'\/uploads\/jung_pink_mandala\.png\'\)\] {
-  background-image: url('/uploads/jung_pink_mandala.png');
 }
 .from-\[\#FAF6F2\] {
   --tw-gradient-from: #FAF6F2 var(--tw-gradient-from-position);
@@ -1458,6 +1489,9 @@ nav a:hover {
 .pb-8 {
   padding-bottom: 2rem;
 }
+.pt-4 {
+  padding-top: 1rem;
+}
 .pt-48 {
   padding-top: 12rem;
 }
@@ -1568,6 +1602,18 @@ nav a:hover {
 .hover-grow:hover{
         scale: 1.05;
     }
+.bouncing-animation{
+        animation: bounce 2s ease-out 1s infinite running;
+    }
+@keyframes bounce {
+    from {
+        translate: 0 0;
+        opacity: 0;
+    }
+    to { 
+        translate: 0 1rem;
+    }
+    }
 
 
 /* ----------- Default Styles --------- */
@@ -1640,6 +1686,9 @@ nav a:hover {
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
   }
+  .md\:hidden {
+    display: none;
+  }
   .md\:min-h-100 {
     min-height: 100vh;
   }
@@ -1652,9 +1701,6 @@ nav a:hover {
   }
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .md\:p-4 {
-    padding: 1rem;
   }
   .md\:p-8 {
     padding: 2rem;
