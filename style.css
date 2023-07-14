@@ -86,10 +86,10 @@
         left: 0;
     }
     .text-part {
-        position: relative;
+        position: absolute;
         left: 440px; /* position the text to the right of the logo */
-        width: 60vw;
-        top: 4rem;
+        width: 50vw;
+        top: 9rem;
     }
 
 
@@ -214,7 +214,7 @@
     }
 
     .bouncing-animation{
-        animation: bounce 2s ease-out 1s infinite running;
+        animation: bounce 1.5s ease-out 1s infinite running;
     }
     
     @keyframes bounce {

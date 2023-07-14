@@ -4,12 +4,10 @@ layout: default
 <!-- Give space for the header nav -->
 <div class="h-[110px]"></div>
 
-<section class="p-5p mx-auto max-w-screen-2xl"> 
-    <h2 class="max-w-screen-2xl mx-auto text-center mb-5 editable"> Offerings </h2>
-    <p class="max-w-screen-2xl mx-auto text-center mb-5 editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem, deleniti perspiciatis molestiae hic, velit quisquam repudiandae beatae unde ducimus dolorem similique nemo quod praesentium corrupti nulla dignissimos at consequatur. </p>
-
-</section>
-   
+<section class="mx-auto p-5p max-w-screen-2xl"> 
+    <h2 class="mx-auto mb-5 text-center max-w-screen-2xl editable"> Offerings </h2>
+    <p class="mx-auto mb-5 text-center max-w-screen-2xl editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem, deleniti perspiciatis molestiae hic, velit quisquam repudiandae beatae unde ducimus dolorem similique nemo quod praesentium corrupti nulla dignissimos at consequatur. </p>
+</section>   
 
 <section class="mx-auto max-w-screen-2xl"> 
     {% for page in site.services %}
@@ -21,7 +19,7 @@ layout: default
             <a href="{{page.url}}" class="button"> Learn More </a>
         </div>
         <div class="col-span-2 p-8 max-md:hidden">
-            <a href="{{page.url}}"> <div class=" bg-cover bg-center aspect-square bg-[url('{{page.featured-image}}')]"></div> </a>
+            <a href="{{page.url}}"> <div class=" bg-cover bg-center aspect-square scroll-in-from-right bg-[url('{{page.featured-image}}')]"></div> </a>
         </div>
     </div>
     {% endfor %}

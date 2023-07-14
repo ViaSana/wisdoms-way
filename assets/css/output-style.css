@@ -928,10 +928,10 @@ nav a:hover {
         left: 0;
     }
 .text-part {
-        position: relative;
+        position: absolute;
         left: 440px; /* position the text to the right of the logo */
-        width: 60vw;
-        top: 4rem;
+        width: 50vw;
+        top: 9rem;
     }
 /* Hamburger Style */
 .hamburger-button {
@@ -985,9 +985,6 @@ nav a:hover {
 @media(max-width: 36em){
     .slider-item p { font-size: 1.1rem;}
     }
-.visible {
-  visibility: visible;
-}
 .fixed {
   position: fixed;
 }
@@ -1000,8 +997,8 @@ nav a:hover {
 .inset-0 {
   inset: 0px;
 }
-.-top-12 {
-  top: -3rem;
+.-top-14 {
+  top: -3.5rem;
 }
 .bottom-0 {
   bottom: 0px;
@@ -1023,6 +1020,18 @@ nav a:hover {
 }
 .top-\[50\%\] {
   top: 50%;
+}
+.left-5 {
+  left: 1.25rem;
+}
+.left-3 {
+  left: 0.75rem;
+}
+.left-2 {
+  left: 0.5rem;
+}
+.top-10 {
+  top: 2.5rem;
 }
 .z-0 {
   z-index: 0;
@@ -1065,6 +1074,9 @@ nav a:hover {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.-mb-6 {
+  margin-bottom: -1.5rem;
 }
 .-mr-2 {
   margin-right: -0.5rem;
@@ -1501,6 +1513,9 @@ nav a:hover {
 .pt-6 {
   padding-top: 1.5rem;
 }
+.pr-4 {
+  padding-right: 1rem;
+}
 .text-left {
   text-align: left;
 }
@@ -1516,6 +1531,10 @@ nav a:hover {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -1603,7 +1622,7 @@ nav a:hover {
         scale: 1.05;
     }
 .bouncing-animation{
-        animation: bounce 2s ease-out 1s infinite running;
+        animation: bounce 1.5s ease-out 1s infinite running;
     }
 @keyframes bounce {
     from {
@@ -1685,9 +1704,6 @@ nav a:hover {
   }
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
-  }
-  .md\:hidden {
-    display: none;
   }
   .md\:min-h-100 {
     min-height: 100vh;

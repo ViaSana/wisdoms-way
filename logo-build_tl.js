@@ -1,14 +1,7 @@
-var allParts = document.querySelectorAll('.logo-part');
-let allText = gsap.utils.toArray('.text-part');
-var allTexts = document.querySelectorAll('.text-part');
+let allParts = gsap.utils.toArray('.logo-part');
+let allTexts = gsap.utils.toArray('.text-part');
 
-
-console.log(allText)
-console.log(allTexts)
-
-console.log(allParts)
 console.log(`max:${ScrollTrigger.maxScroll(window)}`)
-console.log(`scroll:${window.scrollY}`)
 
 var logoBuild = gsap.timeline({
     scrollTrigger: {
@@ -22,6 +15,22 @@ var logoBuild = gsap.timeline({
     }
 });
 
-logoBuild.from(allParts[1], {opacity: 0, duration: .75, delay: 1});
-logoBuild.from(allParts[2], {opacity: 0, duration: .75, delay: 1});
-logoBuild.from(allParts[3], {opacity: 0, duration: .75, delay: 1});
+logoBuild.from(allParts[1], {opacity: 0, duration: 1});
+logoBuild.from(allTexts[1], {y:50, opacity: 0, duration: .75}, "<0.5");
+logoBuild.to(allTexts[0], {y:-20, opacity: 0, duration: .5}, "<");
+logoBuild.to(allParts[0], {opacity: 0, duration: .25}, "<0.25");
+
+
+logoBuild.from(allParts[2], {opacity: 0, duration: 1.5});
+logoBuild.from(allTexts[2], {y:50, opacity: 0, duration: .75}, "<0.5");
+logoBuild.to(allTexts[1], {y:-20, opacity: 0, duration: .5}, "<");
+logoBuild.to(allParts[1], {opacity: 0, duration: .25}, "<0.25");
+
+
+logoBuild.from(allParts[3], {opacity: 0, duration: 1.5});
+logoBuild.from(allTexts[3], {y:50, opacity: 0, duration: .75}, "<0.5");
+logoBuild.to(allTexts[2], {y:-20, opacity: 0, duration: .5}, "<");
+logoBuild.to(allParts[2], {opacity: 0, duration: .25}, "<0.25");
+
+
+
