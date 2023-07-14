@@ -1,12 +1,6 @@
 ---
 layout: default
 title: About
-banner:
-  background-position: bg-center
-  banner-image: /uploads/beach_img_resized.jpg
-  text-color: white
-  heading: Get to Know Me
-  sub-heading: 
 about_image: /uploads/Lisa_tree.jpeg
 credential_links:
   - image: uploads/certifications/E-RYT_500_sm.png
@@ -29,8 +23,8 @@ credential_links:
 <!-- Credentials -->
 <section class="px-5p pb-5p">
   <div class="mx-auto text-center max-w-screen-2xl">
-    <h2 class="pb-2">Credentials</h2>
-    <p class="pb-8"> I bring to Wisdoms’ Way a degree in comparative religions and cultures, a doctoral degree in clinical psychology, E-500 RYT Yoga teacher certification, International Association of Yoga Therapist accreditation, iRest Yoga Nidra Certified teacher, Black Belt in the Nia technique, Reiki level 2 training, and formal study and apprenticeship in tarot and astrology. </p>
+    <h2 class="pb-2 editable"> Credentials </h2>
+    <p class="pb-8 editable"> I bring to Wisdoms’ Way a degree in comparative religions and cultures, a doctoral degree in clinical psychology, E-500 RYT Yoga teacher certification, International Association of Yoga Therapist accreditation, iRest Yoga Nidra Certified teacher, Black Belt in the Nia technique, Reiki level 2 training, and formal study and apprenticeship in tarot and astrology. </p>
     <div class="grid grid-cols-5 gap-6 px-10p justify-center items-center">
 
       {% for item in page.credential_links %}
@@ -41,29 +35,6 @@ credential_links:
       </a>
       <div></div>
       {% endfor %}
-<!-- 
-      <a href="{{page.credential_links.link_1}}"> 
-        <div class="object-cover aspect-square"> 
-          <img src="{{page.credential_links.img_1}}" /> 
-        </div>  
-      </a>
-
-      <div></div>
-
-      <a href="{{page.credential_links.link_2}}"> <div class="object-cover aspect-square"> <img src="{{page.credential_links.img_2}}"> </img> </div>  </a>
-
-      <div></div>
-
-      <a href="{{page.credential_links.link_3}}"> <div class="object-cover aspect-square m-auto"> <img style="margin: auto;" src="{{page.credential_links.img_3}}"> </img> </div>  </a>
-
-      <div></div>
-
-      <a href="{{page.credential_links.link_4}}"> <div class="object-cover aspect-square items-center"> <img style="margin: auto;" src="{{page.credential_links.img_4}}"> </img> </div>  </a>
-
-      <div></div>
-
-      <a href="{{page.credential_links.link_5}}"> <div class="object-cover aspect-square m-auto  items-center"> <img src="{{page.credential_links.img_5}}"> </img> </div>  </a>
-      <div></div> -->
 
     </div>
   </div>
@@ -73,15 +44,3 @@ credential_links:
 <div class="">
 {% include testimonials.html %}
 </div>
-
-<!-- Meet the Logo -->
-<!--- 
-  <section class="relative px-5p py-10p">
- <div class="mx-auto text-center max-w-screen-2xl">
-    <h2 class="pb-8"> Meet the Logo </h2>
-  </div>
-  <div class="h-[600px]">
-    {% include meet-logo.html %}
-  </div>
-</section> 
----->
