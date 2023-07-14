@@ -972,6 +972,9 @@ nav a:hover {
 .inset-0 {
   inset: 0px;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .left-0 {
   left: 0px;
 }
@@ -986,6 +989,9 @@ nav a:hover {
 }
 .top-\[50\%\] {
   top: 50%;
+}
+.-z-10 {
+  z-index: -10;
 }
 .order-first {
   order: -9999;
@@ -1095,6 +1101,9 @@ nav a:hover {
 .h-0\.5 {
   height: 0.125rem;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .h-28 {
   height: 7rem;
 }
@@ -1106,12 +1115,6 @@ nav a:hover {
 }
 .h-full {
   height: 100%;
-}
-.h-9 {
-  height: 2.25rem;
-}
-.h-10 {
-  height: 2.5rem;
 }
 .max-h-0 {
   max-height: 0px;
