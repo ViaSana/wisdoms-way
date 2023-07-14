@@ -43,12 +43,21 @@
     }
 
     .button {
-        @apply px-4 py-2 text-base uppercase border bg-gold text-creme font-headings border-gold;
+        @apply px-4 py-2 text-base uppercase bg-gold text-creme font-headings;
     }
 
     .button:hover {
         @apply px-4 py-2 text-base uppercase border bg-creme text-gold font-headings border-gold;
     }
+
+    .invert_button {
+        @apply px-4 py-2 text-base uppercase border bg-creme text-gold font-headings;
+    }
+
+    .invert_button:hover {
+        @apply px-4 py-2 text-base uppercase border bg-gold text-creme font-headings border-creme;
+    }
+ 
 
     .blog-content {
         @apply text-brown

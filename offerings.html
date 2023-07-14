@@ -14,11 +14,11 @@ layout: default
 <section class="mx-auto max-w-screen-2xl"> 
     {% for page in site.services %}
     <div class="grid grid-cols-5 gap-4 ">
-        <div class="self-end px-8 py-12 col-span-full md:col-span-3">
+        <div class="self-center px-8 py-12 col-span-full md:col-span-3">
             <a href="{{page.url}}">  <h1 class="mb-2 hover:text-gold">{{page.title}} </h1> </a>
             <h2 class="mb-2"> {{page.subtitle}}</h2>
             <p class="mb-6"> {{page.description}} </p>
-            <a href="{{page.url}}" class="button"> Book Now</a>
+            <a href="{{page.url}}" class="button"> Learn More </a>
         </div>
         <div class="col-span-2 p-8 max-md:hidden">
             <a href="{{page.url}}"> <div class=" bg-cover bg-center aspect-square bg-[url('{{page.featured-image}}')]"></div> </a>

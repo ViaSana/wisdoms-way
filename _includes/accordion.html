@@ -1,8 +1,8 @@
-<div class="border-b border-zinc-800" x-data="{ selected: null }">
+<div x-data="{ selected: null }">
 
     {% for item in include.accordion-source %}
 
-        <div class="relative border-t border-zinc-800">
+        <div class="relative border-b border-[#D49E8D]">
 
             <button type="button" class="py-6 block w-full" 
                     @click="selected !== {{ forloop.index }} ? selected = {{ forloop.index }} : selected = null">

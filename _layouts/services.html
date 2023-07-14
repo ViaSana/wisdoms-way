@@ -6,7 +6,7 @@ layout: default
 
 <section class="mx-auto max-w-screen-2xl"> 
     <div class="grid grid-cols-5 gap-4">
-        <div class="self-end px-8 py-12 col-span-full md:col-span-3">
+        <div class="self-center px-8 py-12 col-span-full md:col-span-3">
             <h1 class="">{{page.title}}</h1>
             <h2 class=""> {{page.subtitle}}</h2>
             <p class="mb-6"> {{page.description}} </p>
@@ -22,8 +22,8 @@ layout: default
 <section class="mx-auto max-w-screen-2xl p-5p">
     <div class="grid grid-cols-9 py-10p">
         <div class="md:col-span-4 col-span-full">
-            <div class="inline-block border-b-2 border-gold">
-                <h3 class="font-bold">What To Expect </h3>
+            <div class="inline-block">
+                <h3 class="pb-2 font-bold border-b-2 border-[#D49E8D]"> What To Expect </h3>
             </div>
             <ul class="m-6 list-disc">
                 {% for item in page.what-to-expect %}
@@ -33,7 +33,7 @@ layout: default
         </div>
 
         <div class="mx-4 md:col-span-5 col-span-full">
-            <h3 class="pb-4 font-bold">FAQ's </h3>
+            <h3 class="pb-2 font-bold border-b-2 border-[#D49E8D]">FAQ's </h3>
             
             {% include accordion.html accordion-source=page.faqs %}
             
@@ -44,7 +44,7 @@ layout: default
 <!-- Related Products -->
 
 <section class="p-5p">
-    <h2 class="pb-4 text-center"> Other Services </h2>
+    <h2 class="pb-4 text-center"> Additional Offerings </h2>
     <div class="max-w-screen-xl mx-auto text-center">
 
         {% include services_loop.html %}
