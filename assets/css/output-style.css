@@ -1074,9 +1074,6 @@ nav a:hover {
 .inline-block {
   display: inline-block;
 }
-.inline {
-  display: inline;
-}
 .flex {
   display: flex;
 }
@@ -1134,6 +1131,9 @@ nav a:hover {
 .min-h-\[110px\] {
   min-height: 110px;
 }
+.min-h-\[114px\] {
+  min-height: 114px;
+}
 .w-28 {
   width: 7rem;
 }
@@ -1157,6 +1157,9 @@ nav a:hover {
 }
 .max-w-2xl {
   max-width: 42rem;
+}
+.max-w-\[130px\] {
+  max-width: 130px;
 }
 .max-w-\[25\%\] {
   max-width: 25%;
@@ -1188,9 +1191,6 @@ nav a:hover {
 .break-inside-avoid {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1281,9 +1281,6 @@ nav a:hover {
 .bg-gold {
   background-color: #B08401;;
 }
-.bg-pink {
-  background-color: #D49E8D;;
-}
 .bg-tan {
   background-color: #DED1BD;;
 }
@@ -1296,23 +1293,20 @@ nav a:hover {
 .bg-\[url\(\'\/uploads\/Courses_img_resized\.jpg\'\)\] {
   background-image: url('/uploads/Courses_img_resized.jpg');
 }
-.bg-\[url\(\'\/uploads\/Lisa_beach\.jpeg\'\)\] {
-  background-image: url('/uploads/Lisa_beach.jpeg');
-}
 .bg-\[url\(\'\/uploads\/Lisa_tree\.jpeg\'\)\] {
   background-image: url('/uploads/Lisa_tree.jpeg');
 }
 .bg-\[url\(\'\/uploads\/coaching-mandala\.jpg\'\)\] {
   background-image: url('/uploads/coaching-mandala.jpg');
 }
+.bg-\[url\(\'\/uploads\/footsteps-beach\.jpg\'\)\] {
+  background-image: url('/uploads/footsteps-beach.jpg');
+}
 .bg-\[url\(\'\/uploads\/header_banner\.png\'\)\] {
   background-image: url('/uploads/header_banner.png');
 }
-.bg-\[url\(\'\/uploads\/logo\.png\'\)\] {
-  background-image: url('/uploads/logo.png');
-}
-.bg-\[url\(\'\/uploads\/testimonial_img_resized\.jpg\'\)\] {
-  background-image: url('/uploads/testimonial_img_resized.jpg');
+.bg-\[url\(\'\/uploads\/white_logo_sm\.png\'\)\] {
+  background-image: url('/uploads/white_logo_sm.png');
 }
 .bg-\[url\(\'\{\{page\.about_image\}\}\'\)\] {
   background-image: url('{{page.about_image}}');
@@ -1435,9 +1429,6 @@ nav a:hover {
 .pb-8 {
   padding-bottom: 2rem;
 }
-.pt-1 {
-  padding-top: 0.25rem;
-}
 .pt-48 {
   padding-top: 12rem;
 }
@@ -1462,10 +1453,6 @@ nav a:hover {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -1634,6 +1621,9 @@ nav a:hover {
     -moz-columns: 3;
          columns: 3;
   }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .md\:p-4 {
     padding: 1rem;
   }
@@ -1646,10 +1636,6 @@ nav a:hover {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mx-8 {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
   .lg\:min-h-\[300px\] {
     min-height: 300px;
   }

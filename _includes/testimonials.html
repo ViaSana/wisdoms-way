@@ -1,30 +1,43 @@
-<!-- OG TESTIMONIAL
-<section class="bg-[url('/uploads/testimonial_img_resized.jpg')] text-center bg-cover bg-center">
-    <div class="justify-center mx-auto p-5p max-w-screen-2xl">
-        <svg xmlns="http://www.w3.org/2000/svg" height="2em" width="auto" viewBox="0 0 448 512"><style>svg{fill:#ffffff}</style><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg>        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus assumenda numquam nihil architecto delectus dolorem, eum id doloremque illo reprehenderit distinctio eius facilis eos libero? Fugiat quibusdam deserunt soluta.</p>
-        <h3>Name</h3>
-    </div>
-</section> -->
+
+<h2 class="text-center">  Testimonial option 1 </h2>
 
 <section>
-    <div class="bg-center bg-cover" style="background-image: url('/uploads/testimonial_img_resized.jpg')"> 
+    <div class="bg-center bg-cover" style="background-image: url('/uploads/abstract_bg.png')"> 
     <div class="testimonial-overlay">    
         <!-- Testimonial Slider -->
-        <div class="mx-auto text-center p-5p max-w-screen-2xl">
+        <div class="mx-auto text-center p-5p max-w-screen-2xl grid md:grid-cols-3 gap-10">
             <!-- to make the quote icon bigger change the height property -->
-            <i class="fa-solid fa-quote-left text-4xl text-creme" ></i>   
+            <div class="col-span-3"> <i class="fa-solid fa-quote-left text-4xl text-creme" ></i> </div>
+            
+            {% for item in site.testimonials %}
+                <div class="col-span-1">
+                <p> {{item.content}} </p>
+                <p class="author"> {{item.author}} </p> 
+                </div>   
+            {% endfor %}  
+        </div>    
+    </div>
+    </div>
+</section>
 
-            <div class="testimonial-slider-container">
+<h2 class="text-center">  Testimonial option 2 </h2>
+<section>
+    <div class="bg-center bg-cover" style="background-image: url('/uploads/abstract_bg.png')"> 
+    <div class="testimonial-overlay">    
+        <!-- Testimonial Slider -->
+        <div class="mx-auto text-center p-5p max-w-screen-2xl ">
+            <!-- to make the quote icon bigger change the height property -->
+            <i class="fa-solid fa-quote-left text-4xl text-creme" ></i>
+
+           <div class="testimonial-slider-container">
                 {% for slide in site.testimonials %}
-                <div class="slider-item bg-creme"> 
+                <div class="slider-item"> 
                     <p> {{slide.content}} </p>
                     <p class="author"> {{slide.author}} </p>  
                 </div> 
                 {% endfor %}
-            </div>
+            </div> 
         </div>    
     </div>
     </div>
-
 </section>
