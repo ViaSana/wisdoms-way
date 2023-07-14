@@ -33,7 +33,7 @@ module.exports = {
       colors: {
         'creme': '#FAF6F2;',
         'tan': '#DED1BD;',
-        'gold': '#B08401;',
+        'gold': '#a88342;',
         'pink': '#D49E8D;',
         'brown': '#683B2B;',
       },

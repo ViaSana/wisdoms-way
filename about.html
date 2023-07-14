@@ -8,6 +8,17 @@ banner:
   heading: Get to Know Me
   sub-heading: 
 about_image: /uploads/Lisa_tree.jpeg
+credential_links:
+  - image: uploads/certifications/E-RYT_500_sm.png
+    url: https://www.yogaalliance.org/Credentialing/Credentials_for_Teachers/Yoga_Teacher_Designation
+  - image: uploads/certifications/IAYT_logo_sm.png
+    url: https://www.irest.org/
+  - image: uploads/certifications/nia_black.png
+    url: https://www.somaranch.com/nia-training-overview
+  - image: uploads/certifications/jung_logo.svg
+    url: https://www.yogaalliance.org/Credentialing/Credentials_for_Teachers/Yoga_Teacher_Designation 
+  - image: uploads/certifications/irest_logo.svg
+    url: https://www.yogaalliance.org/Credentialing/Credentials_for_Teachers/Yoga_Teacher_Designation 
 ---
 <div class="min-h-[110px]"></div>
 
@@ -20,21 +31,40 @@ about_image: /uploads/Lisa_tree.jpeg
   <div class="mx-auto text-center max-w-screen-2xl">
     <h2 class="pb-2">Credentials</h2>
     <p class="pb-8"> I bring to Wisdoms’ Way a degree in comparative religions and cultures, a doctoral degree in clinical psychology, E-500 RYT Yoga teacher certification, International Association of Yoga Therapist accreditation, iRest Yoga Nidra Certified teacher, Black Belt in the Nia technique, Reiki level 2 training, and formal study and apprenticeship in tarot and astrology. </p>
-    <div class="grid grid-cols-7">
-      <div class="bg-center bg-cover rounded-full w-28 h-28" style="background-image: url('uploads/RYT_500_logo.png')"></div>
+    <div class="grid grid-cols-5 gap-6 px-10p justify-center items-center">
+
+      {% for item in page.credential_links %}
+      <a href="{{item.url}}">
+        <div class="object-cover flex aspect-square justify-center items-center hover-grow">
+          <img src="{{item.image}}" />
+        </div>
+      </a>
       <div></div>
-      <div class="bg-center bg-cover rounded-full w-28 h-28" style="background-image: url('uploads/nia_black.png')"></div>
+      {% endfor %}
+<!-- 
+      <a href="{{page.credential_links.link_1}}"> 
+        <div class="object-cover aspect-square"> 
+          <img src="{{page.credential_links.img_1}}" /> 
+        </div>  
+      </a>
+
       <div></div>
-      <div class="rounded-full w-28 h-28 bg-gold"></div>
+
+      <a href="{{page.credential_links.link_2}}"> <div class="object-cover aspect-square"> <img src="{{page.credential_links.img_2}}"> </img> </div>  </a>
+
       <div></div>
-      <div class="rounded-full w-28 h-28 bg-gold"></div>
+
+      <a href="{{page.credential_links.link_3}}"> <div class="object-cover aspect-square m-auto"> <img style="margin: auto;" src="{{page.credential_links.img_3}}"> </img> </div>  </a>
+
       <div></div>
-      <div class="rounded-full w-28 h-28 bg-gold"></div>
+
+      <a href="{{page.credential_links.link_4}}"> <div class="object-cover aspect-square items-center"> <img style="margin: auto;" src="{{page.credential_links.img_4}}"> </img> </div>  </a>
+
       <div></div>
-      <div class="rounded-full w-28 h-28 bg-gold"></div>
-      <div></div>
-      <div class="rounded-full w-28 h-28 bg-gold"></div>
-      <div></div>
+
+      <a href="{{page.credential_links.link_5}}"> <div class="object-cover aspect-square m-auto  items-center"> <img src="{{page.credential_links.img_5}}"> </img> </div>  </a>
+      <div></div> -->
+
     </div>
   </div>
 </section>
@@ -45,11 +75,13 @@ about_image: /uploads/Lisa_tree.jpeg
 </div>
 
 <!-- Meet the Logo -->
-<!--- <section class="relative px-5p py-10p">
+<!--- 
+  <section class="relative px-5p py-10p">
  <div class="mx-auto text-center max-w-screen-2xl">
     <h2 class="pb-8"> Meet the Logo </h2>
   </div>
   <div class="h-[600px]">
     {% include meet-logo.html %}
   </div>
-</section> ----> 
+</section> 
+---->
