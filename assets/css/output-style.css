@@ -1064,6 +1064,9 @@ nav a:hover {
 .-mb-6 {
   margin-bottom: -1.5rem;
 }
+.-mb-\[1px\] {
+  margin-bottom: -1px;
+}
 .-mr-2 {
   margin-right: -0.5rem;
 }
@@ -1291,12 +1294,6 @@ nav a:hover {
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
 }
-.rounded-br-xl {
-  border-bottom-right-radius: 0.75rem;
-}
-.rounded-tl-xl {
-  border-top-left-radius: 0.75rem;
-}
 .border {
   border-width: 1px;
 }
@@ -1355,6 +1352,9 @@ nav a:hover {
 }
 .bg-\[url\(\'\/uploads\/Lisa_tree\.jpeg\'\)\] {
   background-image: url('/uploads/Lisa_tree.jpeg');
+}
+.bg-\[url\(\'\/uploads\/connect-hand\.jpg\'\)\] {
+  background-image: url('/uploads/connect-hand.jpg');
 }
 .bg-\[url\(\'\/uploads\/footsteps-beach\.jpg\'\)\] {
   background-image: url('/uploads/footsteps-beach.jpg');
