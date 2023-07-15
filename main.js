@@ -6,6 +6,7 @@ mainHeading.forEach(object => {
     gsap.from(object, {
         y:250,
         opacity:0,
+        duration:1.25,
     })
 })
 

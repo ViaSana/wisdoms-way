@@ -8,6 +8,11 @@
 
 @layer base {
 
+    body, html {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
     body {
         @apply bg-creme text-brown;
     }
@@ -86,9 +91,9 @@
     }
     .text-part {
         position: absolute;
-        left: 440px; /* position the text to the right of the logo */
         width: 50vw;
         top: 9rem;
+        right:0;
     }
 
 
@@ -224,6 +229,12 @@
     to { 
         translate: 0 1rem;
     }
+    }
+
+    @media (max-height: 780px) {
+        .shorty-screen {
+            display: none;
+        }
     }
 
 }
