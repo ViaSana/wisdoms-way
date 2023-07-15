@@ -1,42 +1,15 @@
 
-<h2 class="text-center">  Testimonial option 1 </h2>
-
 <section>
     <div class="bg-center bg-cover" style="background-image: url('/uploads/abstract_bg.png')"> 
     <div class="testimonial-overlay">    
         <!-- Testimonial Slider -->
-        <div class="mx-auto text-center p-5p max-w-screen-2xl grid md:grid-cols-3 gap-10">
-            <!-- to make the quote icon bigger change the height property -->
-            <div class="col-span-3"> <i class="fa-solid fa-quote-left text-4xl text-creme" ></i> </div>
-            
+        <div class="grid gap-10 mx-auto text-center p-5p max-w-screen-2xl md:grid-cols-3">            
             {% for item in site.testimonials %}
                 <div class="col-span-1">
                 <p> {{item.content}} </p>
                 <p class="author"> {{item.author}} </p> 
                 </div>   
             {% endfor %}  
-        </div>    
-    </div>
-    </div>
-</section>
-
-<h2 class="text-center">  Testimonial option 2 </h2>
-<section>
-    <div class="bg-center bg-cover" style="background-image: url('/uploads/abstract_bg.png')"> 
-    <div class="testimonial-overlay">    
-        <!-- Testimonial Slider -->
-        <div class="mx-auto text-center p-5p max-w-screen-2xl ">
-            <!-- to make the quote icon bigger change the height property -->
-            <i class="fa-solid fa-quote-left text-4xl text-creme" ></i>
-
-           <div class="testimonial-slider-container">
-                {% for slide in site.testimonials %}
-                <div class="slider-item"> 
-                    <p> {{slide.content}} </p>
-                    <p class="author"> {{slide.author}} </p>  
-                </div> 
-                {% endfor %}
-            </div> 
         </div>    
     </div>
     </div>
