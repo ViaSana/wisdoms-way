@@ -43,21 +43,20 @@
     }
 
     .button {
-        @apply px-4 py-2 text-base uppercase bg-gold text-creme font-headings;
+        @apply px-4 py-2 text-base uppercase rounded-tl-xl rounded-br-xl bg-gold text-creme font-headings;
     }
 
     .button:hover {
-        @apply px-4 py-2 text-base uppercase border bg-creme text-gold font-headings border-gold;
+        @apply px-4 py-2 text-base uppercase border rounded-tl-xl rounded-br-xl bg-creme text-gold font-headings border-gold;
     }
 
     .invert_button {
-        @apply px-4 py-2 text-base uppercase border bg-creme text-gold font-headings;
+        @apply px-4 py-2 text-base uppercase border bg-creme text-gold font-headings rounded-tl-xl rounded-br-xl;
     }
 
     .invert_button:hover {
-        @apply px-4 py-2 text-base uppercase border bg-gold text-creme font-headings border-creme;
-    }
- 
+        @apply px-4 py-2 text-base uppercase border bg-gold text-creme font-headings border-creme rounded-tl-xl rounded-br-xl;
+    } 
 
     .blog-content {
         @apply text-brown
