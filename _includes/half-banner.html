@@ -1,5 +1,5 @@
 <!--  image banner block that takes up most of the full screen  -->
-<section class="p-10p bg-cover max-h-72 items-center text-brown justify-center {{page.banner.background-position}} flex" style="background-image: url('{{page.banner.banner-image}}')">
+<section class="flex items-center justify-center bg-cover p-10p max-h-72 text-brown" style="background-position: {{page.banner.background-position}}; background-image: url('{{page.banner.banner-image}}')">
     <div> 
        <h2 class="text-5xl mt-[20%] font-light uppercase p-5"> {{page.banner.heading | default: page.title }}  </h2> 
        <p class="p-5 text-2xl font-light text-center uppercase"> {{ page.banner.sub-heading }} </p> 
