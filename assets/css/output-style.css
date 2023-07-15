@@ -1192,6 +1192,9 @@ nav a:hover {
 .min-w-\[265px\] {
   min-width: 265px;
 }
+.min-w-\[120px\] {
+  min-width: 120px;
+}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1690,6 +1693,9 @@ nav a:hover {
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
   }
+  .md\:hidden {
+    display: none;
+  }
   .md\:min-h-100 {
     min-height: 100vh;
   }
@@ -1714,6 +1720,10 @@ nav a:hover {
 @media (min-width: 1024px) {
   .lg\:min-h-\[300px\] {
     min-height: 300px;
+  }
+  .lg\:px-5p {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 

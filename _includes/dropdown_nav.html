@@ -1,5 +1,5 @@
 <div x-data="{ open: false }" class="relative" @mouseleave="open = false">
-    <button @mouseover="open = true" class="flex items-center p-2 min-w-[135px]">
+    <button @mouseover="open = true" class="items-center py-2 min-w-[135px]">
         <a href="{{include.url}}">{{include.name}}</a>
     </button>
     <div x-show="open" class="absolute w-40 text-left shadow-lg left-2 top-10 bg-tan">
