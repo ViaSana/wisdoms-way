@@ -1407,6 +1407,9 @@ nav a:hover {
 .bg-\[url\(\'\/uploads\/connect-hand\.jpg\'\)\] {
   background-image: url('/uploads/connect-hand.jpg');
 }
+.bg-\[url\(\'\/uploads\/blue-mandala\.jpg\'\)\] {
+  background-image: url('/uploads/blue-mandala.jpg');
+}
 .from-\[\#FAF6F2\] {
   --tw-gradient-from: #FAF6F2 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(250 246 242 / 0) var(--tw-gradient-to-position);
