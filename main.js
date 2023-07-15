@@ -1,5 +1,13 @@
 const headings = document.querySelectorAll(".scroll-in-from-bottom")
 const offerings = document.querySelectorAll(".scroll-in-from-right")
+const mainHeading = document.querySelectorAll(".animate-from-bottom")
+
+mainHeading.forEach(object => {
+    gsap.from(object, {
+        y:250,
+        opacity:0,
+    })
+})
 
 // for each of them we are going to attach a gsap animation ( like a jekyll for loop just in js :D )
 headings.forEach(object => {
