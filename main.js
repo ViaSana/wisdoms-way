@@ -51,15 +51,15 @@ $(document).ready(function() {
         $("#thank_you").css("display", "block");
     });
 
-    if($("#thank_you").css("display") === "block"){
-        $(document).click(function(event) {
-            // Check if the clicked target is not the form and not a descendant of the form
-            if (!$(event.target).closest("#wwContactForm").length && ) {
-                $("#thank_you").css("display", "none");
-                $("#wwContactForm")[0].reset();
-            }
-        }); 
-    }
+    // if($("#thank_you").css("display") === "block"){
+    //     $(document).click(function(event) {
+    //         // Check if the clicked target is not the form and not a descendant of the form
+    //         if (!$(event.target).closest("#wwContactForm").length && ) {
+    //             $("#thank_you").css("display", "none");
+    //             $("#wwContactForm")[0].reset();
+    //         }
+    //     }); 
+    // }
 
 });
 
