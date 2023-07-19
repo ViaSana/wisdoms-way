@@ -2,6 +2,7 @@ const headings = document.querySelectorAll(".scroll-in-from-bottom")
 const offerings = document.querySelectorAll(".scroll-in-from-right")
 const mainHeading = document.querySelectorAll(".animate-from-bottom")
 
+// Animates in from the bottom on page load
 mainHeading.forEach(object => {
     gsap.from(object, {
         y:250,
@@ -10,44 +11,32 @@ mainHeading.forEach(object => {
     })
 })
 
-// for each of them we are going to attach a gsap animation ( like a jekyll for loop just in js :D )
 headings.forEach(object => {
-// we start with a gsap timeline
+
     let tl = gsap.timeline({
-    // here's where we start attching the animation to the scroll
     scrollTrigger: {
-        // this is what is triggering the start of the animation
-            trigger: object,
-            // this one takes in to bits of info. the first is the part of the trigger element thats causing the trigger to start and the second one is where on the screen. both of them can be either top, center, bottom or a percentage (% are from the top of the container( as in trigger element or screen) )   
-            start: "top-=210 center+=50",
-            // same as start but the end point of the animation          
-            end: "center-=75 center+=100",
-            // now this is the most important line of code its what turns the triggers from a start point in to locking it to the scroll
-            scrub: .5,
-            // last but not least this helps us to visualize the script
-            markers: false,
-        }
+        trigger: object,
+        start: "top-=210 center+=50",
+        end: "center-=75 center+=100",
+        // now this is the most important line of code its what turns the triggers from a start point in to locking it to the scroll
+        scrub: .5,
+        // last but not least this helps us to visualize the script
+        markers: false,
+    }
     }).from(object,{
         y:250,
         opacity:0,
     })
 });
 
-// for each of them we are going to attach a gsap animation ( like a jekyll for loop just in js :D )
 offerings.forEach(object => {
-    // we start with a gsap timeline
+
     let tl = gsap.timeline({
-    // here's where we start attching the animation to the scroll
     scrollTrigger: {
-        // this is what is triggering the start of the animation
             trigger: object,
-            // this one takes in to bits of info. the first is the part of the trigger element thats causing the trigger to start and the second one is where on the screen. both of them can be either top, center, bottom or a percentage (% are from the top of the container( as in trigger element or screen) )   
             start: "clamp(top center+=50)",
-            // same as start but the end point of the animation          
             end: "clamp(bottom center)",
-            // now this is the most important line of code its what turns the triggers from a start point in to locking it to the scroll
             scrub: 1,
-            // last but not least this helps us to visualize the script
             markers: false,
         }
     }).from(object,{
@@ -56,6 +45,33 @@ offerings.forEach(object => {
     })
 });
 
+// Contact Form Submission
+$(document).ready(function() {
+    $('#wwContactForm').on('submit', function(e) {
+        // Prevent the form from immediately submitting
+        e.preventDefault();
+
+        document.getElementById('thank_you').style.display = 'block';
+
+        // Proceed with the actual form submission
+        $(this).submit();
+    });
+
+    $(document).click(function(event) {
+        // Check if the clicked target is not the form and not a descendant of the form
+        if (!$(event.target).closest("#wwContactForm").length) {
+            // Hide the element by setting its display property to 'none'
+            $("#thank_you").css("display", "none");
+            $("#wwContactForm")[0].reset();
+        }
+    });
+
+    // Prevent the document click event from being triggered when the form is clicked
+    $('#myForm').click(function(event) {
+        event.stopPropagation();
+    });
+
+});
 
 $('.hamburger-button').click(function(){
     $('.mobile-menu').fadeToggle(100);
