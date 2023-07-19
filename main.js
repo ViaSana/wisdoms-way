@@ -45,33 +45,27 @@ offerings.forEach(object => {
     })
 });
 
-// // Contact Form Submission
-// $(document).ready(function() {
-//     $('#wwContactForm').on('submit', function(e) {
-//         // Prevent the form from immediately submitting
-//         e.preventDefault();
+// Contact Form Submission
+$(document).ready(function() {
+    $('#wwContactForm').on('submit', function(e) {
+        $("#thank_you").css("display", "block");
+    });
 
-//         document.getElementById('thank_you').style.display = 'block';
+    $(document).click(function(event) {
+        // Check if the clicked target is not the form and not a descendant of the form
+        if (!$(event.target).closest("#wwContactForm").length && event.target.id !== "submitBtn") {
+            // Hide the element by setting its display property to 'none'
+            $("#thank_you").css("display", "none");
+            $("#wwContactForm")[0].reset();
+        }
+    });
 
-//         // Proceed with the actual form submission
-//         $(this).submit();
-//     });
+    // Prevent the document click event from being triggered when the form is clicked
+    $('#myForm, #submitBtn').click(function(event) {
+        event.stopPropagation();
+    });
 
-//     $(document).click(function(event) {
-//         // Check if the clicked target is not the form and not a descendant of the form
-//         if (!$(event.target).closest("#wwContactForm").length) {
-//             // Hide the element by setting its display property to 'none'
-//             $("#thank_you").css("display", "none");
-//             $("#wwContactForm")[0].reset();
-//         }
-//     });
-
-//     // Prevent the document click event from being triggered when the form is clicked
-//     $('#myForm').click(function(event) {
-//         event.stopPropagation();
-//     });
-
-// });
+});
 
 $('.hamburger-button').click(function(){
     $('.mobile-menu').fadeToggle(100);
