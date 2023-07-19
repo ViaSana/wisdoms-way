@@ -47,22 +47,16 @@ offerings.forEach(object => {
 
 // Contact Form Submission
 $(document).ready(function() {
-    $('#wwContactForm').on('submit', function(e) {
+    $('#wwContactForm').on('submit', function() {
         $("#thank_you").css("display", "block");
     });
 
     $(document).click(function(event) {
         // Check if the clicked target is not the form and not a descendant of the form
-        if (!$(event.target).closest("#wwContactForm").length && event.target.id !== "submitBtn") {
-            // Hide the element by setting its display property to 'none'
+        if (!$(event.target).closest("#wwContactForm").length && $("#thank_you").css("display") === "block") {
             $("#thank_you").css("display", "none");
             $("#wwContactForm")[0].reset();
         }
-    });
-
-    // Prevent the document click event from being triggered when the form is clicked
-    $('#myForm, #submitBtn').click(function(event) {
-        event.stopPropagation();
     });
 
 });
