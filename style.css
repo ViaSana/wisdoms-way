@@ -97,7 +97,6 @@
     }
 
 
-
     /* Hamburger Style */
     .hamburger-button {
         cursor: pointer;
@@ -135,75 +134,74 @@
 
     /* Typography Styles */  
     .author {
-    margin-top: 0.5rem;
-    font-style: italic;
-    text-align: center;
+        margin-top: 0.5rem;
+        font-style: italic;
+        text-align: center;
     }
 
     .testimonial {
-    font-weight: 800;
+        font-weight: 800;
     }
 
     .quote-icon {
-    font-size: 4rem;
-    color: rgb(200,200,200);
+        font-size: 4rem;
+        color: rgb(200,200,200);
     }
 
     /* Slider */
     .testimonial-slider-container {
-    /* padding: 5%; */
-    max-width: 900px;
-    margin: auto;
+        max-width: 900px;
+        margin: auto;
     }
 
     .slider-item {
-    padding: 2rem 2.5rem;
-    display: none;
+        padding: 2rem 2.5rem;
+        display: none;
     }
 
     .slider-item:first-child {
-    display: block;
+        display: block;
     }
 
     .slick-next {
-    right: 10px;
+        right: 10px;
     }
 
     .slick-prev {
-    left: 10px;
+        left: 10px;
     }
 
     .slick-next::before, .slick-prev::before {
-    font-family: inherit;
-    font-size: 20px;
-    line-height: 1;
-    opacity: .75;
-    color: rgb(90,90,90);
+        font-family: inherit;
+        font-size: 20px;
+        line-height: 1;
+        opacity: .75;
+        color: rgb(90,90,90);
     }
 
 /* !!CURRENT BUG WITH TAILWIND FOR STYLE ORDER OF APPLICATION!!  */
     .slick-dots {
-    left: 0;
-    bottom: 10px;
-    /*  Without this the padding on the parent affects the centering of the dots. Do not delete.    */
+        left: 0;
+        bottom: 10px;
+        /*  Without this the padding on the parent affects the centering of the dots. Do not delete.    */
     }
 
     .slick-dots li,
     .slick-dots li button {
-    width: 10px;
+        width: 10px;
     }
 
     .slick-dots li button::before {
-    color: rgb(47, 223, 20);
+        color: rgb(47, 223, 20);
     }
 
     .slick-dots li.slick-active button::before {
-    color: rgb(90,90,90);
+        color: rgb(90,90,90);
     }
 
 
     @media(max-width: 36em){
-    .slider-item p { font-size: 1.1rem;}
+        .slider-item p { font-size: 1.1rem;}
     }
 }
 

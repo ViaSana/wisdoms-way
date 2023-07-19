@@ -976,15 +976,14 @@ nav a:hover {
     }
 /* Typography Styles */
 .author {
-    margin-top: 0.5rem;
-    font-style: italic;
-    text-align: center;
+        margin-top: 0.5rem;
+        font-style: italic;
+        text-align: center;
     }
 /* Slider */
 .testimonial-slider-container {
-    /* padding: 5%; */
-    max-width: 900px;
-    margin: auto;
+        max-width: 900px;
+        margin: auto;
     }
 /* !!CURRENT BUG WITH TAILWIND FOR STYLE ORDER OF APPLICATION!!  */
 .fixed {
