@@ -46,10 +46,21 @@ offerings.forEach(object => {
 });
 
 // Contact Form Submission
+$('#wwContactForm').on('submit', function() {
+    localStorage.setItem('formSubmitted', 'true')
+}); 
+
 $(document).ready(function() {
-    $('#wwContactForm').on('submit', function() {
-        $("#thank_you").css("display", "block");
-    });
+    if (localStorage.getItem('formSubmitted') === 'true') {
+        $('#thank_you').css('display', 'block');
+        localStorage.removeItem('formSubmitted'); // Optional: remove it if you want the message to appear once
+    }
+
+    $(document).click(function(event) {
+        if (!$(event.target).closest("#thank_you").length) {
+            $("#thank_you").css("display", "none");
+        }
+    }); 
 });
 
 $('.hamburger-button').click(function(){
