@@ -45,33 +45,33 @@ offerings.forEach(object => {
     })
 });
 
-// Contact Form Submission
-$(document).ready(function() {
-    $('#wwContactForm').on('submit', function(e) {
-        // Prevent the form from immediately submitting
-        e.preventDefault();
+// // Contact Form Submission
+// $(document).ready(function() {
+//     $('#wwContactForm').on('submit', function(e) {
+//         // Prevent the form from immediately submitting
+//         e.preventDefault();
 
-        document.getElementById('thank_you').style.display = 'block';
+//         document.getElementById('thank_you').style.display = 'block';
 
-        // Proceed with the actual form submission
-        $(this).submit();
-    });
+//         // Proceed with the actual form submission
+//         $(this).submit();
+//     });
 
-    $(document).click(function(event) {
-        // Check if the clicked target is not the form and not a descendant of the form
-        if (!$(event.target).closest("#wwContactForm").length) {
-            // Hide the element by setting its display property to 'none'
-            $("#thank_you").css("display", "none");
-            $("#wwContactForm")[0].reset();
-        }
-    });
+//     $(document).click(function(event) {
+//         // Check if the clicked target is not the form and not a descendant of the form
+//         if (!$(event.target).closest("#wwContactForm").length) {
+//             // Hide the element by setting its display property to 'none'
+//             $("#thank_you").css("display", "none");
+//             $("#wwContactForm")[0].reset();
+//         }
+//     });
 
-    // Prevent the document click event from being triggered when the form is clicked
-    $('#myForm').click(function(event) {
-        event.stopPropagation();
-    });
+//     // Prevent the document click event from being triggered when the form is clicked
+//     $('#myForm').click(function(event) {
+//         event.stopPropagation();
+//     });
 
-});
+// });
 
 $('.hamburger-button').click(function(){
     $('.mobile-menu').fadeToggle(100);
