@@ -1309,9 +1309,16 @@ nav a:hover {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
 .rounded-t-3xl {
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
+}
+.rounded-b-3xl {
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 .border {
   border-width: 1px;
@@ -1331,6 +1338,10 @@ nav a:hover {
 }
 .border-gold {
   border-color: #a88342;;
+}
+.bg-\[\#dfba8e\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(223 186 142 / var(--tw-bg-opacity));
 }
 .bg-blue-400 {
   --tw-bg-opacity: 1;
@@ -1363,23 +1374,12 @@ nav a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/uploads\/Connections_img_resized\.jpg\'\)\] {
-  background-image: url('/uploads/Connections_img_resized.jpg');
+.bg-\[\#\#e7d4af\] {
+  background-color: ##e7d4af;
 }
-.bg-\[url\(\'\/uploads\/Courses_img_resized\.jpg\'\)\] {
-  background-image: url('/uploads/Courses_img_resized.jpg');
-}
-.bg-\[url\(\'\/uploads\/Lisa_tree\.jpeg\'\)\] {
-  background-image: url('/uploads/Lisa_tree.jpeg');
-}
-.bg-\[url\(\'\/uploads\/blue-mandala\.jpg\'\)\] {
-  background-image: url('/uploads/blue-mandala.jpg');
-}
-.bg-\[url\(\'\/uploads\/connect-hand\.jpg\'\)\] {
-  background-image: url('/uploads/connect-hand.jpg');
-}
-.bg-\[url\(\'\/uploads\/white_logo_sm\.png\'\)\] {
-  background-image: url('/uploads/white_logo_sm.png');
+.bg-\[\#e7d4af\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 212 175 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
