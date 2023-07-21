@@ -1068,6 +1068,9 @@ nav a:hover {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
 .col-span-full {
   grid-column: 1 / -1;
 }
@@ -1161,6 +1164,15 @@ nav a:hover {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.aspect-\[\.75\] {
+  aspect-ratio: .75;
+}
+.aspect-\[75\%\] {
+  aspect-ratio: 75%;
+}
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
+}
 .h-0 {
   height: 0px;
 }
@@ -1200,6 +1212,9 @@ nav a:hover {
 .min-h-\[90px\] {
   min-height: 90px;
 }
+.min-h-\[20vh\] {
+  min-height: 20vh;
+}
 .w-1\/3 {
   width: 33.333333%;
 }
@@ -1214,6 +1229,9 @@ nav a:hover {
 }
 .w-screen {
   width: 100vw;
+}
+.w-\[1080px\] {
+  width: 1080px;
 }
 .min-w-\[265px\] {
   min-width: 265px;
@@ -1363,24 +1381,6 @@ nav a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/uploads\/Connections_img_resized\.jpg\'\)\] {
-  background-image: url('/uploads/Connections_img_resized.jpg');
-}
-.bg-\[url\(\'\/uploads\/Courses_img_resized\.jpg\'\)\] {
-  background-image: url('/uploads/Courses_img_resized.jpg');
-}
-.bg-\[url\(\'\/uploads\/Lisa_tree\.jpeg\'\)\] {
-  background-image: url('/uploads/Lisa_tree.jpeg');
-}
-.bg-\[url\(\'\/uploads\/blue-mandala\.jpg\'\)\] {
-  background-image: url('/uploads/blue-mandala.jpg');
-}
-.bg-\[url\(\'\/uploads\/connect-hand\.jpg\'\)\] {
-  background-image: url('/uploads/connect-hand.jpg');
-}
-.bg-\[url\(\'\/uploads\/white_logo_sm\.png\'\)\] {
-  background-image: url('/uploads/white_logo_sm.png');
-}
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1394,6 +1394,9 @@ nav a:hover {
 }
 .bg-cover {
   background-size: cover;
+}
+.bg-contain {
+  background-size: contain;
 }
 .bg-center {
   background-position: center;

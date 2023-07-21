@@ -1,0 +1,24 @@
+<section>
+    <div class="bg-center bg-cover" style="background-image: url('')"> 
+        <h2 class="text-center editable">
+            <br/>Meet the Logo
+        </h2>     
+        <!-- Testimonial Slider -->
+        <div class="mx-auto text-center px-5p pb-5p max-w-screen-2xl ">
+            <div class="testimonial-slider-container">
+
+                {% for item in site.data.logo-meet.logo %}
+                <div class="slider-item">
+                    <div class="grid grid-cols-6 ">
+                        <div class="aspect-[3/4] min-h-[20vh] col-span-2 bg-center bg-contain bg-no-repeat" style="background-image: url('{{item.image}}')"></div>
+                        <div class="col-span-4">
+                            <h3> {{item.title}} </h3>
+                            <p> {{item.copy}} </p>
+                        </div>
+                    </div>
+                </div> 
+                {% endfor %}
+            </div> 
+        </div>    
+    </div>
+</section>
