@@ -1,18 +1,40 @@
-
-<section>
+<!----------------------------------Testimonial 3 columns --------------------> 
+<!---- <section>
     <div class="bg-center bg-cover" style="background-image: url('/uploads/abstract_bg.png')"> 
     <div class="testimonial-overlay"> 
         <h2 class="text-center editable">
             <br/>Testimonials
         </h2>   
-        <!-- Testimonial Slider -->
-        <div class="grid gap-10 mx-auto text-center p-5p max-w-screen-2xl md:grid-cols-3">            
+            <div class="grid gap-10 mx-auto text-center p-5p max-w-screen-2xl md:grid-cols-3">            
             {% for item in site.testimonials %}
                 <div class="col-span-1">
                 <p> {{item.content}} </p>
                 <p class="author"> {{item.author}} </p> 
                 </div>   
             {% endfor %}  
+         </div>    
+    </div>
+    </div>
+</section> ---->
+
+<!----------------------------------Testimonial Slider Gallery  --------------------> 
+
+<section>
+    <div class="bg-center bg-cover" style="background-image: url('/uploads/abstract_bg.png')"> 
+    <div class="testimonial-overlay">  
+        <h2 class="text-center editable">
+            <br/>Testimonials
+        </h2>     
+        <!-- Testimonial Slider -->
+        <div class="mx-auto text-center px-5p pb-5p max-w-screen-2xl ">
+           <div class="testimonial-slider-container">
+                {% for slide in site.testimonials %}
+                <div class="slider-item"> 
+                    <p> {{slide.content}} </p>
+                    <p class="author"> {{slide.author}} </p>  
+                </div> 
+                {% endfor %}
+            </div> 
         </div>    
     </div>
     </div>

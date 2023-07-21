@@ -991,7 +991,17 @@ nav a:hover {
         max-width: 900px;
         margin: auto;
     }
+.slider-item {
+        padding: 2rem 2.5rem;
+        display: none;
+    }
+.slider-item:first-child {
+        display: block;
+    }
 /* !!CURRENT BUG WITH TAILWIND FOR STYLE ORDER OF APPLICATION!!  */
+@media(max-width: 36em){
+        .slider-item p { font-size: 1.1rem;}
+    }
 .fixed {
   position: fixed;
 }
@@ -1352,6 +1362,24 @@ nav a:hover {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+.bg-\[url\(\'\/uploads\/Connections_img_resized\.jpg\'\)\] {
+  background-image: url('/uploads/Connections_img_resized.jpg');
+}
+.bg-\[url\(\'\/uploads\/Courses_img_resized\.jpg\'\)\] {
+  background-image: url('/uploads/Courses_img_resized.jpg');
+}
+.bg-\[url\(\'\/uploads\/Lisa_tree\.jpeg\'\)\] {
+  background-image: url('/uploads/Lisa_tree.jpeg');
+}
+.bg-\[url\(\'\/uploads\/blue-mandala\.jpg\'\)\] {
+  background-image: url('/uploads/blue-mandala.jpg');
+}
+.bg-\[url\(\'\/uploads\/connect-hand\.jpg\'\)\] {
+  background-image: url('/uploads/connect-hand.jpg');
+}
+.bg-\[url\(\'\/uploads\/white_logo_sm\.png\'\)\] {
+  background-image: url('/uploads/white_logo_sm.png');
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
