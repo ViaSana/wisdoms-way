@@ -992,7 +992,7 @@ nav a:hover {
         margin: auto;
     }
 .slider-item {
-        padding: 2rem 2.5rem;
+        padding: 2rem .5rem;
         display: none;
     }
 .slider-item:first-child {
@@ -1014,12 +1014,6 @@ nav a:hover {
 .inset-0 {
   inset: 0px;
 }
-.-top-14 {
-  top: -3.5rem;
-}
-.bottom-0 {
-  bottom: 0px;
-}
 .bottom-4 {
   bottom: 1rem;
 }
@@ -1032,9 +1026,6 @@ nav a:hover {
 .left-4 {
   left: 1rem;
 }
-.left-\[48\.5vw\] {
-  left: 48.5vw;
-}
 .top-0 {
   top: 0px;
 }
@@ -1043,18 +1034,6 @@ nav a:hover {
 }
 .top-\[50\%\] {
   top: 50%;
-}
-.z-0 {
-  z-index: 0;
-}
-.z-10 {
-  z-index: 10;
-}
-.z-20 {
-  z-index: 20;
-}
-.z-30 {
-  z-index: 30;
 }
 .order-first {
   order: -9999;
@@ -1068,8 +1047,8 @@ nav a:hover {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
-.col-span-4 {
-  grid-column: span 4 / span 4;
+.col-span-5 {
+  grid-column: span 5 / span 5;
 }
 .col-span-full {
   grid-column: 1 / -1;
@@ -1155,6 +1134,9 @@ nav a:hover {
 .hidden {
   display: none;
 }
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
+}
 .aspect-landscape {
   aspect-ratio: 2 / 1 ;
 }
@@ -1164,23 +1146,11 @@ nav a:hover {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
-.aspect-\[\.75\] {
-  aspect-ratio: .75;
-}
-.aspect-\[75\%\] {
-  aspect-ratio: 75%;
-}
-.aspect-\[3\/4\] {
-  aspect-ratio: 3/4;
-}
 .h-0 {
   height: 0px;
 }
 .h-0\.5 {
   height: 0.125rem;
-}
-.h-8 {
-  height: 2rem;
 }
 .h-\[110px\] {
   height: 110px;
@@ -1209,11 +1179,11 @@ nav a:hover {
 .min-h-\[114px\] {
   min-height: 114px;
 }
-.min-h-\[90px\] {
-  min-height: 90px;
-}
 .min-h-\[20vh\] {
   min-height: 20vh;
+}
+.min-h-\[90px\] {
+  min-height: 90px;
 }
 .w-1\/3 {
   width: 33.333333%;
@@ -1229,9 +1199,6 @@ nav a:hover {
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[1080px\] {
-  width: 1080px;
 }
 .min-w-\[265px\] {
   min-width: 265px;
@@ -1324,19 +1291,16 @@ nav a:hover {
 .overflow-hidden {
   overflow: hidden;
 }
-.rounded-full {
-  border-radius: 9999px;
-}
 .rounded-3xl {
   border-radius: 1.5rem;
-}
-.rounded-t-3xl {
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
 }
 .rounded-b-3xl {
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+}
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 .border {
   border-width: 1px;
@@ -1367,9 +1331,6 @@ nav a:hover {
 .bg-creme {
   background-color: #FAF6F2;;
 }
-.bg-gold {
-  background-color: #a88342;;
-}
 .bg-green-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
@@ -1399,11 +1360,11 @@ nav a:hover {
 .from-20\% {
   --tw-gradient-from-position: 20%;
 }
-.bg-cover {
-  background-size: cover;
-}
 .bg-contain {
   background-size: contain;
+}
+.bg-cover {
+  background-size: cover;
 }
 .bg-center {
   background-position: center;
@@ -1504,12 +1465,6 @@ nav a:hover {
 .pb-8 {
   padding-bottom: 2rem;
 }
-.pt-16 {
-  padding-top: 4rem;
-}
-.pt-4 {
-  padding-top: 1rem;
-}
 .pt-48 {
   padding-top: 12rem;
 }
@@ -1534,10 +1489,6 @@ nav a:hover {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -1624,9 +1575,6 @@ nav a:hover {
 .hover-grow:hover{
         scale: 1.05;
     }
-.bouncing-animation{
-        animation: bounce 1.5s ease-out 1s infinite running;
-    }
 @keyframes bounce {
     from {
         translate: 0 0;
@@ -1635,11 +1583,6 @@ nav a:hover {
     to { 
         translate: 0 1rem;
     }
-    }
-@media (max-height: 780px) {
-        .shorty-screen {
-            display: none;
-        }
     }
 
 
@@ -1673,11 +1616,17 @@ nav a:hover {
   .sm\:col-span-3 {
     grid-column: span 3 / span 3;
   }
+  .sm\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
   .sm\:min-h-\[422px\] {
     min-height: 422px;
   }
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .sm\:grid-cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
   }
   .sm\:text-3xl {
     font-size: 1.875rem;
@@ -1709,9 +1658,6 @@ nav a:hover {
   }
   .md\:min-h-100 {
     min-height: 100vh;
-  }
-  .md\:min-h-\[160px\] {
-    min-height: 160px;
   }
   .md\:min-h-\[366px\] {
     min-height: 366px;
