@@ -1,38 +1,44 @@
+<header class="lg:px-5p py-3 flex absolute top-0 w-full bg-gradient-to-b from-20% from-[#FAF6F2] items-center justify-center">
 
-<header class="lg:px-5p py-3 flex absolute top-0 w-screen bg-gradient-to-b from-20% from-[#FAF6F2] justify-center text-center ">
-  
-  <nav class="flex items-center justify-between text-lg gap-x-11 max-md:hidden">
-    <a class="py-2" href="/about">About</a>
-    {% include dropdown_nav.html name="Offerings" url="/offerings" 
-      l1="Coaching" url1="/coaching"
-      l2="Courses" url2="/courses"
-      l3="Astrology" url3="/astrology" %}
-    <div class="inline-block max-w-[25%]"> <a href="/index"> <img src="/uploads/logo.png"></img> </a> </div>
-    <a class="py-2" href="/meet-the-logo">Meet the Logo</a>
-    <a class="py-2" href="/contact">Connect</a>
-  </nav> 
+    <div class="relative flex w-full max-md:hidden max-w-screen-2xl">
+        <nav class="grid items-center w-full grid-cols-5 gap-4">
+            <a class="py-2 text-center" href="/about">About</a>
+            {% include dropdown_nav.html name="Offerings" url="/offerings" 
+            l1="Coaching" url1="/coaching"
+            l2="Courses" url2="/courses"
+            l3="Astrology" url3="/astrology" %}
 
-  <div class="w-1/3 md:hidden"></div>
-  <div class="flex justify-end w-1/3 md:hidden"> <a href="/index"> <img src="/uploads/logo.png"></img> </a> </div>
-  <div class="flex items-center justify-end w-1/3 md:hidden">
-    <div class="relative mr-4 space-y-2 hamburger-button">
-      <div class="w-8 h-0.5 bg-brown"></div>
-      <div class="w-8 h-0.5 bg-brown"></div>
-      <div class="w-8 h-0.5 bg-brown"></div>
-      <div class="shadow-lg mobile-menu">
-        <div class="-mt-4 -mr-2 text-right">X</div> 
-        <nav class="text-left">
-          <a class="p-4" href="/about">About</a>
-          <a class="p-4" href="/offerings">Offerings</a>
-            <a class="p-4 ml-2" href="/coaching">Coaching</a>
-            <a class="p-4 ml-2" href="/courses"> Courses </a>
-            <a class="p-4 ml-2" href="/astrology">Astrology</a>
-          <a class="p-4" href="/meet-the-logo">Meet the Logo</a>
-          <!--- <a class="p-4" href="/blog.html">Blog</a> ----> 
-          <a class="p-4" href="/contact">Connect</a>
+            <div class="flex justify-center"> <a href="/index"> <img class="max-h-[110px]" src="/uploads/logo.png"></img> </a> </div>
+            
+            <a class="py-2 text-center" href="/meet-the-logo">Meet the Logo</a>
+            <a class="py-2 text-center" href="/contact">Connect</a>
         </nav> 
-      </div>
     </div>
-  </div>
+
+    <!-- This handles the responsive menu -->
+    <div class="w-1/3 md:hidden"></div>
+    <div class="flex justify-end w-1/3 md:hidden"> <a href="/index"> <img src="/uploads/logo.png"></img> </a> </div>
+    <div class="flex items-center justify-end w-1/3 md:hidden">
+        <div class="relative mr-4 space-y-2 hamburger-button">
+            <div class="w-8 h-0.5 bg-brown"></div>
+            <div class="w-8 h-0.5 bg-brown"></div>
+            <div class="w-8 h-0.5 bg-brown"></div>
+            
+            <div class="shadow-lg mobile-menu">
+                <div class="-mt-4 -mr-2 text-right">X</div> 
+                <nav class="text-left">
+                    <a class="p-4" href="/about">About</a>
+                    <a class="p-4" href="/offerings">Offerings</a>
+                    <a class="p-4 ml-2" href="/coaching">Coaching</a>
+                    <a class="p-4 ml-2" href="/courses"> Courses </a>
+                    <a class="p-4 ml-2" href="/astrology">Astrology</a>
+                    <a class="p-4" href="/meet-the-logo">Meet the Logo</a>
+                    <!--- <a class="p-4" href="/blog.html">Blog</a> ----> 
+                    <a class="p-4" href="/contact">Connect</a>
+                </nav> 
+            </div>
+        </div>
+    </div>
 </header>
+
 
