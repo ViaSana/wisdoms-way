@@ -1200,6 +1200,9 @@ nav a:hover {
 .min-w-\[265px\] {
   min-width: 265px;
 }
+.min-w-\[261px\] {
+  min-width: 261px;
+}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1462,9 +1465,6 @@ nav a:hover {
 .pb-8 {
   padding-bottom: 2rem;
 }
-.pt-16 {
-  padding-top: 4rem;
-}
 .pt-48 {
   padding-top: 12rem;
 }
@@ -1658,9 +1658,6 @@ nav a:hover {
   }
   .md\:min-h-100 {
     min-height: 100vh;
-  }
-  .md\:min-h-\[160px\] {
-    min-height: 160px;
   }
   .md\:min-h-\[366px\] {
     min-height: 366px;
