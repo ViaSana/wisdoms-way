@@ -1034,6 +1034,9 @@ nav a:hover {
 .top-\[50\%\] {
   top: 50%;
 }
+.left-12 {
+  left: 3rem;
+}
 .order-first {
   order: -9999;
 }
@@ -1160,6 +1163,9 @@ nav a:hover {
 .max-h-72 {
   max-height: 18rem;
 }
+.max-h-\[110px\] {
+  max-height: 110px;
+}
 .min-h-50 {
   min-height: 50vh;
 }
@@ -1192,6 +1198,9 @@ nav a:hover {
 }
 .w-screen {
   width: 100vw;
+}
+.w-\[7\.5rem\] {
+  width: 7.5rem;
 }
 .min-w-\[261px\] {
   min-width: 261px;
