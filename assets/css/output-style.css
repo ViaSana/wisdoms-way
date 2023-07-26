@@ -406,7 +406,6 @@ nav a:hover {
   border-top-left-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
   border-width: 1px;
-  border-color: #FAF6F2;;
   background-color: #a88342;;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1321,15 +1320,14 @@ nav a:hover {
 .bg-creme {
   background-color: #FAF6F2;;
 }
+.bg-pink {
+  background-color: #D49E8D;;
+}
 .bg-tan {
   background-color: #DED1BD;;
 }
 .bg-transparent {
   background-color: transparent;
-}
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -1455,6 +1453,9 @@ nav a:hover {
 .pb-8 {
   padding-bottom: 2rem;
 }
+.pt-4 {
+  padding-top: 1rem;
+}
 .pt-48 {
   padding-top: 12rem;
 }
@@ -1463,9 +1464,6 @@ nav a:hover {
 }
 .pt-6 {
   padding-top: 1.5rem;
-}
-.pt-4 {
-  padding-top: 1rem;
 }
 .text-left {
   text-align: left;

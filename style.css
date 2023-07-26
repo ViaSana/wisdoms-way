@@ -60,7 +60,7 @@
     }
 
     .invert_button:hover {
-        @apply px-4 py-2 text-base uppercase border bg-gold text-creme font-headings border-creme rounded-tl-xl rounded-br-xl;
+        @apply px-4 py-2 text-base uppercase border bg-gold text-creme font-headings rounded-tl-xl rounded-br-xl;
     } 
 
     .blog-content {
