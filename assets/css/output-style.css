@@ -420,6 +420,13 @@ nav a:hover {
 .blog-content {
   color: #683B2B;;
 }
+.logo-slider .slick-next::before, .logo-slider .slick-prev::before {
+        font-family: slick;
+        font-size: 20px;
+        line-height: 1;
+        opacity: .75;
+        color: #a88342 !important; 
+    }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;

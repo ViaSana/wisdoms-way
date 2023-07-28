@@ -66,6 +66,14 @@
     .blog-content {
         @apply text-brown
     }
+
+    .logo-slider .slick-next::before, .logo-slider .slick-prev::before {
+        font-family: slick;
+        font-size: 20px;
+        line-height: 1;
+        opacity: .75;
+        color: #a88342 !important; 
+    }
 }
 
 
@@ -178,13 +186,7 @@
         left: 10px;
     }
 
-    .slick-next::before, .slick-prev::before {
-        font-family: inherit;
-        font-size: 20px;
-        line-height: 1;
-        opacity: .75;
-        color: #a88342;
-    }
+    
 
 /* !!CURRENT BUG WITH TAILWIND FOR STYLE ORDER OF APPLICATION!!  */
     .slick-dots {
