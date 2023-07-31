@@ -1041,6 +1041,18 @@ nav a:hover {
 .top-\[50\%\] {
   top: 50%;
 }
+.-bottom-\[1\] {
+  bottom: -1;
+}
+.-left-\[1px\] {
+  left: -1px;
+}
+.-bottom-\[1px\] {
+  bottom: -1px;
+}
+.bottom-\[1px\] {
+  bottom: 1px;
+}
 .order-first {
   order: -9999;
 }
@@ -1199,6 +1211,9 @@ nav a:hover {
 }
 .w-full {
   width: 100%;
+}
+.w-\[101\%\] {
+  width: 101%;
 }
 .min-w-\[261px\] {
   min-width: 261px;
