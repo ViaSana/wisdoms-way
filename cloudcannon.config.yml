@@ -35,8 +35,8 @@ collections_config_override: false
 
 # Control which data sets are available to populate select and multiselect inputs.
 data_config:
-_inputs: 
-      image:
+  _inputs: 
+      logo-image:
         hidden: true
       copy:
         type: textarea
