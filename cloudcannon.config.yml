@@ -43,6 +43,8 @@ _inputs:
       type: textarea
     title:
       hidden: true
+    layout:
+      hidden: true
 # Base path to your source files, relative to the root folder of your repository.
 source:
 
