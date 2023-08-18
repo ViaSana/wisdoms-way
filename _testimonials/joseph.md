@@ -1,4 +1,0 @@
----
-author: joseph
----
-sadjhgas
