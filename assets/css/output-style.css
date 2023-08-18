@@ -387,36 +387,6 @@ nav a:hover {
   text-transform: uppercase;
   color: #a88342;;
 }
-.invert_button {
-  border-top-left-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
-  border-width: 1px;
-  background-color: #FAF6F2;;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-family: minerva-modern, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-transform: uppercase;
-  color: #a88342;;
-}
-.invert_button:hover {
-  border-top-left-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
-  border-width: 1px;
-  background-color: #a88342;;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-family: minerva-modern, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-transform: uppercase;
-  color: #FAF6F2;;
-}
 .blog-content {
   color: #683B2B;;
 }
@@ -1020,8 +990,14 @@ nav a:hover {
 .inset-0 {
   inset: 0px;
 }
+.-left-\[1px\] {
+  left: -1px;
+}
 .bottom-4 {
   bottom: 1rem;
+}
+.bottom-\[1px\] {
+  bottom: 1px;
 }
 .left-0 {
   left: 0px;
@@ -1040,18 +1016,6 @@ nav a:hover {
 }
 .top-\[50\%\] {
   top: 50%;
-}
-.-bottom-\[1\] {
-  bottom: -1;
-}
-.-left-\[1px\] {
-  left: -1px;
-}
-.-bottom-\[1px\] {
-  bottom: -1px;
-}
-.bottom-\[1px\] {
-  bottom: 1px;
 }
 .order-first {
   order: -9999;
@@ -1197,23 +1161,20 @@ nav a:hover {
 .min-h-\[20vh\] {
   min-height: 20vh;
 }
-.min-h-\[90px\] {
-  min-height: 90px;
-}
 .w-1\/3 {
   width: 33.333333%;
 }
 .w-8 {
   width: 2rem;
 }
+.w-\[101\%\] {
+  width: 101%;
+}
 .w-\[7\.5rem\] {
   width: 7.5rem;
 }
 .w-full {
   width: 100%;
-}
-.w-\[101\%\] {
-  width: 101%;
 }
 .min-w-\[261px\] {
   min-width: 261px;
@@ -1616,9 +1577,6 @@ nav a:hover {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
-  .sm\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
   .sm\:col-span-7 {
     grid-column: span 7 / span 7;
   }
@@ -1665,6 +1623,9 @@ nav a:hover {
   .md\:min-h-\[366px\] {
     min-height: 366px;
   }
+  .md\:min-h-\[536px\] {
+    min-height: 536px;
+  }
   .md\:columns-3 {
     -moz-columns: 3;
          columns: 3;
@@ -1684,6 +1645,9 @@ nav a:hover {
   .lg\:min-h-\[300px\] {
     min-height: 300px;
   }
+  .lg\:min-h-\[388px\] {
+    min-height: 388px;
+  }
   .lg\:px-5p {
     padding-left: 5%;
     padding-right: 5%;
@@ -1693,5 +1657,8 @@ nav a:hover {
 @media (min-width: 1280px) {
   .xl\:min-h-\[220px\] {
     min-height: 220px;
+  }
+  .xl\:min-h-\[316px\] {
+    min-height: 316px;
   }
 }
