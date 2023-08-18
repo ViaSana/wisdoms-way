@@ -27,7 +27,7 @@ collections_config:
     path: _testimonials
     create:
       extra_data: 
-        filename: '[count]-testimonial'
+        filename: [count]-testimonial
       path: '[relative_base_path]/{filename}.[ext]'
     
 
