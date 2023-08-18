@@ -26,11 +26,8 @@ collections_config:
     output: false
     path: _testimonials
     create:
-      extra_data: 
-        filename: [count]-testimonial
-      path: '[relative_base_path]/{filename}.[ext]'
-    
-
+      path: '[relative_base_path]/[count]-testimonial.[ext]'
+  
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
 collection_groups:
