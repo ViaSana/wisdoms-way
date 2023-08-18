@@ -8,6 +8,11 @@ collections_config:
   data:
     path: _data
     output: false
+    _inputs: 
+      image:
+        hidden: true
+      copy:
+        type: textarea
   posts:
     path: _posts
     output: true
@@ -34,7 +39,8 @@ collections_config_override: false
 
 # Control which data sets are available to populate select and multiselect inputs.
 data_config:
-
+  meet-the-logo:
+    name: Logo Page Info
 # Base path to your source files, relative to the root folder of your repository.
 source:
 
