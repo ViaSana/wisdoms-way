@@ -24,9 +24,9 @@ collections_config:
     path: _services
   testimonials:
     output: false
-    path: _testimonials
+    path: [relative_base_path]/1.testimonial.md
     create:
-      path: '{author}[count].[ext]'
+      path: [relative_base_path]/[count].testimonial.[ext]
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
