@@ -35,11 +35,12 @@ collections_config_override: false
 
 # Control which data sets are available to populate select and multiselect inputs.
 data_config:
-  _inputs: 
-      logo-image:
-        hidden: true
-      copy:
-        type: textarea
+
+_inputs: 
+    logo-image:
+      hidden: true
+    copy:
+      type: textarea
 # Base path to your source files, relative to the root folder of your repository.
 source:
 
