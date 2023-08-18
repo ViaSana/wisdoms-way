@@ -26,7 +26,7 @@ collections_config:
     output: false
     path: _testimonials
     create:
-      path: {author}[count].[ext]
+      path: '{author}[count].[ext]'
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
