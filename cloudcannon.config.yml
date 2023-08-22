@@ -3,11 +3,11 @@ paths:
   data: _data
   layouts: _layouts
   includes: _includes
-
 collections_config:
   data:
     path: _data
     output: false
+    icon: notes
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
@@ -15,38 +15,63 @@ collections_config:
     path: _posts
     output: true
     icon: notes
+    _editables: {}
+    _inputs: {}
+    _select_data: {}
+    _structures: {}
     create:
       path: >-
         [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+      extra_data: {}
+      _inputs: {}
+      _select_data: {}
+      _structures: {}
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas: {}
   pages:
     output: true
     filter: strict
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
   services:
     path: _services
     output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
   testimonials:
     path: _testimonials
     output: false
+    icon: notes
     create:
       path: '[relative_base_path]/{author}.md'
-
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 collections_config_override: false
-
 _inputs:
   logo-image:
+    type: auto
     hidden: true
     cascade: true
   copy:
     type: textarea
     cascade: true
   title:
+    type: auto
     hidden: true
     cascade: true
   layout:
+    type: auto
     hidden: true
     cascade: true
-
+_select_data: {}
+_structures: {}
+_editables: {}
+data_config: {}
 timezone: US/Eastern
