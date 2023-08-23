@@ -1228,6 +1228,9 @@ nav a:hover {
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .items-center {
   align-items: center;
 }
@@ -1251,6 +1254,9 @@ nav a:hover {
 }
 .gap-6 {
   gap: 1.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -1580,6 +1586,10 @@ nav a:hover {
   .max-md\:hidden {
     display: none;
   }
+  .max-md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1635,6 +1645,12 @@ nav a:hover {
   }
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
   .md\:p-8 {
     padding: 2rem;
