@@ -37,14 +37,14 @@ credential_links:
 <section class="px-5p pb-5p">
   <div class="mx-auto text-center max-w-screen-2xl">
     <h2 class="pb-2 editable"> Credentials </h2>
-    <p class="pb-8 editable">
+    <p class="pb-8 editable max-md:px-8">
         Wisdoms’ Way is the alchemy of my degree in Comparative Religions and Cultures, doctoral degree in Clinical Psychology, Jungian Coaching Certification, E-500 RYT Yoga teacher certification, International Association of Yoga Therapist accreditation, Ashtanga Yoga Apprenticeship, iRest Yoga Nidra Certified teacher, Black Belt in the Nia technique, Reiki level 2 training, formal study and apprenticeship in astrology and tarot, intentional globetrotting, and being a life long practitioner of listening to the Wisdom of Nature.
     </p>
-    <div class="grid grid-cols-5 gap-6 px-10p justify-center items-center">
+    <div class="grid items-center justify-center grid-cols-3 gap-2 md:grid-cols-5 md:gap-6 px-10p">
 
       {% for item in page.credential_links %}
       <a href="{{item.url}}">
-        <div class="object-cover flex aspect-square justify-center items-center hover-grow">
+        <div class="flex items-center justify-center object-cover aspect-square hover-grow">
           <img src="{{item.image}}" />
         </div>
       </a>
