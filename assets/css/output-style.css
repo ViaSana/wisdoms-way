@@ -1020,6 +1020,12 @@ nav a:hover {
 .order-first {
   order: -9999;
 }
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -1438,6 +1444,9 @@ nav a:hover {
 .pt-6 {
   padding-top: 1.5rem;
 }
+.pb-12 {
+  padding-bottom: 3rem;
+}
 .text-left {
   text-align: left;
 }
@@ -1596,6 +1605,9 @@ nav a:hover {
   .md\:order-first {
     order: -9999;
   }
+  .md\:order-3 {
+    order: 3;
+  }
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1626,6 +1638,10 @@ nav a:hover {
   }
   .md\:p-8 {
     padding: 2rem;
+  }
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .md\:text-\[5vw\] {
     font-size: 5vw;
