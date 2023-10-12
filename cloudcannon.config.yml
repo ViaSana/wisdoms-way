@@ -81,14 +81,6 @@ _inputs:
         - h5
         - p
     label: Sub-Heading Font Choice
-    cascade: true
-  heading2_color:
-    type: color
-    options:
-      allow_empty: true
-      format: hex
-    label: "Color Choice (Brand Colors: creme:#FAF6F2, tan:#DED1BD, gold:#a88342, pink:#D49E8D, brown:#683B2B)"
-    cascade: true
 _select_data: {}
 _structures: {}
 _editables: {}
