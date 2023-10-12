@@ -70,6 +70,18 @@ _inputs:
     type: auto
     hidden: true
     cascade: true
+  heading2_select:
+    type: select
+    options:
+      allow_empty: false
+      values:
+        - h2
+        - h3
+        - h4
+        - h5
+        - p
+    label: Font Choice
+    cascade: true
 _select_data: {}
 _structures: {}
 _editables: {}

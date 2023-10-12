@@ -1459,6 +1459,9 @@ nav a:hover {
 .font-headings {
   font-family: minerva-modern, sans-serif;
 }
+.font-paragraphs {
+  font-family: dolly-new, serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1652,6 +1655,9 @@ nav a:hover {
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+  .md\:text-\[2vw\] {
+    font-size: 2vw;
   }
   .md\:text-\[5vw\] {
     font-size: 5vw;
