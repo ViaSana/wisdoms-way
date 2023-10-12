@@ -71,9 +71,8 @@ _inputs:
     hidden: true
     cascade: true
   banner.background-position:
-    label: |
-      Values can be top, left, bottom, or right. 
-      If left or right is given, then this defines X and the other given value defines Y. If top or bottom is given, then this defines Y and the other value defines X.
+    label: Banner Image Postion
+    comment: Values can be top, left, bottom, or right. 
   heading2_select:
     type: select
     options:
