@@ -71,8 +71,8 @@ _inputs:
     hidden: true
     cascade: true
   banner.background-position:
-    label: Banner Image Postion
-    comment: Values can be top, left, bottom, or right. Refer to this link for more explination of possible syntax https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+    label: Banner Image Background-Postion
+    comment: Values can be top, left, bottom, or right. Refer to this link for more info https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
   heading2_select:
     type: select
     options:
