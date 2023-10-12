@@ -82,6 +82,18 @@ _inputs:
         - p
     label: Font Choice
     cascade: true
+  heading2_color:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - 'creme': 'text-[#FAF6F2]'
+        - 'tan': 'text-[#DED1BD]'
+        - 'gold': 'text-[#a88342]'
+        - 'pink': 'text-[#D49E8D]'
+        - 'brown': 'text-[#683B2B]'
+    label: Color Choice
+    cascade: true
 _select_data: {}
 _structures: {}
 _editables: {}

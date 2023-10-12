@@ -5,7 +5,7 @@
         
         <!-- If statement adds a sub-heading if one exists-->
         {% if {{page.banner.sub-heading}} %}
-            <{{page.banner.heading2_select}} class="p-5 text-creme bg-blend-hard-light animate-from-bottom  font-paragraphs md:text-[2vw]"> {{page.banner.sub-heading}}</{{page.banner.heading2_select}}>
+            <{{page.banner.heading2_select}} class="p-5 text-creme bg-blend-hard-light animate-from-bottom md:text-[2vw] {{page.banner.heading2_color}}"> {{page.banner.sub-heading}}</{{page.banner.heading2_select}}>
         {% endif %}
     </div> 
 </section>
