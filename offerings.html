@@ -22,16 +22,16 @@ seo:
 </section>   
 
 <section class="mx-auto max-w-screen-2xl"> 
-    {% for page in site.services %}
+    {% for item in site.services %}
     <div class="grid grid-cols-5 gap-4 ">
         <div class="self-center order-2 px-8 pb-12 md:py-12 col-span-full md:col-span-3">
-            <a href="{{page.url}}">  <h1 class="mb-2 hover:text-gold">{{page.service_heading}}</h1></a>
-            <h2 class="mb-2"> {{page.subtitle}}</h2>
-            <p class="mb-6"> {{page.description}} </p>
-            <a href="{{page.url}}" class="button"> Learn More </a>
+            <a href="{{item.url}}">  <h1 class="mb-2 hover:text-gold">{{item.service_heading}}</h1></a>
+            <h2 class="mb-2"> {{item.subtitle}}</h2>
+            <p class="mb-6"> {{item.description}} </p>
+            <a href="{{item.url}}" class="button"> Learn More </a>
         </div>
         <div class="order-1 px-8 md:p-8 col-span-full md:col-span-2 md:order-3">
-            <a href="{{page.url}}"> <div class="bg-center bg-cover aspect-square rounded-3xl" style="background-image: url('{{page.featured-image}}');"></div> </a>
+            <a href="{{item.url}}"> <div class="bg-center bg-cover aspect-square rounded-3xl" style="background-image: url('{{item.featured-image}}');"></div></a>
         </div>
     </div>
     {% endfor %}

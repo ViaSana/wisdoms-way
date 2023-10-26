@@ -1,11 +1,11 @@
 <div class="grid gap-10 md:grid-cols-3">
-    {% for page in site.services %}
+    {% for item in site.services %}
     <div class="hover-grow">
-        <a href="{{page.url}}">
-            <div class="bg-cover p-[50%] bg-center rounded-t-3xl" style="background-image: url('{{page.featured-image}}')"></div>
+        <a href="{{item.url}}">
+            <div class="bg-cover p-[50%] bg-center rounded-t-3xl" style="background-image: url('{{item.featured-image}}')"></div>
             <div class="p-4 bg-tan md:min-h-[536px] lg:min-h-[388px] xl:min-h-[316px] grid rounded-b-3xl">
-                <h4 class="mb-2 font-bold hover:text-gold">{{page.service_heading}}</h4>
-                <p class="mb-4">{{page.summary}}</p>
+                <h4 class="mb-2 font-bold hover:text-gold">{{item.service_heading}}</h4>
+                <p class="mb-4">{{item.summary}}</p>
                 <div class="self-end max-w-[130px] mx-auto button inline-block"> Learn More </div>
             </div>
         </a>

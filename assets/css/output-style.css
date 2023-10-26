@@ -1029,9 +1029,6 @@ nav a:hover {
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -1254,9 +1251,6 @@ nav a:hover {
 }
 .gap-4 {
   gap: 1rem;
-}
-.gap-6 {
-  gap: 1.5rem;
 }
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -1493,9 +1487,6 @@ nav a:hover {
 }
 .uppercase {
   text-transform: uppercase;
-}
-.\!lowercase {
-  text-transform: lowercase !important;
 }
 .\!capitalize {
   text-transform: capitalize !important;
