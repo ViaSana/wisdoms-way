@@ -30,7 +30,6 @@ headings.forEach(object => {
 });
 
 offerings.forEach(object => {
-
     let tl = gsap.timeline({
     scrollTrigger: {
             trigger: object,
@@ -46,16 +45,12 @@ offerings.forEach(object => {
 });
 
 // Contact Form Submission
-$('#wwContactForm').on('submit', function() {
-    localStorage.setItem('formSubmitted', 'true')
-}); 
-
+$('#wwContactForm').on('submit', function() { localStorage.setItem('formSubmitted', 'true')}); 
 $(document).ready(function() {
     if (localStorage.getItem('formSubmitted') === 'true') {
         $('#thank_you').css('display', 'block');
         localStorage.removeItem('formSubmitted'); // Optional: remove it if you want the message to appear once
     }
-
     $(document).click(function(event) {
         if (!$(event.target).closest("#thank_you").length) {
             $("#thank_you").css("display", "none");
@@ -63,11 +58,13 @@ $(document).ready(function() {
     }); 
 });
 
+// Hamburger
 $('.hamburger-button').click(function(){
     $('.mobile-menu').fadeToggle(100);
     $(this).toggleClass('active');
 });
 
+// Slick Slider
 $(".testimonial-slider-container").slick({
     autoplay: false,
     autoplaySpeed: 2e3,
