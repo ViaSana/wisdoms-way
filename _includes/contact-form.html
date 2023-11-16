@@ -3,17 +3,27 @@
         Get Connected
     </h2>
     <form class="grid max-w-2xl mx-auto" method="post" action="#wayContact" id="wwContactForm"> 
+        <! -------Name -------->
         <label for="name" class="uppercase font-headings"> Name </label>
         <input type="text" id="name" name="name" class="p-2 mb-2 bg-transparent border-t border-gold outline-gold" />
         
+        <! -------Email -------->
         <label for="email" class="uppercase font-headings"> Email </label>
         <input type="email" id="email" name="email" class="p-2 mb-2 bg-transparent border-t border-gold outline-gold" />
 
+      
+        <! ------- Message -------->
         <label for="message" class="uppercase font-headings"> Message </label>
         <textarea id="message" name="message" class="p-2 mb-8 bg-transparent border border-gold outline-gold"></textarea>
 
         <input type="hidden" name="inbox_key" value="contact-form">
         <input type="text" name="_gotcha" style="display: none;">
+
+        <! -------Checkbox -------->
+        <label for="email" class="checkbox-inline uppercase font-headings editable">
+        <input type="checkbox" id="inlineCheckbox1" value="option1" class="p-2 mb-2"> Stay Connected with news and updates
+         </label>
+
 
         <div class="text-right"> <input class="border button" type="submit" value="connect" id="submitBtn"/> </div>
     </form>
