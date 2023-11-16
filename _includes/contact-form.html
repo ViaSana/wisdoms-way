@@ -14,16 +14,17 @@
       
         <! ------- Message -------->
         <label for="message" class="uppercase font-headings"> Message </label>
-        <textarea id="message" name="message" class="p-2 mb-8 bg-transparent border border-gold outline-gold"></textarea>
+        <textarea id="message" name="message" class="p-2 mb-2 bg-transparent border border-gold outline-gold"></textarea>
 
-        <input type="hidden" name="inbox_key" value="contact-form">
-        <input type="text" name="_gotcha" style="display: none;">
+    
 
         <! -------Checkbox -------->
         <label for="email" class="checkbox-inline uppercase font-headings">
-        <input type="checkbox" id="inlineCheckbox1" value="option1" class="p-2 mb-2 editable"> Stay Connected with news and updates
+        <input type="checkbox" id="newsletter" value="option1" class="p-2 mb-8 editable"> Stay Connected with news and updates
          </label>
 
+         <input type="hidden" name="inbox_key" value="contact-form">
+         <input type="text" name="_gotcha" style="display: none;">
 
         <div class="text-right"> <input class="border button" type="submit" value="connect" id="submitBtn"/> </div>
     </form>
