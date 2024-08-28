@@ -44,19 +44,36 @@ offerings.forEach(object => {
     })
 });
 
-// Contact Form Submission
-$('#wwContactForm').on('submit', function() { localStorage.setItem('formSubmitted', 'true')}); 
+// Old Contact Form Submission Script
+// $('#wwContactForm').on('submit', function() { localStorage.setItem('formSubmitted', 'true')}); 
+// $(document).ready(function() {
+//     if (localStorage.getItem('formSubmitted') === 'true') {
+//         $('#thank_you').css('display', 'block');
+//         localStorage.removeItem('formSubmitted'); // Optional: remove it if you want the message to appear once
+//     }
+//     $(document).click(function(event) {
+//         if (!$(event.target).closest("#thank_you").length) {
+//             $("#thank_you").css("display", "none");
+//         }
+//     }); 
+// });
+
+
+// Handle showing thank you message on page load if form was submitted
 $(document).ready(function() {
     if (localStorage.getItem('formSubmitted') === 'true') {
         $('#thank_you').css('display', 'block');
-        localStorage.removeItem('formSubmitted'); // Optional: remove it if you want the message to appear once
+        localStorage.removeItem('formSubmitted'); // Optional: remove it if you want the message to appear only once
     }
+
+    // Hide thank you message on outside click
     $(document).click(function(event) {
         if (!$(event.target).closest("#thank_you").length) {
             $("#thank_you").css("display", "none");
         }
-    }); 
+    });
 });
+
 
 // Hamburger
 $('.hamburger-button').click(function(){

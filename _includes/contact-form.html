@@ -2,35 +2,50 @@
     <h2 class="mb-6 text-center uppercase editable">
         Get Connected
     </h2>
-    <form class="grid max-w-2xl mx-auto" method="post" action="#wayContact" id="wwContactForm"> 
-        <!--------- Name -------->
+    <form class="grid max-w-2xl mx-auto" id="wwContactForm" method="POST">
+        
+        <!-- Required: Your Access Key for Web3Forms -->
+        <input type="hidden" name="access_key" value="9e73aa1c-c1ad-4986-a4e0-e508f5d259bd">
+        
+        <!-- Optional Subject -->
+        <input type="hidden" name="subject" value="New Submission from Wisdom-Way.com">
+        
+        <!-- Hidden botcheck field -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+        <!-- Name field -->
         <label for="name" class="uppercase font-headings"> Name </label>
-        <input type="text" id="name" name="name" class="p-2 mb-2 bg-transparent border-t border-gold outline-gold" />
+        <input type="text" id="name" name="name" class="p-2 mb-2 bg-transparent border-t border-gold outline-gold" required />
 
-        <!------- Email -------->
+        <!-- Email field -->
         <label for="email" class="uppercase font-headings"> Email </label>
-        <input type="email" id="email" name="email" class="p-2 mb-2 bg-transparent border-t border-gold outline-gold" />
+        <input type="email" id="email" name="email" class="p-2 mb-2 bg-transparent border-t border-gold outline-gold" required />
 
-        <!------- Message -------->
+        <!-- Message field -->
         <label for="message" class="uppercase font-headings"> Message </label>
-        <textarea id="message" name="message" class="p-2 mb-2 bg-transparent border border-gold outline-gold"></textarea>
+        <textarea id="message" name="message" class="p-2 mb-2 bg-transparent border border-gold outline-gold" required></textarea>
 
-        <!-------Checkbox -------->
+        <!-- Newsletter checkbox -->
         <div class="flex">
             <input type="checkbox" id="newsletter" class="p-2 mb-8" name="newsletter" value="subscribed">
-            <label for="newsletter" class="pb-8 ml-2 uppercase font-headings">  <span class="editable"> Stay Connected with news and updates </span> </label>
+            <label for="newsletter" class="pb-8 ml-2 uppercase font-headings"> Stay Connected with news and updates </label>
         </div>
 
-        <input type="hidden" name="inbox_key" value="contact-form">
-        <input type="text" name="_gotcha" style="display: none;">
+        <!-- Submit button -->
+        <div class="text-right">
+            <input class="border button" type="submit" value="Connect" />
+        </div>
 
-        <div class="text-right"> <input class="border button" type="submit" value="connect" id="submitBtn"/> </div>
     </form>
+
+    <!-- Thank You message -->
     <div id="thank_you" style="display: none;">
         <div class="absolute bottom-4 left-4">
             <h3>Thanks for connecting!</h3> 
             <p>I’ll get back to you as soon as I can.</p>
         </div>
     </div>
-</div>
 
+    <!-- Result message -->
+    <div id="result" style="margin-top: 10px;"></div>
+</div>
