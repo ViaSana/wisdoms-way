@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apline Flicker Fix  */
+[x-cloak] {
+    display: none !important;
+}
 
 /* ----------- Default Styles --------- */
 
@@ -213,9 +217,7 @@
 
 @layer utilities {
 
-    [x-cloak] {
-        display: none !important;
-    }
+    
 
     /* This is the hover-grow animation */
     .hover-grow{
