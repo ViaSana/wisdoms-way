@@ -1017,6 +1017,9 @@ nav a:hover {
 .top-\[50\%\] {
   top: 50%;
 }
+.bottom-6 {
+  bottom: 1.5rem;
+}
 .order-1 {
   order: 1;
 }
