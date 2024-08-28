@@ -16,15 +16,15 @@ seo:
   description: >-
   social_image: /android-chrome-512x512.png
   keywords: >-
-  hide-from-google: false
+  hide-from-google: true
 ---
 <div class="min-h-[110px]"></div>
 
 <!------------------------ Featured blog loop ------------------------>
 <section class="p-5p">
-  <h2 class="max-w-screen-2xl mx-auto text-center mb-5 editable"> Recently on the blog </h2>
+  <h2 class="mx-auto mb-5 text-center max-w-screen-2xl editable"> Recently on the blog </h2>
 
-  <div class="max-w-screen-2xl mx-auto md:columns-3">
+  <div class="mx-auto max-w-screen-2xl md:columns-3">
 
       {% for post in site.posts limit:12 %}
 
