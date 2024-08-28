@@ -213,6 +213,10 @@
 
 @layer utilities {
 
+    [x-cloak] {
+        display: none !important;
+    }
+
     /* This is the hover-grow animation */
     .hover-grow{
         transition-duration: .4s;
