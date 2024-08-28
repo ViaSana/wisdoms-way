@@ -2,7 +2,7 @@
     <button @mouseover="open = true" class="py-2 ">
         <a href="{{include.url}}">{{include.name}}</a>
     </button>
-    <div x-show="open" class="absolute w-[7.5rem] text-left shadow-lg left-12 top-10 bg-tan">
+    <div x-cloak x-show="open" class="absolute w-[7.5rem] text-left shadow-lg left-12 top-10 bg-tan">
         <a href="{{include.url1}}" class="block px-4 py-2 text-brown hover:text-pink">
             {{include.l1}}
         </a>
